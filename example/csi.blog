@@ -4,17 +4,21 @@
  * 
  * The probability of X being true given no evidence is P(X=true) = 0.596.
  */
+type TypeU;
+distinct TypeU TRUE, FALSE;
 
-random Boolean U ~ BooleanDistrib(0.3);
+random TypeU U ~ Categorical({TRUE -> 0.3, FALSE->0.7});
 
-random Boolean V ~ BooleanDistrib(0.9);
+type TypeV;
+distinct TypeV TRUEV, FALSEV;
+random TypeV V ~ Categorical({TRUEV -> 0.9, FALSEV->0.1});
 
 random Boolean W ~ BooleanDistrib(0.1);
 
 random Boolean X ~
     if U then  case W in {true -> BooleanDistrib(0.8),
                        false -> BooleanDistrib(0.2)}
-    else case V in {true -> BooleanDistrib(0.8),
-                  false -> BooleanDistrib(0.2)}
+    else case V in {TRUEV -> BooleanDistrib(0.8),
+                   FALSEV-> BooleanDistrib(0.2)}
     ;
 query X;

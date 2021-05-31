@@ -1,0 +1,40 @@
+type TypeCancer;
+distinct TypeCancer CancerTrue, CancerFalse;
+
+type TypeDyspnoea;
+distinct TypeDyspnoea DyspnoeaTrue, DyspnoeaFalse;
+
+type TypePollution;
+distinct TypePollution Pollutionlow, Pollutionmedium, Pollutionhigh;
+
+type TypeSmoker;
+distinct TypeSmoker SmokerTrue, SmokerFalse;
+
+type TypeXray;
+distinct TypeXray Xraypositive, Xraynegative;
+
+random TypeCancer Cancer ~ case [Pollution, Smoker] in
+	{[ Pollutionlow, SmokerTrue ] -> Categorical({CancerTrue -> 0.03, CancerFalse -> 0.97}),
+[ Pollutionlow, SmokerFalse ] -> Categorical({CancerTrue -> 0.001, CancerFalse -> 0.999}),
+[ Pollutionmedium, SmokerTrue ] -> Categorical({CancerTrue -> 0.03, CancerFalse -> 0.97}),
+[ Pollutionmedium, SmokerFalse ] -> Categorical({CancerTrue -> 0.001, CancerFalse -> 0.999}),
+[ Pollutionhigh, SmokerTrue ] -> Categorical({CancerTrue -> 0.05, CancerFalse -> 0.95}),
+[ Pollutionhigh, SmokerFalse ] -> Categorical({CancerTrue -> 0.02, CancerFalse -> 0.98})};
+
+random TypeDyspnoea Dyspnoea ~ case Cancer in
+	{CancerTrue -> Categorical({DyspnoeaTrue -> 0.65, DyspnoeaFalse -> 0.35}),
+CancerFalse -> Categorical({DyspnoeaTrue -> 0.3, DyspnoeaFalse -> 0.7})};
+
+random TypePollution Pollution ~ 
+	Categorical({Pollutionlow -> 0.5,Pollutionmedium -> 0.4,Pollutionhigh -> 0.1})
+;
+
+random TypeSmoker Smoker ~ 
+	Categorical({SmokerTrue -> 0.3,SmokerFalse -> 0.7})
+;
+
+random TypeXray Xray ~ case Cancer in
+	{CancerTrue -> Categorical({Xraypositive -> 0.9, Xraynegative -> 0.1}),
+CancerFalse -> Categorical({Xraypositive -> 0.2, Xraynegative -> 0.8})};
+
+query Xray;

@@ -1,0 +1,1383 @@
+type TypeAMCINInScen;
+distinct TypeAMCINInScen AMCINInScenLessThanAve, AMCINInScenAverage, AMCINInScenMoreThanAve;
+
+type TypeAMDewptCalPl;
+distinct TypeAMDewptCalPl AMDewptCalPlInstability, AMDewptCalPlNeutral, AMDewptCalPlStability;
+
+type TypeAMInsWliScen;
+distinct TypeAMInsWliScen AMInsWliScenLessUnstable, AMInsWliScenAverage, AMInsWliScenMoreUnstable;
+
+type TypeAMInstabMt;
+distinct TypeAMInstabMt AMInstabMtNone, AMInstabMtWeak, AMInstabMtStrong;
+
+type TypeAreaMeso_ALS;
+distinct TypeAreaMeso_ALS AreaMeso_ALSStrongUp, AreaMeso_ALSWeakUp, AreaMeso_ALSNeutral, AreaMeso_ALSDown;
+
+type TypeAreaMoDryAir;
+distinct TypeAreaMoDryAir AreaMoDryAirVeryWet, AreaMoDryAirWet, AreaMoDryAirNeutral, AreaMoDryAirDry;
+
+type TypeBoundaries;
+distinct TypeBoundaries BoundariesNone, BoundariesWeak, BoundariesStrong;
+
+type TypeCapChange;
+distinct TypeCapChange CapChangeDecreasing, CapChangeLittleChange, CapChangeIncreasing;
+
+type TypeCapInScen;
+distinct TypeCapInScen CapInScenLessThanAve, CapInScenAverage, CapInScenMoreThanAve;
+
+type TypeCldShadeConv;
+distinct TypeCldShadeConv CldShadeConvNone, CldShadeConvSome, CldShadeConvMarked;
+
+type TypeCldShadeOth;
+distinct TypeCldShadeOth CldShadeOthCloudy, CldShadeOthPC, CldShadeOthClear;
+
+type TypeCombClouds;
+distinct TypeCombClouds CombCloudsCloudy, CombCloudsPC, CombCloudsClear;
+
+type TypeCombMoisture;
+distinct TypeCombMoisture CombMoistureVeryWet, CombMoistureWet, CombMoistureNeutral, CombMoistureDry;
+
+type TypeCombVerMo;
+distinct TypeCombVerMo CombVerMoStrongUp, CombVerMoWeakUp, CombVerMoNeutral, CombVerMoDown;
+
+type TypeCompPlFcst;
+distinct TypeCompPlFcst CompPlFcstIncCapDecIns, CompPlFcstLittleChange, CompPlFcstDecCapIncIns;
+
+type TypeCurPropConv;
+distinct TypeCurPropConv CurPropConvNone, CurPropConvSlight, CurPropConvModerate, CurPropConvStrong;
+
+type TypeDate;
+distinct TypeDate DateMay15_Jun14, DateJun15_Jul1, DateJul2_Jul15, DateJul16_Aug10, DateAug11_Aug20, DateAug20_Sep15;
+
+type TypeDewpoints;
+distinct TypeDewpoints DewpointsLowEvrywhere, DewpointsLowAtStation, DewpointsLowSHighN, DewpointsLowNHighS, DewpointsLowMtsHighPl, DewpointsHighEvrywher, DewpointsOther;
+
+type TypeIRCloudCover;
+distinct TypeIRCloudCover IRCloudCoverCloudy, IRCloudCoverPC, IRCloudCoverClear;
+
+type TypeInsChange;
+distinct TypeInsChange InsChangeDecreasing, InsChangeLittleChange, InsChangeIncreasing;
+
+type TypeInsInMt;
+distinct TypeInsInMt InsInMtNone, InsInMtWeak, InsInMtStrong;
+
+type TypeInsSclInScen;
+distinct TypeInsSclInScen InsSclInScenLessUnstable, InsSclInScenAverage, InsSclInScenMoreUnstable;
+
+type TypeLIfr12ZDENSd;
+distinct TypeLIfr12ZDENSd LIfr12ZDENSdLIGt0, LIfr12ZDENSdN1GtLIGt_4, LIfr12ZDENSdN5GtLIGt_8, LIfr12ZDENSdLILt_8;
+
+type TypeLLIW;
+distinct TypeLLIW LLIWUnfavorable, LLIWWeak, LLIWModerate, LLIWStrong;
+
+type TypeLatestCIN;
+distinct TypeLatestCIN LatestCINNone, LatestCINPartInhibit, LatestCINStifling, LatestCINTotalInhibit;
+
+type TypeLoLevMoistAd;
+distinct TypeLoLevMoistAd LoLevMoistAdStrongPos, LoLevMoistAdWeakPos, LoLevMoistAdNeutral, LoLevMoistAdNegative;
+
+type TypeLowLLapse;
+distinct TypeLowLLapse LowLLapseCloseToDryAd, LowLLapseSteep, LowLLapseModerateOrLe, LowLLapseStable;
+
+type TypeMeanRH;
+distinct TypeMeanRH MeanRHVeryMoist, MeanRHAverage, MeanRHDry;
+
+type TypeMidLLapse;
+distinct TypeMidLLapse MidLLapseCloseToDryAd, MidLLapseSteep, MidLLapseModerateOrLe;
+
+type TypeMorningBound;
+distinct TypeMorningBound MorningBoundNone, MorningBoundWeak, MorningBoundStrong;
+
+type TypeMorningCIN;
+distinct TypeMorningCIN MorningCINNone, MorningCINPartInhibit, MorningCINStifling, MorningCINTotalInhibit;
+
+type TypeMountainFcst;
+distinct TypeMountainFcst MountainFcstXNIL, MountainFcstSIG, MountainFcstSVR;
+
+type TypeMvmtFeatures;
+distinct TypeMvmtFeatures MvmtFeaturesStrongFront, MvmtFeaturesMarkedUpper, MvmtFeaturesOtherRapid, MvmtFeaturesNoMajor;
+
+type TypeN0_7muVerMo;
+distinct TypeN0_7muVerMo N0_7muVerMoStrongUp, N0_7muVerMoWeakUp, N0_7muVerMoNeutral, N0_7muVerMoDown;
+
+type TypeN34StarFcst;
+distinct TypeN34StarFcst N34StarFcstXNIL, N34StarFcstSIG, N34StarFcstSVR;
+
+type TypeOutflowFrMt;
+distinct TypeOutflowFrMt OutflowFrMtNone, OutflowFrMtWeak, OutflowFrMtStrong;
+
+type TypePlainsFcst;
+distinct TypePlainsFcst PlainsFcstXNIL, PlainsFcstSIG, PlainsFcstSVR;
+
+type TypeQGVertMotion;
+distinct TypeQGVertMotion QGVertMotionStrongUp, QGVertMotionWeakUp, QGVertMotionNeutral, QGVertMotionDown;
+
+type TypeR5Fcst;
+distinct TypeR5Fcst R5FcstXNIL, R5FcstSIG, R5FcstSVR;
+
+type TypeRHRatio;
+distinct TypeRHRatio RHRatioMoistMDryL, RHRatioDryMMoistL, RHRatioOther;
+
+type TypeRaoContMoist;
+distinct TypeRaoContMoist RaoContMoistVeryWet, RaoContMoistWet, RaoContMoistNeutral, RaoContMoistDry;
+
+type TypeSatContMoist;
+distinct TypeSatContMoist SatContMoistVeryWet, SatContMoistWet, SatContMoistNeutral, SatContMoistDry;
+
+type TypeScenRel3_4;
+distinct TypeScenRel3_4 ScenRel3_4ACEFK, ScenRel3_4B, ScenRel3_4D, ScenRel3_4GJ, ScenRel3_4HI;
+
+type TypeScenRelAMCIN;
+distinct TypeScenRelAMCIN ScenRelAMCINAB, ScenRelAMCINCThruK;
+
+type TypeScenRelAMIns;
+distinct TypeScenRelAMIns ScenRelAMInsABI, ScenRelAMInsCDEJ, ScenRelAMInsF, ScenRelAMInsG, ScenRelAMInsH, ScenRelAMInsK;
+
+type TypeScenario;
+distinct TypeScenario ScenarioA, ScenarioB, ScenarioC, ScenarioD, ScenarioE, ScenarioF, ScenarioG, ScenarioH, ScenarioI, ScenarioJ, ScenarioK;
+
+type TypeScnRelPlFcst;
+distinct TypeScnRelPlFcst ScnRelPlFcstA, ScnRelPlFcstB, ScnRelPlFcstC, ScnRelPlFcstD, ScnRelPlFcstE, ScnRelPlFcstF, ScnRelPlFcstG, ScnRelPlFcstH, ScnRelPlFcstI, ScnRelPlFcstJ, ScnRelPlFcstK;
+
+type TypeSfcWndShfDis;
+distinct TypeSfcWndShfDis SfcWndShfDisDenvCyclone, SfcWndShfDisE_W_N, SfcWndShfDisE_W_S, SfcWndShfDisMovingFtorOt, SfcWndShfDisDryLine, SfcWndShfDisNone, SfcWndShfDisOther;
+
+type TypeSubjVertMo;
+distinct TypeSubjVertMo SubjVertMoStronUp, SubjVertMoWeakUp, SubjVertMoNeutral, SubjVertMoDown;
+
+type TypeSynForcng;
+distinct TypeSynForcng SynForcngSigNegative, SynForcngNegToPos, SynForcngSigPositive, SynForcngPosToNeg, SynForcngLittleChange;
+
+type TypeTempDis;
+distinct TypeTempDis TempDisQStationary, TempDisMoving, TempDisNone, TempDisOther;
+
+type TypeVISCloudCov;
+distinct TypeVISCloudCov VISCloudCovCloudy, VISCloudCovPC, VISCloudCovClear;
+
+type TypeWindAloft;
+distinct TypeWindAloft WindAloftLV, WindAloftSWQuad, WindAloftNWQuad, WindAloftAllElse;
+
+type TypeWindFieldMt;
+distinct TypeWindFieldMt WindFieldMtWesterly, WindFieldMtLVorOther;
+
+type TypeWindFieldPln;
+distinct TypeWindFieldPln WindFieldPlnLV, WindFieldPlnDenvCyclone, WindFieldPlnLongAnticyc, WindFieldPlnE_NE, WindFieldPlnSEQuad, WindFieldPlnWidespdDnsl;
+
+type TypeWndHodograph;
+distinct TypeWndHodograph WndHodographDCVZFavor, WndHodographStrongWest, WndHodographWesterly, WndHodographOther;
+
+random TypeAMCINInScen AMCINInScen ~ case [ScenRelAMCIN, MorningCIN] in
+	{[ ScenRelAMCINAB, MorningCINNone ] -> Categorical({AMCINInScenLessThanAve -> 1.0, AMCINInScenAverage -> 0.0, AMCINInScenMoreThanAve -> 0.0}),
+[ ScenRelAMCINAB, MorningCINPartInhibit ] -> Categorical({AMCINInScenLessThanAve -> 0.6, AMCINInScenAverage -> 0.37, AMCINInScenMoreThanAve -> 0.03}),
+[ ScenRelAMCINAB, MorningCINStifling ] -> Categorical({AMCINInScenLessThanAve -> 0.25, AMCINInScenAverage -> 0.45, AMCINInScenMoreThanAve -> 0.3}),
+[ ScenRelAMCINAB, MorningCINTotalInhibit ] -> Categorical({AMCINInScenLessThanAve -> 0.0, AMCINInScenAverage -> 0.1, AMCINInScenMoreThanAve -> 0.9}),
+[ ScenRelAMCINCThruK, MorningCINNone ] -> Categorical({AMCINInScenLessThanAve -> 0.75, AMCINInScenAverage -> 0.25, AMCINInScenMoreThanAve -> 0.0}),
+[ ScenRelAMCINCThruK, MorningCINPartInhibit ] -> Categorical({AMCINInScenLessThanAve -> 0.3, AMCINInScenAverage -> 0.6, AMCINInScenMoreThanAve -> 0.1}),
+[ ScenRelAMCINCThruK, MorningCINStifling ] -> Categorical({AMCINInScenLessThanAve -> 0.01, AMCINInScenAverage -> 0.4, AMCINInScenMoreThanAve -> 0.59}),
+[ ScenRelAMCINCThruK, MorningCINTotalInhibit ] -> Categorical({AMCINInScenLessThanAve -> 0.0, AMCINInScenAverage -> 0.03, AMCINInScenMoreThanAve -> 0.97})};
+
+random TypeAMDewptCalPl AMDewptCalPl ~ 
+	Categorical({AMDewptCalPlInstability -> 0.3,AMDewptCalPlNeutral -> 0.25,AMDewptCalPlStability -> 0.45})
+;
+
+random TypeAMInsWliScen AMInsWliScen ~ case [ScenRelAMIns, LIfr12ZDENSd, AMDewptCalPl] in
+	{[ ScenRelAMInsABI, LIfr12ZDENSdLIGt0, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.6, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.1}),
+[ ScenRelAMInsABI, LIfr12ZDENSdLIGt0, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.85, AMInsWliScenAverage -> 0.13, AMInsWliScenMoreUnstable -> 0.02}),
+[ ScenRelAMInsABI, LIfr12ZDENSdLIGt0, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.95, AMInsWliScenAverage -> 0.04, AMInsWliScenMoreUnstable -> 0.01}),
+[ ScenRelAMInsABI, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.3, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.4}),
+[ ScenRelAMInsABI, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.5, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.2}),
+[ ScenRelAMInsABI, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.75, AMInsWliScenAverage -> 0.2, AMInsWliScenMoreUnstable -> 0.05}),
+[ ScenRelAMInsABI, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.06, AMInsWliScenAverage -> 0.21, AMInsWliScenMoreUnstable -> 0.73}),
+[ ScenRelAMInsABI, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.2, AMInsWliScenAverage -> 0.4, AMInsWliScenMoreUnstable -> 0.4}),
+[ ScenRelAMInsABI, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.5, AMInsWliScenAverage -> 0.4, AMInsWliScenMoreUnstable -> 0.1}),
+[ ScenRelAMInsABI, LIfr12ZDENSdLILt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.01, AMInsWliScenAverage -> 0.04, AMInsWliScenMoreUnstable -> 0.95}),
+[ ScenRelAMInsABI, LIfr12ZDENSdLILt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.05, AMInsWliScenAverage -> 0.2, AMInsWliScenMoreUnstable -> 0.75}),
+[ ScenRelAMInsABI, LIfr12ZDENSdLILt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.35, AMInsWliScenAverage -> 0.35, AMInsWliScenMoreUnstable -> 0.3}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdLIGt0, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.4, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.3}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdLIGt0, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.7, AMInsWliScenAverage -> 0.2, AMInsWliScenMoreUnstable -> 0.1}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdLIGt0, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.9, AMInsWliScenAverage -> 0.08, AMInsWliScenMoreUnstable -> 0.02}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.15, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.55}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.25, AMInsWliScenAverage -> 0.5, AMInsWliScenMoreUnstable -> 0.25}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.6, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.1}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.03, AMInsWliScenAverage -> 0.17, AMInsWliScenMoreUnstable -> 0.8}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.2, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.5}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.45, AMInsWliScenAverage -> 0.4, AMInsWliScenMoreUnstable -> 0.15}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdLILt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.01, AMInsWliScenAverage -> 0.04, AMInsWliScenMoreUnstable -> 0.95}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdLILt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.05, AMInsWliScenAverage -> 0.18, AMInsWliScenMoreUnstable -> 0.77}),
+[ ScenRelAMInsCDEJ, LIfr12ZDENSdLILt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.25, AMInsWliScenAverage -> 0.4, AMInsWliScenMoreUnstable -> 0.35}),
+[ ScenRelAMInsF, LIfr12ZDENSdLIGt0, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.35, AMInsWliScenAverage -> 0.35, AMInsWliScenMoreUnstable -> 0.3}),
+[ ScenRelAMInsF, LIfr12ZDENSdLIGt0, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.55, AMInsWliScenAverage -> 0.4, AMInsWliScenMoreUnstable -> 0.05}),
+[ ScenRelAMInsF, LIfr12ZDENSdLIGt0, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.85, AMInsWliScenAverage -> 0.13, AMInsWliScenMoreUnstable -> 0.02}),
+[ ScenRelAMInsF, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.07, AMInsWliScenAverage -> 0.38, AMInsWliScenMoreUnstable -> 0.55}),
+[ ScenRelAMInsF, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.2, AMInsWliScenAverage -> 0.6, AMInsWliScenMoreUnstable -> 0.2}),
+[ ScenRelAMInsF, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.5, AMInsWliScenAverage -> 0.43, AMInsWliScenMoreUnstable -> 0.07}),
+[ ScenRelAMInsF, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.0, AMInsWliScenAverage -> 0.05, AMInsWliScenMoreUnstable -> 0.95}),
+[ ScenRelAMInsF, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.05, AMInsWliScenAverage -> 0.35, AMInsWliScenMoreUnstable -> 0.6}),
+[ ScenRelAMInsF, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.25, AMInsWliScenAverage -> 0.5, AMInsWliScenMoreUnstable -> 0.25}),
+[ ScenRelAMInsF, LIfr12ZDENSdLILt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.0, AMInsWliScenAverage -> 0.02, AMInsWliScenMoreUnstable -> 0.98}),
+[ ScenRelAMInsF, LIfr12ZDENSdLILt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.0, AMInsWliScenAverage -> 0.05, AMInsWliScenMoreUnstable -> 0.95}),
+[ ScenRelAMInsF, LIfr12ZDENSdLILt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.04, AMInsWliScenAverage -> 0.16, AMInsWliScenMoreUnstable -> 0.8}),
+[ ScenRelAMInsG, LIfr12ZDENSdLIGt0, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.3, AMInsWliScenAverage -> 0.4, AMInsWliScenMoreUnstable -> 0.3}),
+[ ScenRelAMInsG, LIfr12ZDENSdLIGt0, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.5, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.2}),
+[ ScenRelAMInsG, LIfr12ZDENSdLIGt0, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.75, AMInsWliScenAverage -> 0.2, AMInsWliScenMoreUnstable -> 0.05}),
+[ ScenRelAMInsG, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.15, AMInsWliScenAverage -> 0.35, AMInsWliScenMoreUnstable -> 0.5}),
+[ ScenRelAMInsG, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.2, AMInsWliScenAverage -> 0.6, AMInsWliScenMoreUnstable -> 0.2}),
+[ ScenRelAMInsG, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.15, AMInsWliScenAverage -> 0.7, AMInsWliScenMoreUnstable -> 0.15}),
+[ ScenRelAMInsG, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.07, AMInsWliScenAverage -> 0.23, AMInsWliScenMoreUnstable -> 0.7}),
+[ ScenRelAMInsG, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.13, AMInsWliScenAverage -> 0.47, AMInsWliScenMoreUnstable -> 0.4}),
+[ ScenRelAMInsG, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.1, AMInsWliScenAverage -> 0.75, AMInsWliScenMoreUnstable -> 0.15}),
+[ ScenRelAMInsG, LIfr12ZDENSdLILt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.02, AMInsWliScenAverage -> 0.18, AMInsWliScenMoreUnstable -> 0.8}),
+[ ScenRelAMInsG, LIfr12ZDENSdLILt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.04, AMInsWliScenAverage -> 0.26, AMInsWliScenMoreUnstable -> 0.7}),
+[ ScenRelAMInsG, LIfr12ZDENSdLILt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.07, AMInsWliScenAverage -> 0.3, AMInsWliScenMoreUnstable -> 0.63}),
+[ ScenRelAMInsH, LIfr12ZDENSdLIGt0, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.35, AMInsWliScenAverage -> 0.45, AMInsWliScenMoreUnstable -> 0.2}),
+[ ScenRelAMInsH, LIfr12ZDENSdLIGt0, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.4, AMInsWliScenAverage -> 0.5, AMInsWliScenMoreUnstable -> 0.1}),
+[ ScenRelAMInsH, LIfr12ZDENSdLIGt0, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.58, AMInsWliScenAverage -> 0.4, AMInsWliScenMoreUnstable -> 0.02}),
+[ ScenRelAMInsH, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.1, AMInsWliScenAverage -> 0.25, AMInsWliScenMoreUnstable -> 0.65}),
+[ ScenRelAMInsH, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.15, AMInsWliScenAverage -> 0.45, AMInsWliScenMoreUnstable -> 0.4}),
+[ ScenRelAMInsH, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.4, AMInsWliScenAverage -> 0.45, AMInsWliScenMoreUnstable -> 0.15}),
+[ ScenRelAMInsH, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.02, AMInsWliScenAverage -> 0.18, AMInsWliScenMoreUnstable -> 0.8}),
+[ ScenRelAMInsH, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.05, AMInsWliScenAverage -> 0.25, AMInsWliScenMoreUnstable -> 0.7}),
+[ ScenRelAMInsH, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.15, AMInsWliScenAverage -> 0.35, AMInsWliScenMoreUnstable -> 0.5}),
+[ ScenRelAMInsH, LIfr12ZDENSdLILt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.01, AMInsWliScenAverage -> 0.09, AMInsWliScenMoreUnstable -> 0.9}),
+[ ScenRelAMInsH, LIfr12ZDENSdLILt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.03, AMInsWliScenAverage -> 0.17, AMInsWliScenMoreUnstable -> 0.8}),
+[ ScenRelAMInsH, LIfr12ZDENSdLILt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.08, AMInsWliScenAverage -> 0.32, AMInsWliScenMoreUnstable -> 0.6}),
+[ ScenRelAMInsK, LIfr12ZDENSdLIGt0, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.3, AMInsWliScenAverage -> 0.55, AMInsWliScenMoreUnstable -> 0.15}),
+[ ScenRelAMInsK, LIfr12ZDENSdLIGt0, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.4, AMInsWliScenAverage -> 0.5, AMInsWliScenMoreUnstable -> 0.1}),
+[ ScenRelAMInsK, LIfr12ZDENSdLIGt0, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.5, AMInsWliScenAverage -> 0.43, AMInsWliScenMoreUnstable -> 0.07}),
+[ ScenRelAMInsK, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.1, AMInsWliScenAverage -> 0.35, AMInsWliScenMoreUnstable -> 0.55}),
+[ ScenRelAMInsK, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.25, AMInsWliScenAverage -> 0.5, AMInsWliScenMoreUnstable -> 0.25}),
+[ ScenRelAMInsK, LIfr12ZDENSdN1GtLIGt_4, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.3, AMInsWliScenAverage -> 0.5, AMInsWliScenMoreUnstable -> 0.2}),
+[ ScenRelAMInsK, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.05, AMInsWliScenAverage -> 0.22, AMInsWliScenMoreUnstable -> 0.73}),
+[ ScenRelAMInsK, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.1, AMInsWliScenAverage -> 0.35, AMInsWliScenMoreUnstable -> 0.55}),
+[ ScenRelAMInsK, LIfr12ZDENSdN5GtLIGt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.15, AMInsWliScenAverage -> 0.35, AMInsWliScenMoreUnstable -> 0.5}),
+[ ScenRelAMInsK, LIfr12ZDENSdLILt_8, AMDewptCalPlInstability ] -> Categorical({AMInsWliScenLessUnstable -> 0.02, AMInsWliScenAverage -> 0.1, AMInsWliScenMoreUnstable -> 0.88}),
+[ ScenRelAMInsK, LIfr12ZDENSdLILt_8, AMDewptCalPlNeutral ] -> Categorical({AMInsWliScenLessUnstable -> 0.04, AMInsWliScenAverage -> 0.16, AMInsWliScenMoreUnstable -> 0.8}),
+[ ScenRelAMInsK, LIfr12ZDENSdLILt_8, AMDewptCalPlStability ] -> Categorical({AMInsWliScenLessUnstable -> 0.1, AMInsWliScenAverage -> 0.25, AMInsWliScenMoreUnstable -> 0.65})};
+
+random TypeAMInstabMt AMInstabMt ~ 
+	Categorical({AMInstabMtNone -> 0.333333,AMInstabMtWeak -> 0.333333,AMInstabMtStrong -> 0.333334})
+;
+
+random TypeAreaMeso_ALS AreaMeso_ALS ~ case CombVerMo in
+	{CombVerMoStrongUp -> Categorical({AreaMeso_ALSStrongUp -> 1.0, AreaMeso_ALSWeakUp -> 0.0, AreaMeso_ALSNeutral -> 0.0, AreaMeso_ALSDown -> 0.0}),
+CombVerMoWeakUp -> Categorical({AreaMeso_ALSStrongUp -> 0.0, AreaMeso_ALSWeakUp -> 1.0, AreaMeso_ALSNeutral -> 0.0, AreaMeso_ALSDown -> 0.0}),
+CombVerMoNeutral -> Categorical({AreaMeso_ALSStrongUp -> 0.0, AreaMeso_ALSWeakUp -> 0.0, AreaMeso_ALSNeutral -> 1.0, AreaMeso_ALSDown -> 0.0}),
+CombVerMoDown -> Categorical({AreaMeso_ALSStrongUp -> 0.0, AreaMeso_ALSWeakUp -> 0.0, AreaMeso_ALSNeutral -> 0.0, AreaMeso_ALSDown -> 1.0})};
+
+random TypeAreaMoDryAir AreaMoDryAir ~ case [AreaMeso_ALS, CombMoisture] in
+	{[ AreaMeso_ALSStrongUp, CombMoistureVeryWet ] -> Categorical({AreaMoDryAirVeryWet -> 0.99, AreaMoDryAirWet -> 0.01, AreaMoDryAirNeutral -> 0.0, AreaMoDryAirDry -> 0.0}),
+[ AreaMeso_ALSStrongUp, CombMoistureWet ] -> Categorical({AreaMoDryAirVeryWet -> 0.7, AreaMoDryAirWet -> 0.29, AreaMoDryAirNeutral -> 0.01, AreaMoDryAirDry -> 0.0}),
+[ AreaMeso_ALSStrongUp, CombMoistureNeutral ] -> Categorical({AreaMoDryAirVeryWet -> 0.2, AreaMoDryAirWet -> 0.55, AreaMoDryAirNeutral -> 0.24, AreaMoDryAirDry -> 0.01}),
+[ AreaMeso_ALSStrongUp, CombMoistureDry ] -> Categorical({AreaMoDryAirVeryWet -> 0.0, AreaMoDryAirWet -> 0.25, AreaMoDryAirNeutral -> 0.55, AreaMoDryAirDry -> 0.2}),
+[ AreaMeso_ALSWeakUp, CombMoistureVeryWet ] -> Categorical({AreaMoDryAirVeryWet -> 0.8, AreaMoDryAirWet -> 0.2, AreaMoDryAirNeutral -> 0.0, AreaMoDryAirDry -> 0.0}),
+[ AreaMeso_ALSWeakUp, CombMoistureWet ] -> Categorical({AreaMoDryAirVeryWet -> 0.35, AreaMoDryAirWet -> 0.55, AreaMoDryAirNeutral -> 0.1, AreaMoDryAirDry -> 0.0}),
+[ AreaMeso_ALSWeakUp, CombMoistureNeutral ] -> Categorical({AreaMoDryAirVeryWet -> 0.01, AreaMoDryAirWet -> 0.39, AreaMoDryAirNeutral -> 0.55, AreaMoDryAirDry -> 0.05}),
+[ AreaMeso_ALSWeakUp, CombMoistureDry ] -> Categorical({AreaMoDryAirVeryWet -> 0.0, AreaMoDryAirWet -> 0.02, AreaMoDryAirNeutral -> 0.43, AreaMoDryAirDry -> 0.55}),
+[ AreaMeso_ALSNeutral, CombMoistureVeryWet ] -> Categorical({AreaMoDryAirVeryWet -> 0.7, AreaMoDryAirWet -> 0.29, AreaMoDryAirNeutral -> 0.01, AreaMoDryAirDry -> 0.0}),
+[ AreaMeso_ALSNeutral, CombMoistureWet ] -> Categorical({AreaMoDryAirVeryWet -> 0.2, AreaMoDryAirWet -> 0.6, AreaMoDryAirNeutral -> 0.2, AreaMoDryAirDry -> 0.0}),
+[ AreaMeso_ALSNeutral, CombMoistureNeutral ] -> Categorical({AreaMoDryAirVeryWet -> 0.01, AreaMoDryAirWet -> 0.09, AreaMoDryAirNeutral -> 0.8, AreaMoDryAirDry -> 0.1}),
+[ AreaMeso_ALSNeutral, CombMoistureDry ] -> Categorical({AreaMoDryAirVeryWet -> 0.0, AreaMoDryAirWet -> 0.0, AreaMoDryAirNeutral -> 0.3, AreaMoDryAirDry -> 0.7}),
+[ AreaMeso_ALSDown, CombMoistureVeryWet ] -> Categorical({AreaMoDryAirVeryWet -> 0.2, AreaMoDryAirWet -> 0.74, AreaMoDryAirNeutral -> 0.06, AreaMoDryAirDry -> 0.0}),
+[ AreaMeso_ALSDown, CombMoistureWet ] -> Categorical({AreaMoDryAirVeryWet -> 0.05, AreaMoDryAirWet -> 0.4, AreaMoDryAirNeutral -> 0.45, AreaMoDryAirDry -> 0.1}),
+[ AreaMeso_ALSDown, CombMoistureNeutral ] -> Categorical({AreaMoDryAirVeryWet -> 0.0, AreaMoDryAirWet -> 0.05, AreaMoDryAirNeutral -> 0.5, AreaMoDryAirDry -> 0.45}),
+[ AreaMeso_ALSDown, CombMoistureDry ] -> Categorical({AreaMoDryAirVeryWet -> 0.0, AreaMoDryAirWet -> 0.0, AreaMoDryAirNeutral -> 0.01, AreaMoDryAirDry -> 0.99})};
+
+random TypeBoundaries Boundaries ~ case [OutflowFrMt, WndHodograph, MorningBound] in
+	{[ OutflowFrMtNone, WndHodographDCVZFavor, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.5, BoundariesWeak -> 0.48, BoundariesStrong -> 0.02}),
+[ OutflowFrMtNone, WndHodographDCVZFavor, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.3, BoundariesWeak -> 0.5, BoundariesStrong -> 0.2}),
+[ OutflowFrMtNone, WndHodographDCVZFavor, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.1, BoundariesWeak -> 0.25, BoundariesStrong -> 0.65}),
+[ OutflowFrMtNone, WndHodographStrongWest, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.75, BoundariesWeak -> 0.22, BoundariesStrong -> 0.03}),
+[ OutflowFrMtNone, WndHodographStrongWest, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.45, BoundariesWeak -> 0.45, BoundariesStrong -> 0.1}),
+[ OutflowFrMtNone, WndHodographStrongWest, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.25, BoundariesWeak -> 0.4, BoundariesStrong -> 0.35}),
+[ OutflowFrMtNone, WndHodographWesterly, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.8, BoundariesWeak -> 0.18, BoundariesStrong -> 0.02}),
+[ OutflowFrMtNone, WndHodographWesterly, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.35, BoundariesWeak -> 0.5, BoundariesStrong -> 0.15}),
+[ OutflowFrMtNone, WndHodographWesterly, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.25, BoundariesWeak -> 0.35, BoundariesStrong -> 0.4}),
+[ OutflowFrMtNone, WndHodographOther, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.7, BoundariesWeak -> 0.28, BoundariesStrong -> 0.02}),
+[ OutflowFrMtNone, WndHodographOther, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.25, BoundariesWeak -> 0.6, BoundariesStrong -> 0.15}),
+[ OutflowFrMtNone, WndHodographOther, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.05, BoundariesWeak -> 0.35, BoundariesStrong -> 0.6}),
+[ OutflowFrMtWeak, WndHodographDCVZFavor, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.3, BoundariesWeak -> 0.63, BoundariesStrong -> 0.07}),
+[ OutflowFrMtWeak, WndHodographDCVZFavor, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.1, BoundariesWeak -> 0.5, BoundariesStrong -> 0.4}),
+[ OutflowFrMtWeak, WndHodographDCVZFavor, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.05, BoundariesWeak -> 0.2, BoundariesStrong -> 0.75}),
+[ OutflowFrMtWeak, WndHodographStrongWest, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.15, BoundariesWeak -> 0.7, BoundariesStrong -> 0.15}),
+[ OutflowFrMtWeak, WndHodographStrongWest, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.1, BoundariesWeak -> 0.75, BoundariesStrong -> 0.15}),
+[ OutflowFrMtWeak, WndHodographStrongWest, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.05, BoundariesWeak -> 0.5, BoundariesStrong -> 0.45}),
+[ OutflowFrMtWeak, WndHodographWesterly, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.15, BoundariesWeak -> 0.7, BoundariesStrong -> 0.15}),
+[ OutflowFrMtWeak, WndHodographWesterly, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.05, BoundariesWeak -> 0.8, BoundariesStrong -> 0.15}),
+[ OutflowFrMtWeak, WndHodographWesterly, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.05, BoundariesWeak -> 0.45, BoundariesStrong -> 0.5}),
+[ OutflowFrMtWeak, WndHodographOther, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.4, BoundariesWeak -> 0.55, BoundariesStrong -> 0.05}),
+[ OutflowFrMtWeak, WndHodographOther, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.2, BoundariesWeak -> 0.65, BoundariesStrong -> 0.15}),
+[ OutflowFrMtWeak, WndHodographOther, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.05, BoundariesWeak -> 0.3, BoundariesStrong -> 0.65}),
+[ OutflowFrMtStrong, WndHodographDCVZFavor, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.55, BoundariesStrong -> 0.45}),
+[ OutflowFrMtStrong, WndHodographDCVZFavor, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.4, BoundariesStrong -> 0.6}),
+[ OutflowFrMtStrong, WndHodographDCVZFavor, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.15, BoundariesStrong -> 0.85}),
+[ OutflowFrMtStrong, WndHodographStrongWest, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.5, BoundariesStrong -> 0.5}),
+[ OutflowFrMtStrong, WndHodographStrongWest, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.4, BoundariesStrong -> 0.6}),
+[ OutflowFrMtStrong, WndHodographStrongWest, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.2, BoundariesStrong -> 0.8}),
+[ OutflowFrMtStrong, WndHodographWesterly, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.7, BoundariesStrong -> 0.3}),
+[ OutflowFrMtStrong, WndHodographWesterly, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.5, BoundariesStrong -> 0.5}),
+[ OutflowFrMtStrong, WndHodographWesterly, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.0, BoundariesWeak -> 0.2, BoundariesStrong -> 0.8}),
+[ OutflowFrMtStrong, WndHodographOther, MorningBoundNone ] -> Categorical({BoundariesNone -> 0.02, BoundariesWeak -> 0.73, BoundariesStrong -> 0.25}),
+[ OutflowFrMtStrong, WndHodographOther, MorningBoundWeak ] -> Categorical({BoundariesNone -> 0.01, BoundariesWeak -> 0.5, BoundariesStrong -> 0.49}),
+[ OutflowFrMtStrong, WndHodographOther, MorningBoundStrong ] -> Categorical({BoundariesNone -> 0.01, BoundariesWeak -> 0.2, BoundariesStrong -> 0.79})};
+
+random TypeCapChange CapChange ~ case CompPlFcst in
+	{CompPlFcstIncCapDecIns -> Categorical({CapChangeDecreasing -> 0.0, CapChangeLittleChange -> 0.0, CapChangeIncreasing -> 1.0}),
+CompPlFcstLittleChange -> Categorical({CapChangeDecreasing -> 0.0, CapChangeLittleChange -> 1.0, CapChangeIncreasing -> 0.0}),
+CompPlFcstDecCapIncIns -> Categorical({CapChangeDecreasing -> 1.0, CapChangeLittleChange -> 0.0, CapChangeIncreasing -> 0.0})};
+
+random TypeCapInScen CapInScen ~ case [AMCINInScen, CapChange] in
+	{[ AMCINInScenLessThanAve, CapChangeDecreasing ] -> Categorical({CapInScenLessThanAve -> 1.0, CapInScenAverage -> 0.0, CapInScenMoreThanAve -> 0.0}),
+[ AMCINInScenLessThanAve, CapChangeLittleChange ] -> Categorical({CapInScenLessThanAve -> 0.98, CapInScenAverage -> 0.02, CapInScenMoreThanAve -> 0.0}),
+[ AMCINInScenLessThanAve, CapChangeIncreasing ] -> Categorical({CapInScenLessThanAve -> 0.35, CapInScenAverage -> 0.35, CapInScenMoreThanAve -> 0.3}),
+[ AMCINInScenAverage, CapChangeDecreasing ] -> Categorical({CapInScenLessThanAve -> 0.75, CapInScenAverage -> 0.25, CapInScenMoreThanAve -> 0.0}),
+[ AMCINInScenAverage, CapChangeLittleChange ] -> Categorical({CapInScenLessThanAve -> 0.03, CapInScenAverage -> 0.94, CapInScenMoreThanAve -> 0.03}),
+[ AMCINInScenAverage, CapChangeIncreasing ] -> Categorical({CapInScenLessThanAve -> 0.0, CapInScenAverage -> 0.25, CapInScenMoreThanAve -> 0.75}),
+[ AMCINInScenMoreThanAve, CapChangeDecreasing ] -> Categorical({CapInScenLessThanAve -> 0.3, CapInScenAverage -> 0.35, CapInScenMoreThanAve -> 0.35}),
+[ AMCINInScenMoreThanAve, CapChangeLittleChange ] -> Categorical({CapInScenLessThanAve -> 0.0, CapInScenAverage -> 0.02, CapInScenMoreThanAve -> 0.98}),
+[ AMCINInScenMoreThanAve, CapChangeIncreasing ] -> Categorical({CapInScenLessThanAve -> 0.0, CapInScenAverage -> 0.0, CapInScenMoreThanAve -> 1.0})};
+
+random TypeCldShadeConv CldShadeConv ~ case [InsInMt, WndHodograph] in
+	{[ InsInMtNone, WndHodographDCVZFavor ] -> Categorical({CldShadeConvNone -> 1.0, CldShadeConvSome -> 0.0, CldShadeConvMarked -> 0.0}),
+[ InsInMtNone, WndHodographStrongWest ] -> Categorical({CldShadeConvNone -> 1.0, CldShadeConvSome -> 0.0, CldShadeConvMarked -> 0.0}),
+[ InsInMtNone, WndHodographWesterly ] -> Categorical({CldShadeConvNone -> 1.0, CldShadeConvSome -> 0.0, CldShadeConvMarked -> 0.0}),
+[ InsInMtNone, WndHodographOther ] -> Categorical({CldShadeConvNone -> 1.0, CldShadeConvSome -> 0.0, CldShadeConvMarked -> 0.0}),
+[ InsInMtWeak, WndHodographDCVZFavor ] -> Categorical({CldShadeConvNone -> 0.3, CldShadeConvSome -> 0.6, CldShadeConvMarked -> 0.1}),
+[ InsInMtWeak, WndHodographStrongWest ] -> Categorical({CldShadeConvNone -> 0.2, CldShadeConvSome -> 0.7, CldShadeConvMarked -> 0.1}),
+[ InsInMtWeak, WndHodographWesterly ] -> Categorical({CldShadeConvNone -> 0.5, CldShadeConvSome -> 0.46, CldShadeConvMarked -> 0.04}),
+[ InsInMtWeak, WndHodographOther ] -> Categorical({CldShadeConvNone -> 0.8, CldShadeConvSome -> 0.19, CldShadeConvMarked -> 0.01}),
+[ InsInMtStrong, WndHodographDCVZFavor ] -> Categorical({CldShadeConvNone -> 0.0, CldShadeConvSome -> 0.3, CldShadeConvMarked -> 0.7}),
+[ InsInMtStrong, WndHodographStrongWest ] -> Categorical({CldShadeConvNone -> 0.0, CldShadeConvSome -> 0.2, CldShadeConvMarked -> 0.8}),
+[ InsInMtStrong, WndHodographWesterly ] -> Categorical({CldShadeConvNone -> 0.1, CldShadeConvSome -> 0.5, CldShadeConvMarked -> 0.4}),
+[ InsInMtStrong, WndHodographOther ] -> Categorical({CldShadeConvNone -> 0.5, CldShadeConvSome -> 0.38, CldShadeConvMarked -> 0.12})};
+
+random TypeCldShadeOth CldShadeOth ~ case [AreaMoDryAir, AreaMeso_ALS, CombClouds] in
+	{[ AreaMoDryAirVeryWet, AreaMeso_ALSStrongUp, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 1.0, CldShadeOthPC -> 0.0, CldShadeOthClear -> 0.0}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSStrongUp, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.85, CldShadeOthPC -> 0.15, CldShadeOthClear -> 0.0}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSStrongUp, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.25, CldShadeOthPC -> 0.35, CldShadeOthClear -> 0.4}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSWeakUp, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.95, CldShadeOthPC -> 0.05, CldShadeOthClear -> 0.0}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSWeakUp, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.4, CldShadeOthPC -> 0.55, CldShadeOthClear -> 0.05}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSWeakUp, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.05, CldShadeOthPC -> 0.45, CldShadeOthClear -> 0.5}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSNeutral, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.93, CldShadeOthPC -> 0.07, CldShadeOthClear -> 0.0}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSNeutral, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.2, CldShadeOthPC -> 0.78, CldShadeOthClear -> 0.02}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSNeutral, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.01, CldShadeOthPC -> 0.29, CldShadeOthClear -> 0.7}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSDown, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.74, CldShadeOthPC -> 0.25, CldShadeOthClear -> 0.01}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSDown, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.5, CldShadeOthClear -> 0.5}),
+[ AreaMoDryAirVeryWet, AreaMeso_ALSDown, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.1, CldShadeOthClear -> 0.9}),
+[ AreaMoDryAirWet, AreaMeso_ALSStrongUp, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.92, CldShadeOthPC -> 0.08, CldShadeOthClear -> 0.0}),
+[ AreaMoDryAirWet, AreaMeso_ALSStrongUp, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.7, CldShadeOthPC -> 0.29, CldShadeOthClear -> 0.01}),
+[ AreaMoDryAirWet, AreaMeso_ALSStrongUp, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.15, CldShadeOthPC -> 0.4, CldShadeOthClear -> 0.45}),
+[ AreaMoDryAirWet, AreaMeso_ALSWeakUp, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.9, CldShadeOthPC -> 0.09, CldShadeOthClear -> 0.01}),
+[ AreaMoDryAirWet, AreaMeso_ALSWeakUp, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.25, CldShadeOthPC -> 0.6, CldShadeOthClear -> 0.15}),
+[ AreaMoDryAirWet, AreaMeso_ALSWeakUp, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.01, CldShadeOthPC -> 0.3, CldShadeOthClear -> 0.69}),
+[ AreaMoDryAirWet, AreaMeso_ALSNeutral, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.8, CldShadeOthPC -> 0.2, CldShadeOthClear -> 0.0}),
+[ AreaMoDryAirWet, AreaMeso_ALSNeutral, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.01, CldShadeOthPC -> 0.89, CldShadeOthClear -> 0.1}),
+[ AreaMoDryAirWet, AreaMeso_ALSNeutral, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.1, CldShadeOthClear -> 0.9}),
+[ AreaMoDryAirWet, AreaMeso_ALSDown, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.65, CldShadeOthPC -> 0.34, CldShadeOthClear -> 0.01}),
+[ AreaMoDryAirWet, AreaMeso_ALSDown, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.4, CldShadeOthClear -> 0.6}),
+[ AreaMoDryAirWet, AreaMeso_ALSDown, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.02, CldShadeOthClear -> 0.98}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSStrongUp, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.88, CldShadeOthPC -> 0.12, CldShadeOthClear -> 0.0}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSStrongUp, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.4, CldShadeOthPC -> 0.5, CldShadeOthClear -> 0.1}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSStrongUp, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.1, CldShadeOthPC -> 0.4, CldShadeOthClear -> 0.5}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSWeakUp, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.85, CldShadeOthPC -> 0.15, CldShadeOthClear -> 0.0}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSWeakUp, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.15, CldShadeOthPC -> 0.75, CldShadeOthClear -> 0.1}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSWeakUp, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.2, CldShadeOthClear -> 0.8}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSNeutral, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.8, CldShadeOthPC -> 0.18, CldShadeOthClear -> 0.02}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSNeutral, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.03, CldShadeOthPC -> 0.85, CldShadeOthClear -> 0.12}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSNeutral, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.05, CldShadeOthClear -> 0.95}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSDown, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.5, CldShadeOthPC -> 0.48, CldShadeOthClear -> 0.02}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSDown, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.01, CldShadeOthPC -> 0.74, CldShadeOthClear -> 0.25}),
+[ AreaMoDryAirNeutral, AreaMeso_ALSDown, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.01, CldShadeOthClear -> 0.99}),
+[ AreaMoDryAirDry, AreaMeso_ALSStrongUp, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.85, CldShadeOthPC -> 0.14, CldShadeOthClear -> 0.01}),
+[ AreaMoDryAirDry, AreaMeso_ALSStrongUp, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.55, CldShadeOthPC -> 0.43, CldShadeOthClear -> 0.02}),
+[ AreaMoDryAirDry, AreaMeso_ALSStrongUp, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.1, CldShadeOthPC -> 0.25, CldShadeOthClear -> 0.65}),
+[ AreaMoDryAirDry, AreaMeso_ALSWeakUp, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.6, CldShadeOthPC -> 0.39, CldShadeOthClear -> 0.01}),
+[ AreaMoDryAirDry, AreaMeso_ALSWeakUp, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.01, CldShadeOthPC -> 0.9, CldShadeOthClear -> 0.09}),
+[ AreaMoDryAirDry, AreaMeso_ALSWeakUp, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.15, CldShadeOthClear -> 0.85}),
+[ AreaMoDryAirDry, AreaMeso_ALSNeutral, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.78, CldShadeOthPC -> 0.2, CldShadeOthClear -> 0.02}),
+[ AreaMoDryAirDry, AreaMeso_ALSNeutral, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.01, CldShadeOthPC -> 0.74, CldShadeOthClear -> 0.25}),
+[ AreaMoDryAirDry, AreaMeso_ALSNeutral, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.04, CldShadeOthClear -> 0.96}),
+[ AreaMoDryAirDry, AreaMeso_ALSDown, CombCloudsCloudy ] -> Categorical({CldShadeOthCloudy -> 0.42, CldShadeOthPC -> 0.55, CldShadeOthClear -> 0.03}),
+[ AreaMoDryAirDry, AreaMeso_ALSDown, CombCloudsPC ] -> Categorical({CldShadeOthCloudy -> 0.05, CldShadeOthPC -> 0.65, CldShadeOthClear -> 0.3}),
+[ AreaMoDryAirDry, AreaMeso_ALSDown, CombCloudsClear ] -> Categorical({CldShadeOthCloudy -> 0.0, CldShadeOthPC -> 0.0, CldShadeOthClear -> 1.0})};
+
+random TypeCombClouds CombClouds ~ case [VISCloudCov, IRCloudCover] in
+	{[ VISCloudCovCloudy, IRCloudCoverCloudy ] -> Categorical({CombCloudsCloudy -> 0.95, CombCloudsPC -> 0.04, CombCloudsClear -> 0.01}),
+[ VISCloudCovCloudy, IRCloudCoverPC ] -> Categorical({CombCloudsCloudy -> 0.85, CombCloudsPC -> 0.13, CombCloudsClear -> 0.02}),
+[ VISCloudCovCloudy, IRCloudCoverClear ] -> Categorical({CombCloudsCloudy -> 0.8, CombCloudsPC -> 0.1, CombCloudsClear -> 0.1}),
+[ VISCloudCovPC, IRCloudCoverCloudy ] -> Categorical({CombCloudsCloudy -> 0.45, CombCloudsPC -> 0.52, CombCloudsClear -> 0.03}),
+[ VISCloudCovPC, IRCloudCoverPC ] -> Categorical({CombCloudsCloudy -> 0.1, CombCloudsPC -> 0.8, CombCloudsClear -> 0.1}),
+[ VISCloudCovPC, IRCloudCoverClear ] -> Categorical({CombCloudsCloudy -> 0.05, CombCloudsPC -> 0.45, CombCloudsClear -> 0.5}),
+[ VISCloudCovClear, IRCloudCoverCloudy ] -> Categorical({CombCloudsCloudy -> 0.1, CombCloudsPC -> 0.4, CombCloudsClear -> 0.5}),
+[ VISCloudCovClear, IRCloudCoverPC ] -> Categorical({CombCloudsCloudy -> 0.02, CombCloudsPC -> 0.28, CombCloudsClear -> 0.7}),
+[ VISCloudCovClear, IRCloudCoverClear ] -> Categorical({CombCloudsCloudy -> 0.0, CombCloudsPC -> 0.02, CombCloudsClear -> 0.98})};
+
+random TypeCombMoisture CombMoisture ~ case [SatContMoist, RaoContMoist] in
+	{[ SatContMoistVeryWet, RaoContMoistVeryWet ] -> Categorical({CombMoistureVeryWet -> 0.9, CombMoistureWet -> 0.1, CombMoistureNeutral -> 0.0, CombMoistureDry -> 0.0}),
+[ SatContMoistVeryWet, RaoContMoistWet ] -> Categorical({CombMoistureVeryWet -> 0.6, CombMoistureWet -> 0.35, CombMoistureNeutral -> 0.05, CombMoistureDry -> 0.0}),
+[ SatContMoistVeryWet, RaoContMoistNeutral ] -> Categorical({CombMoistureVeryWet -> 0.3, CombMoistureWet -> 0.5, CombMoistureNeutral -> 0.2, CombMoistureDry -> 0.0}),
+[ SatContMoistVeryWet, RaoContMoistDry ] -> Categorical({CombMoistureVeryWet -> 0.25, CombMoistureWet -> 0.35, CombMoistureNeutral -> 0.25, CombMoistureDry -> 0.15}),
+[ SatContMoistWet, RaoContMoistVeryWet ] -> Categorical({CombMoistureVeryWet -> 0.55, CombMoistureWet -> 0.4, CombMoistureNeutral -> 0.05, CombMoistureDry -> 0.0}),
+[ SatContMoistWet, RaoContMoistWet ] -> Categorical({CombMoistureVeryWet -> 0.15, CombMoistureWet -> 0.6, CombMoistureNeutral -> 0.2, CombMoistureDry -> 0.05}),
+[ SatContMoistWet, RaoContMoistNeutral ] -> Categorical({CombMoistureVeryWet -> 0.05, CombMoistureWet -> 0.4, CombMoistureNeutral -> 0.45, CombMoistureDry -> 0.1}),
+[ SatContMoistWet, RaoContMoistDry ] -> Categorical({CombMoistureVeryWet -> 0.1, CombMoistureWet -> 0.3, CombMoistureNeutral -> 0.3, CombMoistureDry -> 0.3}),
+[ SatContMoistNeutral, RaoContMoistVeryWet ] -> Categorical({CombMoistureVeryWet -> 0.25, CombMoistureWet -> 0.3, CombMoistureNeutral -> 0.35, CombMoistureDry -> 0.1}),
+[ SatContMoistNeutral, RaoContMoistWet ] -> Categorical({CombMoistureVeryWet -> 0.1, CombMoistureWet -> 0.35, CombMoistureNeutral -> 0.5, CombMoistureDry -> 0.05}),
+[ SatContMoistNeutral, RaoContMoistNeutral ] -> Categorical({CombMoistureVeryWet -> 0.0, CombMoistureWet -> 0.15, CombMoistureNeutral -> 0.7, CombMoistureDry -> 0.15}),
+[ SatContMoistNeutral, RaoContMoistDry ] -> Categorical({CombMoistureVeryWet -> 0.0, CombMoistureWet -> 0.1, CombMoistureNeutral -> 0.4, CombMoistureDry -> 0.5}),
+[ SatContMoistDry, RaoContMoistVeryWet ] -> Categorical({CombMoistureVeryWet -> 0.25, CombMoistureWet -> 0.25, CombMoistureNeutral -> 0.25, CombMoistureDry -> 0.25}),
+[ SatContMoistDry, RaoContMoistWet ] -> Categorical({CombMoistureVeryWet -> 0.25, CombMoistureWet -> 0.25, CombMoistureNeutral -> 0.25, CombMoistureDry -> 0.25}),
+[ SatContMoistDry, RaoContMoistNeutral ] -> Categorical({CombMoistureVeryWet -> 0.25, CombMoistureWet -> 0.25, CombMoistureNeutral -> 0.25, CombMoistureDry -> 0.25}),
+[ SatContMoistDry, RaoContMoistDry ] -> Categorical({CombMoistureVeryWet -> 0.25, CombMoistureWet -> 0.25, CombMoistureNeutral -> 0.25, CombMoistureDry -> 0.25})};
+
+random TypeCombVerMo CombVerMo ~ case [N0_7muVerMo, SubjVertMo, QGVertMotion] in
+	{[ N0_7muVerMoStrongUp, SubjVertMoStronUp, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 1.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 0.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoStronUp, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.9, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoStronUp, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.7, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.1, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoStronUp, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.2, CombVerMoWeakUp -> 0.5, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoStrongUp, SubjVertMoWeakUp, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.9, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoWeakUp, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.7, CombVerMoWeakUp -> 0.3, CombVerMoNeutral -> 0.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoWeakUp, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.15, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.15, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoWeakUp, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.35, CombVerMoNeutral -> 0.45, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoStrongUp, SubjVertMoNeutral, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.7, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.1, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoNeutral, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.15, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.15, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoNeutral, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.2, CombVerMoWeakUp -> 0.6, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoStrongUp, SubjVertMoNeutral, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.6, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoStrongUp, SubjVertMoDown, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.2, CombVerMoWeakUp -> 0.5, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoStrongUp, SubjVertMoDown, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.35, CombVerMoNeutral -> 0.45, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoStrongUp, SubjVertMoDown, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.6, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoStrongUp, SubjVertMoDown, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.6}),
+[ N0_7muVerMoWeakUp, SubjVertMoStronUp, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.9, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoStronUp, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.7, CombVerMoWeakUp -> 0.3, CombVerMoNeutral -> 0.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoStronUp, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.15, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.15, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoStronUp, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.35, CombVerMoNeutral -> 0.45, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoWeakUp, SubjVertMoWeakUp, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.7, CombVerMoWeakUp -> 0.3, CombVerMoNeutral -> 0.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoWeakUp, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 1.0, CombVerMoNeutral -> 0.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoWeakUp, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.3, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoWeakUp, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoWeakUp, SubjVertMoNeutral, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.15, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.15, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoNeutral, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.3, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoNeutral, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.3, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoWeakUp, SubjVertMoNeutral, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.15, CombVerMoNeutral -> 0.5, CombVerMoDown -> 0.35}),
+[ N0_7muVerMoWeakUp, SubjVertMoDown, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.35, CombVerMoNeutral -> 0.45, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoWeakUp, SubjVertMoDown, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoWeakUp, SubjVertMoDown, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.15, CombVerMoNeutral -> 0.5, CombVerMoDown -> 0.35}),
+[ N0_7muVerMoWeakUp, SubjVertMoDown, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.7}),
+[ N0_7muVerMoNeutral, SubjVertMoStronUp, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.7, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.1, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoStronUp, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.15, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.15, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoStronUp, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.2, CombVerMoWeakUp -> 0.6, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoStronUp, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.6, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoNeutral, SubjVertMoWeakUp, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.15, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.15, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoWeakUp, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.7, CombVerMoNeutral -> 0.3, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoWeakUp, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.3, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoWeakUp, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.15, CombVerMoNeutral -> 0.5, CombVerMoDown -> 0.35}),
+[ N0_7muVerMoNeutral, SubjVertMoNeutral, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.2, CombVerMoWeakUp -> 0.6, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoNeutral, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.3, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoNeutral, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 1.0, CombVerMoDown -> 0.0}),
+[ N0_7muVerMoNeutral, SubjVertMoNeutral, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.3}),
+[ N0_7muVerMoNeutral, SubjVertMoDown, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.6, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoNeutral, SubjVertMoDown, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.15, CombVerMoNeutral -> 0.5, CombVerMoDown -> 0.35}),
+[ N0_7muVerMoNeutral, SubjVertMoDown, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.3}),
+[ N0_7muVerMoNeutral, SubjVertMoDown, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 0.3, CombVerMoDown -> 0.7}),
+[ N0_7muVerMoDown, SubjVertMoStronUp, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.2, CombVerMoWeakUp -> 0.5, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoDown, SubjVertMoStronUp, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.35, CombVerMoNeutral -> 0.45, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoDown, SubjVertMoStronUp, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.6, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoDown, SubjVertMoStronUp, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.6}),
+[ N0_7muVerMoDown, SubjVertMoWeakUp, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.35, CombVerMoNeutral -> 0.45, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoDown, SubjVertMoWeakUp, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoDown, SubjVertMoWeakUp, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.15, CombVerMoNeutral -> 0.5, CombVerMoDown -> 0.35}),
+[ N0_7muVerMoDown, SubjVertMoWeakUp, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.7}),
+[ N0_7muVerMoDown, SubjVertMoNeutral, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.2, CombVerMoNeutral -> 0.6, CombVerMoDown -> 0.1}),
+[ N0_7muVerMoDown, SubjVertMoNeutral, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.15, CombVerMoNeutral -> 0.5, CombVerMoDown -> 0.35}),
+[ N0_7muVerMoDown, SubjVertMoNeutral, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 0.7, CombVerMoDown -> 0.3}),
+[ N0_7muVerMoDown, SubjVertMoNeutral, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 0.3, CombVerMoDown -> 0.7}),
+[ N0_7muVerMoDown, SubjVertMoDown, QGVertMotionStrongUp ] -> Categorical({CombVerMoStrongUp -> 0.1, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.6}),
+[ N0_7muVerMoDown, SubjVertMoDown, QGVertMotionWeakUp ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.1, CombVerMoNeutral -> 0.2, CombVerMoDown -> 0.7}),
+[ N0_7muVerMoDown, SubjVertMoDown, QGVertMotionNeutral ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 0.3, CombVerMoDown -> 0.7}),
+[ N0_7muVerMoDown, SubjVertMoDown, QGVertMotionDown ] -> Categorical({CombVerMoStrongUp -> 0.0, CombVerMoWeakUp -> 0.0, CombVerMoNeutral -> 0.0, CombVerMoDown -> 1.0})};
+
+random TypeCompPlFcst CompPlFcst ~ case [Boundaries, CldShadeConv, AreaMeso_ALS, CldShadeOth] in
+	{[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.1, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.55}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.05, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.65}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.2, CompPlFcstLittleChange -> 0.5, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.45, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.25, CompPlFcstLittleChange -> 0.45, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.7, CompPlFcstLittleChange -> 0.27, CompPlFcstDecCapIncIns -> 0.03}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesNone, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.25, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.45}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.15, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.5}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.45, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.25, CompPlFcstLittleChange -> 0.5, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.5, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.3, CompPlFcstLittleChange -> 0.45, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.75, CompPlFcstLittleChange -> 0.23, CompPlFcstDecCapIncIns -> 0.02}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.7, CompPlFcstLittleChange -> 0.26, CompPlFcstDecCapIncIns -> 0.04}),
+[ BoundariesNone, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.32, CompPlFcstDecCapIncIns -> 0.03}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.45, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.35, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.35}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.7, CompPlFcstLittleChange -> 0.22, CompPlFcstDecCapIncIns -> 0.08}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.45, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.7, CompPlFcstLittleChange -> 0.27, CompPlFcstDecCapIncIns -> 0.03}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.33, CompPlFcstDecCapIncIns -> 0.12}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.85, CompPlFcstLittleChange -> 0.14, CompPlFcstDecCapIncIns -> 0.01}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.8, CompPlFcstLittleChange -> 0.17, CompPlFcstDecCapIncIns -> 0.03}),
+[ BoundariesNone, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.75, CompPlFcstLittleChange -> 0.23, CompPlFcstDecCapIncIns -> 0.02}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.35, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.05, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.6}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.03, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.72}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.5, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.3, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.35}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.15, CompPlFcstLittleChange -> 0.45, CompPlFcstDecCapIncIns -> 0.4}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.2, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.4}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesWeak, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.33, CompPlFcstDecCapIncIns -> 0.12}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.35, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.1, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.55}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.05, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.65}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.35, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.2, CompPlFcstLittleChange -> 0.5, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.45, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.25, CompPlFcstLittleChange -> 0.5, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesWeak, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.25, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.35}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.2, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.4}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.45, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.3, CompPlFcstLittleChange -> 0.5, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.5, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.78, CompPlFcstLittleChange -> 0.18, CompPlFcstDecCapIncIns -> 0.04}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.75, CompPlFcstLittleChange -> 0.2, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesWeak, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.7, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.05}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.3, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.4}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.01, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.74}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.01, CompPlFcstLittleChange -> 0.2, CompPlFcstDecCapIncIns -> 0.79}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.35, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.4}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.15, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.45}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.1, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.55}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.45, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.3, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.15, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.45}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.5, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.48, CompPlFcstLittleChange -> 0.32, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesStrong, CldShadeConvNone, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.45, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.3, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.4}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.05, CompPlFcstLittleChange -> 0.6, CompPlFcstDecCapIncIns -> 0.35}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.04, CompPlFcstLittleChange -> 0.27, CompPlFcstDecCapIncIns -> 0.69}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.35}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.2, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.4}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.12, CompPlFcstLittleChange -> 0.43, CompPlFcstDecCapIncIns -> 0.45}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.5, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.35, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.2, CompPlFcstLittleChange -> 0.45, CompPlFcstDecCapIncIns -> 0.35}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.15}),
+[ BoundariesStrong, CldShadeConvSome, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.5, CompPlFcstLittleChange -> 0.4, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.3, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.35}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.15, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.5}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSStrongUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.13, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.52}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.5, CompPlFcstLittleChange -> 0.25, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.35, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.3}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSWeakUp, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.2, CompPlFcstLittleChange -> 0.45, CompPlFcstDecCapIncIns -> 0.35}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.55, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.1}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.45, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.2}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSNeutral, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.4, CompPlFcstLittleChange -> 0.35, CompPlFcstDecCapIncIns -> 0.25}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthCloudy ] -> Categorical({CompPlFcstIncCapDecIns -> 0.7, CompPlFcstLittleChange -> 0.24, CompPlFcstDecCapIncIns -> 0.06}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthPC ] -> Categorical({CompPlFcstIncCapDecIns -> 0.65, CompPlFcstLittleChange -> 0.28, CompPlFcstDecCapIncIns -> 0.07}),
+[ BoundariesStrong, CldShadeConvMarked, AreaMeso_ALSDown, CldShadeOthClear ] -> Categorical({CompPlFcstIncCapDecIns -> 0.6, CompPlFcstLittleChange -> 0.3, CompPlFcstDecCapIncIns -> 0.1})};
+
+random TypeCurPropConv CurPropConv ~ case [LatestCIN, LLIW] in
+	{[ LatestCINNone, LLIWUnfavorable ] -> Categorical({CurPropConvNone -> 0.7, CurPropConvSlight -> 0.28, CurPropConvModerate -> 0.02, CurPropConvStrong -> 0.0}),
+[ LatestCINNone, LLIWWeak ] -> Categorical({CurPropConvNone -> 0.1, CurPropConvSlight -> 0.5, CurPropConvModerate -> 0.3, CurPropConvStrong -> 0.1}),
+[ LatestCINNone, LLIWModerate ] -> Categorical({CurPropConvNone -> 0.01, CurPropConvSlight -> 0.14, CurPropConvModerate -> 0.35, CurPropConvStrong -> 0.5}),
+[ LatestCINNone, LLIWStrong ] -> Categorical({CurPropConvNone -> 0.0, CurPropConvSlight -> 0.02, CurPropConvModerate -> 0.18, CurPropConvStrong -> 0.8}),
+[ LatestCINPartInhibit, LLIWUnfavorable ] -> Categorical({CurPropConvNone -> 0.9, CurPropConvSlight -> 0.09, CurPropConvModerate -> 0.01, CurPropConvStrong -> 0.0}),
+[ LatestCINPartInhibit, LLIWWeak ] -> Categorical({CurPropConvNone -> 0.65, CurPropConvSlight -> 0.25, CurPropConvModerate -> 0.09, CurPropConvStrong -> 0.01}),
+[ LatestCINPartInhibit, LLIWModerate ] -> Categorical({CurPropConvNone -> 0.25, CurPropConvSlight -> 0.35, CurPropConvModerate -> 0.3, CurPropConvStrong -> 0.1}),
+[ LatestCINPartInhibit, LLIWStrong ] -> Categorical({CurPropConvNone -> 0.01, CurPropConvSlight -> 0.15, CurPropConvModerate -> 0.33, CurPropConvStrong -> 0.51}),
+[ LatestCINStifling, LLIWUnfavorable ] -> Categorical({CurPropConvNone -> 0.95, CurPropConvSlight -> 0.05, CurPropConvModerate -> 0.0, CurPropConvStrong -> 0.0}),
+[ LatestCINStifling, LLIWWeak ] -> Categorical({CurPropConvNone -> 0.75, CurPropConvSlight -> 0.23, CurPropConvModerate -> 0.02, CurPropConvStrong -> 0.0}),
+[ LatestCINStifling, LLIWModerate ] -> Categorical({CurPropConvNone -> 0.4, CurPropConvSlight -> 0.4, CurPropConvModerate -> 0.18, CurPropConvStrong -> 0.02}),
+[ LatestCINStifling, LLIWStrong ] -> Categorical({CurPropConvNone -> 0.2, CurPropConvSlight -> 0.3, CurPropConvModerate -> 0.35, CurPropConvStrong -> 0.15}),
+[ LatestCINTotalInhibit, LLIWUnfavorable ] -> Categorical({CurPropConvNone -> 1.0, CurPropConvSlight -> 0.0, CurPropConvModerate -> 0.0, CurPropConvStrong -> 0.0}),
+[ LatestCINTotalInhibit, LLIWWeak ] -> Categorical({CurPropConvNone -> 0.95, CurPropConvSlight -> 0.05, CurPropConvModerate -> 0.0, CurPropConvStrong -> 0.0}),
+[ LatestCINTotalInhibit, LLIWModerate ] -> Categorical({CurPropConvNone -> 0.75, CurPropConvSlight -> 0.2, CurPropConvModerate -> 0.05, CurPropConvStrong -> 0.0}),
+[ LatestCINTotalInhibit, LLIWStrong ] -> Categorical({CurPropConvNone -> 0.5, CurPropConvSlight -> 0.35, CurPropConvModerate -> 0.1, CurPropConvStrong -> 0.05})};
+
+random TypeDate Date ~ 
+	Categorical({DateMay15_Jun14 -> 0.254098,DateJun15_Jul1 -> 0.131148,DateJul2_Jul15 -> 0.106557,DateJul16_Aug10 -> 0.213115,DateAug11_Aug20 -> 0.07377,DateAug20_Sep15 -> 0.221312})
+;
+
+random TypeDewpoints Dewpoints ~ case Scenario in
+	{ScenarioA -> Categorical({DewpointsLowEvrywhere -> 0.04, DewpointsLowAtStation -> 0.05, DewpointsLowSHighN -> 0.15, DewpointsLowNHighS -> 0.05, DewpointsLowMtsHighPl -> 0.19, DewpointsHighEvrywher -> 0.3, DewpointsOther -> 0.22}),
+ScenarioB -> Categorical({DewpointsLowEvrywhere -> 0.05, DewpointsLowAtStation -> 0.07, DewpointsLowSHighN -> 0.15, DewpointsLowNHighS -> 0.1, DewpointsLowMtsHighPl -> 0.3, DewpointsHighEvrywher -> 0.27, DewpointsOther -> 0.06}),
+ScenarioC -> Categorical({DewpointsLowEvrywhere -> 0.4, DewpointsLowAtStation -> 0.25, DewpointsLowSHighN -> 0.0, DewpointsLowNHighS -> 0.15, DewpointsLowMtsHighPl -> 0.05, DewpointsHighEvrywher -> 0.02, DewpointsOther -> 0.13}),
+ScenarioD -> Categorical({DewpointsLowEvrywhere -> 0.13, DewpointsLowAtStation -> 0.22, DewpointsLowSHighN -> 0.18, DewpointsLowNHighS -> 0.07, DewpointsLowMtsHighPl -> 0.34, DewpointsHighEvrywher -> 0.03, DewpointsOther -> 0.03}),
+ScenarioE -> Categorical({DewpointsLowEvrywhere -> 0.15, DewpointsLowAtStation -> 0.2, DewpointsLowSHighN -> 0.2, DewpointsLowNHighS -> 0.18, DewpointsLowMtsHighPl -> 0.11, DewpointsHighEvrywher -> 0.11, DewpointsOther -> 0.05}),
+ScenarioF -> Categorical({DewpointsLowEvrywhere -> 0.0, DewpointsLowAtStation -> 0.0, DewpointsLowSHighN -> 0.0, DewpointsLowNHighS -> 0.0, DewpointsLowMtsHighPl -> 0.0, DewpointsHighEvrywher -> 0.98, DewpointsOther -> 0.02}),
+ScenarioG -> Categorical({DewpointsLowEvrywhere -> 0.5, DewpointsLowAtStation -> 0.27, DewpointsLowSHighN -> 0.15, DewpointsLowNHighS -> 0.02, DewpointsLowMtsHighPl -> 0.02, DewpointsHighEvrywher -> 0.0, DewpointsOther -> 0.04}),
+ScenarioH -> Categorical({DewpointsLowEvrywhere -> 0.0, DewpointsLowAtStation -> 0.02, DewpointsLowSHighN -> 0.1, DewpointsLowNHighS -> 0.05, DewpointsLowMtsHighPl -> 0.5, DewpointsHighEvrywher -> 0.2, DewpointsOther -> 0.13}),
+ScenarioI -> Categorical({DewpointsLowEvrywhere -> 0.0, DewpointsLowAtStation -> 0.02, DewpointsLowSHighN -> 0.7, DewpointsLowNHighS -> 0.0, DewpointsLowMtsHighPl -> 0.2, DewpointsHighEvrywher -> 0.04, DewpointsOther -> 0.04}),
+ScenarioJ -> Categorical({DewpointsLowEvrywhere -> 0.1, DewpointsLowAtStation -> 0.45, DewpointsLowSHighN -> 0.1, DewpointsLowNHighS -> 0.05, DewpointsLowMtsHighPl -> 0.26, DewpointsHighEvrywher -> 0.02, DewpointsOther -> 0.02}),
+ScenarioK -> Categorical({DewpointsLowEvrywhere -> 0.1, DewpointsLowAtStation -> 0.1, DewpointsLowSHighN -> 0.1, DewpointsLowNHighS -> 0.2, DewpointsLowMtsHighPl -> 0.05, DewpointsHighEvrywher -> 0.1, DewpointsOther -> 0.35})};
+
+random TypeIRCloudCover IRCloudCover ~ 
+	Categorical({IRCloudCoverCloudy -> 0.15,IRCloudCoverPC -> 0.45,IRCloudCoverClear -> 0.4})
+;
+
+random TypeInsChange InsChange ~ case [LoLevMoistAd, CompPlFcst] in
+	{[ LoLevMoistAdStrongPos, CompPlFcstIncCapDecIns ] -> Categorical({InsChangeDecreasing -> 0.0, InsChangeLittleChange -> 0.05, InsChangeIncreasing -> 0.95}),
+[ LoLevMoistAdStrongPos, CompPlFcstLittleChange ] -> Categorical({InsChangeDecreasing -> 0.0, InsChangeLittleChange -> 0.12, InsChangeIncreasing -> 0.88}),
+[ LoLevMoistAdStrongPos, CompPlFcstDecCapIncIns ] -> Categorical({InsChangeDecreasing -> 0.05, InsChangeLittleChange -> 0.15, InsChangeIncreasing -> 0.8}),
+[ LoLevMoistAdWeakPos, CompPlFcstIncCapDecIns ] -> Categorical({InsChangeDecreasing -> 0.05, InsChangeLittleChange -> 0.15, InsChangeIncreasing -> 0.8}),
+[ LoLevMoistAdWeakPos, CompPlFcstLittleChange ] -> Categorical({InsChangeDecreasing -> 0.1, InsChangeLittleChange -> 0.4, InsChangeIncreasing -> 0.5}),
+[ LoLevMoistAdWeakPos, CompPlFcstDecCapIncIns ] -> Categorical({InsChangeDecreasing -> 0.25, InsChangeLittleChange -> 0.5, InsChangeIncreasing -> 0.25}),
+[ LoLevMoistAdNeutral, CompPlFcstIncCapDecIns ] -> Categorical({InsChangeDecreasing -> 0.15, InsChangeLittleChange -> 0.5, InsChangeIncreasing -> 0.35}),
+[ LoLevMoistAdNeutral, CompPlFcstLittleChange ] -> Categorical({InsChangeDecreasing -> 0.2, InsChangeLittleChange -> 0.6, InsChangeIncreasing -> 0.2}),
+[ LoLevMoistAdNeutral, CompPlFcstDecCapIncIns ] -> Categorical({InsChangeDecreasing -> 0.35, InsChangeLittleChange -> 0.5, InsChangeIncreasing -> 0.15}),
+[ LoLevMoistAdNegative, CompPlFcstIncCapDecIns ] -> Categorical({InsChangeDecreasing -> 0.5, InsChangeLittleChange -> 0.4, InsChangeIncreasing -> 0.1}),
+[ LoLevMoistAdNegative, CompPlFcstLittleChange ] -> Categorical({InsChangeDecreasing -> 0.8, InsChangeLittleChange -> 0.16, InsChangeIncreasing -> 0.04}),
+[ LoLevMoistAdNegative, CompPlFcstDecCapIncIns ] -> Categorical({InsChangeDecreasing -> 0.9, InsChangeLittleChange -> 0.09, InsChangeIncreasing -> 0.01})};
+
+random TypeInsInMt InsInMt ~ case [CldShadeOth, AMInstabMt] in
+	{[ CldShadeOthCloudy, AMInstabMtNone ] -> Categorical({InsInMtNone -> 0.9, InsInMtWeak -> 0.1, InsInMtStrong -> 0.0}),
+[ CldShadeOthCloudy, AMInstabMtWeak ] -> Categorical({InsInMtNone -> 0.01, InsInMtWeak -> 0.4, InsInMtStrong -> 0.59}),
+[ CldShadeOthCloudy, AMInstabMtStrong ] -> Categorical({InsInMtNone -> 0.0, InsInMtWeak -> 0.05, InsInMtStrong -> 0.95}),
+[ CldShadeOthPC, AMInstabMtNone ] -> Categorical({InsInMtNone -> 0.6, InsInMtWeak -> 0.39, InsInMtStrong -> 0.01}),
+[ CldShadeOthPC, AMInstabMtWeak ] -> Categorical({InsInMtNone -> 0.0, InsInMtWeak -> 0.4, InsInMtStrong -> 0.6}),
+[ CldShadeOthPC, AMInstabMtStrong ] -> Categorical({InsInMtNone -> 0.0, InsInMtWeak -> 0.0, InsInMtStrong -> 1.0}),
+[ CldShadeOthClear, AMInstabMtNone ] -> Categorical({InsInMtNone -> 0.5, InsInMtWeak -> 0.35, InsInMtStrong -> 0.15}),
+[ CldShadeOthClear, AMInstabMtWeak ] -> Categorical({InsInMtNone -> 0.0, InsInMtWeak -> 0.15, InsInMtStrong -> 0.85}),
+[ CldShadeOthClear, AMInstabMtStrong ] -> Categorical({InsInMtNone -> 0.0, InsInMtWeak -> 0.0, InsInMtStrong -> 1.0})};
+
+random TypeInsSclInScen InsSclInScen ~ case [AMInsWliScen, InsChange] in
+	{[ AMInsWliScenLessUnstable, InsChangeDecreasing ] -> Categorical({InsSclInScenLessUnstable -> 1.0, InsSclInScenAverage -> 0.0, InsSclInScenMoreUnstable -> 0.0}),
+[ AMInsWliScenLessUnstable, InsChangeLittleChange ] -> Categorical({InsSclInScenLessUnstable -> 0.9, InsSclInScenAverage -> 0.1, InsSclInScenMoreUnstable -> 0.0}),
+[ AMInsWliScenLessUnstable, InsChangeIncreasing ] -> Categorical({InsSclInScenLessUnstable -> 0.4, InsSclInScenAverage -> 0.35, InsSclInScenMoreUnstable -> 0.25}),
+[ AMInsWliScenAverage, InsChangeDecreasing ] -> Categorical({InsSclInScenLessUnstable -> 0.6, InsSclInScenAverage -> 0.4, InsSclInScenMoreUnstable -> 0.0}),
+[ AMInsWliScenAverage, InsChangeLittleChange ] -> Categorical({InsSclInScenLessUnstable -> 0.15, InsSclInScenAverage -> 0.7, InsSclInScenMoreUnstable -> 0.15}),
+[ AMInsWliScenAverage, InsChangeIncreasing ] -> Categorical({InsSclInScenLessUnstable -> 0.0, InsSclInScenAverage -> 0.4, InsSclInScenMoreUnstable -> 0.6}),
+[ AMInsWliScenMoreUnstable, InsChangeDecreasing ] -> Categorical({InsSclInScenLessUnstable -> 0.25, InsSclInScenAverage -> 0.35, InsSclInScenMoreUnstable -> 0.4}),
+[ AMInsWliScenMoreUnstable, InsChangeLittleChange ] -> Categorical({InsSclInScenLessUnstable -> 0.0, InsSclInScenAverage -> 0.1, InsSclInScenMoreUnstable -> 0.9}),
+[ AMInsWliScenMoreUnstable, InsChangeIncreasing ] -> Categorical({InsSclInScenLessUnstable -> 0.0, InsSclInScenAverage -> 0.0, InsSclInScenMoreUnstable -> 1.0})};
+
+random TypeLIfr12ZDENSd LIfr12ZDENSd ~ 
+	Categorical({LIfr12ZDENSdLIGt0 -> 0.1,LIfr12ZDENSdN1GtLIGt_4 -> 0.52,LIfr12ZDENSdN5GtLIGt_8 -> 0.3,LIfr12ZDENSdLILt_8 -> 0.08})
+;
+
+random TypeLLIW LLIW ~ 
+	Categorical({LLIWUnfavorable -> 0.12,LLIWWeak -> 0.32,LLIWModerate -> 0.38,LLIWStrong -> 0.18})
+;
+
+random TypeLatestCIN LatestCIN ~ 
+	Categorical({LatestCINNone -> 0.4,LatestCINPartInhibit -> 0.4,LatestCINStifling -> 0.15,LatestCINTotalInhibit -> 0.05})
+;
+
+random TypeLoLevMoistAd LoLevMoistAd ~ 
+	Categorical({LoLevMoistAdStrongPos -> 0.12,LoLevMoistAdWeakPos -> 0.28,LoLevMoistAdNeutral -> 0.3,LoLevMoistAdNegative -> 0.3})
+;
+
+random TypeLowLLapse LowLLapse ~ case Scenario in
+	{ScenarioA -> Categorical({LowLLapseCloseToDryAd -> 0.04, LowLLapseSteep -> 0.25, LowLLapseModerateOrLe -> 0.35, LowLLapseStable -> 0.36}),
+ScenarioB -> Categorical({LowLLapseCloseToDryAd -> 0.07, LowLLapseSteep -> 0.31, LowLLapseModerateOrLe -> 0.31, LowLLapseStable -> 0.31}),
+ScenarioC -> Categorical({LowLLapseCloseToDryAd -> 0.35, LowLLapseSteep -> 0.47, LowLLapseModerateOrLe -> 0.14, LowLLapseStable -> 0.04}),
+ScenarioD -> Categorical({LowLLapseCloseToDryAd -> 0.4, LowLLapseSteep -> 0.4, LowLLapseModerateOrLe -> 0.13, LowLLapseStable -> 0.07}),
+ScenarioE -> Categorical({LowLLapseCloseToDryAd -> 0.45, LowLLapseSteep -> 0.35, LowLLapseModerateOrLe -> 0.15, LowLLapseStable -> 0.05}),
+ScenarioF -> Categorical({LowLLapseCloseToDryAd -> 0.01, LowLLapseSteep -> 0.35, LowLLapseModerateOrLe -> 0.45, LowLLapseStable -> 0.19}),
+ScenarioG -> Categorical({LowLLapseCloseToDryAd -> 0.78, LowLLapseSteep -> 0.19, LowLLapseModerateOrLe -> 0.03, LowLLapseStable -> 0.0}),
+ScenarioH -> Categorical({LowLLapseCloseToDryAd -> 0.0, LowLLapseSteep -> 0.02, LowLLapseModerateOrLe -> 0.33, LowLLapseStable -> 0.65}),
+ScenarioI -> Categorical({LowLLapseCloseToDryAd -> 0.22, LowLLapseSteep -> 0.4, LowLLapseModerateOrLe -> 0.3, LowLLapseStable -> 0.08}),
+ScenarioJ -> Categorical({LowLLapseCloseToDryAd -> 0.13, LowLLapseSteep -> 0.4, LowLLapseModerateOrLe -> 0.35, LowLLapseStable -> 0.12}),
+ScenarioK -> Categorical({LowLLapseCloseToDryAd -> 0.09, LowLLapseSteep -> 0.4, LowLLapseModerateOrLe -> 0.33, LowLLapseStable -> 0.18})};
+
+random TypeMeanRH MeanRH ~ case Scenario in
+	{ScenarioA -> Categorical({MeanRHVeryMoist -> 0.33, MeanRHAverage -> 0.5, MeanRHDry -> 0.17}),
+ScenarioB -> Categorical({MeanRHVeryMoist -> 0.4, MeanRHAverage -> 0.4, MeanRHDry -> 0.2}),
+ScenarioC -> Categorical({MeanRHVeryMoist -> 0.05, MeanRHAverage -> 0.45, MeanRHDry -> 0.5}),
+ScenarioD -> Categorical({MeanRHVeryMoist -> 0.1, MeanRHAverage -> 0.5, MeanRHDry -> 0.4}),
+ScenarioE -> Categorical({MeanRHVeryMoist -> 0.05, MeanRHAverage -> 0.65, MeanRHDry -> 0.3}),
+ScenarioF -> Categorical({MeanRHVeryMoist -> 1.0, MeanRHAverage -> 0.0, MeanRHDry -> 0.0}),
+ScenarioG -> Categorical({MeanRHVeryMoist -> 0.0, MeanRHAverage -> 0.07, MeanRHDry -> 0.93}),
+ScenarioH -> Categorical({MeanRHVeryMoist -> 0.4, MeanRHAverage -> 0.55, MeanRHDry -> 0.05}),
+ScenarioI -> Categorical({MeanRHVeryMoist -> 0.2, MeanRHAverage -> 0.45, MeanRHDry -> 0.35}),
+ScenarioJ -> Categorical({MeanRHVeryMoist -> 0.05, MeanRHAverage -> 0.55, MeanRHDry -> 0.4}),
+ScenarioK -> Categorical({MeanRHVeryMoist -> 0.2, MeanRHAverage -> 0.4, MeanRHDry -> 0.4})};
+
+random TypeMidLLapse MidLLapse ~ case Scenario in
+	{ScenarioA -> Categorical({MidLLapseCloseToDryAd -> 0.25, MidLLapseSteep -> 0.55, MidLLapseModerateOrLe -> 0.2}),
+ScenarioB -> Categorical({MidLLapseCloseToDryAd -> 0.25, MidLLapseSteep -> 0.5, MidLLapseModerateOrLe -> 0.25}),
+ScenarioC -> Categorical({MidLLapseCloseToDryAd -> 0.4, MidLLapseSteep -> 0.38, MidLLapseModerateOrLe -> 0.22}),
+ScenarioD -> Categorical({MidLLapseCloseToDryAd -> 0.43, MidLLapseSteep -> 0.37, MidLLapseModerateOrLe -> 0.2}),
+ScenarioE -> Categorical({MidLLapseCloseToDryAd -> 0.02, MidLLapseSteep -> 0.38, MidLLapseModerateOrLe -> 0.6}),
+ScenarioF -> Categorical({MidLLapseCloseToDryAd -> 0.0, MidLLapseSteep -> 0.1, MidLLapseModerateOrLe -> 0.9}),
+ScenarioG -> Categorical({MidLLapseCloseToDryAd -> 0.84, MidLLapseSteep -> 0.16, MidLLapseModerateOrLe -> 0.0}),
+ScenarioH -> Categorical({MidLLapseCloseToDryAd -> 0.25, MidLLapseSteep -> 0.31, MidLLapseModerateOrLe -> 0.44}),
+ScenarioI -> Categorical({MidLLapseCloseToDryAd -> 0.41, MidLLapseSteep -> 0.29, MidLLapseModerateOrLe -> 0.3}),
+ScenarioJ -> Categorical({MidLLapseCloseToDryAd -> 0.23, MidLLapseSteep -> 0.42, MidLLapseModerateOrLe -> 0.35}),
+ScenarioK -> Categorical({MidLLapseCloseToDryAd -> 0.16, MidLLapseSteep -> 0.28, MidLLapseModerateOrLe -> 0.56})};
+
+random TypeMorningBound MorningBound ~ 
+	Categorical({MorningBoundNone -> 0.5,MorningBoundWeak -> 0.35,MorningBoundStrong -> 0.15})
+;
+
+random TypeMorningCIN MorningCIN ~ 
+	Categorical({MorningCINNone -> 0.15,MorningCINPartInhibit -> 0.57,MorningCINStifling -> 0.2,MorningCINTotalInhibit -> 0.08})
+;
+
+random TypeMountainFcst MountainFcst ~ case InsInMt in
+	{InsInMtNone -> Categorical({MountainFcstXNIL -> 1.0, MountainFcstSIG -> 0.0, MountainFcstSVR -> 0.0}),
+InsInMtWeak -> Categorical({MountainFcstXNIL -> 0.48, MountainFcstSIG -> 0.5, MountainFcstSVR -> 0.02}),
+InsInMtStrong -> Categorical({MountainFcstXNIL -> 0.2, MountainFcstSIG -> 0.5, MountainFcstSVR -> 0.3})};
+
+random TypeMvmtFeatures MvmtFeatures ~ case Scenario in
+	{ScenarioA -> Categorical({MvmtFeaturesStrongFront -> 0.25, MvmtFeaturesMarkedUpper -> 0.55, MvmtFeaturesOtherRapid -> 0.2, MvmtFeaturesNoMajor -> 0.0}),
+ScenarioB -> Categorical({MvmtFeaturesStrongFront -> 0.05, MvmtFeaturesMarkedUpper -> 0.1, MvmtFeaturesOtherRapid -> 0.1, MvmtFeaturesNoMajor -> 0.75}),
+ScenarioC -> Categorical({MvmtFeaturesStrongFront -> 0.1, MvmtFeaturesMarkedUpper -> 0.3, MvmtFeaturesOtherRapid -> 0.3, MvmtFeaturesNoMajor -> 0.3}),
+ScenarioD -> Categorical({MvmtFeaturesStrongFront -> 0.18, MvmtFeaturesMarkedUpper -> 0.38, MvmtFeaturesOtherRapid -> 0.34, MvmtFeaturesNoMajor -> 0.1}),
+ScenarioE -> Categorical({MvmtFeaturesStrongFront -> 0.02, MvmtFeaturesMarkedUpper -> 0.02, MvmtFeaturesOtherRapid -> 0.26, MvmtFeaturesNoMajor -> 0.7}),
+ScenarioF -> Categorical({MvmtFeaturesStrongFront -> 0.05, MvmtFeaturesMarkedUpper -> 0.07, MvmtFeaturesOtherRapid -> 0.05, MvmtFeaturesNoMajor -> 0.83}),
+ScenarioG -> Categorical({MvmtFeaturesStrongFront -> 0.1, MvmtFeaturesMarkedUpper -> 0.25, MvmtFeaturesOtherRapid -> 0.15, MvmtFeaturesNoMajor -> 0.5}),
+ScenarioH -> Categorical({MvmtFeaturesStrongFront -> 0.0, MvmtFeaturesMarkedUpper -> 0.6, MvmtFeaturesOtherRapid -> 0.1, MvmtFeaturesNoMajor -> 0.3}),
+ScenarioI -> Categorical({MvmtFeaturesStrongFront -> 0.2, MvmtFeaturesMarkedUpper -> 0.1, MvmtFeaturesOtherRapid -> 0.2, MvmtFeaturesNoMajor -> 0.5}),
+ScenarioJ -> Categorical({MvmtFeaturesStrongFront -> 0.04, MvmtFeaturesMarkedUpper -> 0.0, MvmtFeaturesOtherRapid -> 0.04, MvmtFeaturesNoMajor -> 0.92}),
+ScenarioK -> Categorical({MvmtFeaturesStrongFront -> 0.5, MvmtFeaturesMarkedUpper -> 0.35, MvmtFeaturesOtherRapid -> 0.09, MvmtFeaturesNoMajor -> 0.06})};
+
+random TypeN0_7muVerMo N0_7muVerMo ~ 
+	Categorical({N0_7muVerMoStrongUp -> 0.25,N0_7muVerMoWeakUp -> 0.25,N0_7muVerMoNeutral -> 0.25,N0_7muVerMoDown -> 0.25})
+;
+
+random TypeN34StarFcst N34StarFcst ~ case [ScenRel3_4, PlainsFcst] in
+	{[ ScenRel3_4ACEFK, PlainsFcstXNIL ] -> Categorical({N34StarFcstXNIL -> 0.94, N34StarFcstSIG -> 0.05, N34StarFcstSVR -> 0.01}),
+[ ScenRel3_4ACEFK, PlainsFcstSIG ] -> Categorical({N34StarFcstXNIL -> 0.06, N34StarFcstSIG -> 0.89, N34StarFcstSVR -> 0.05}),
+[ ScenRel3_4ACEFK, PlainsFcstSVR ] -> Categorical({N34StarFcstXNIL -> 0.01, N34StarFcstSIG -> 0.05, N34StarFcstSVR -> 0.94}),
+[ ScenRel3_4B, PlainsFcstXNIL ] -> Categorical({N34StarFcstXNIL -> 0.98, N34StarFcstSIG -> 0.02, N34StarFcstSVR -> 0.0}),
+[ ScenRel3_4B, PlainsFcstSIG ] -> Categorical({N34StarFcstXNIL -> 0.04, N34StarFcstSIG -> 0.94, N34StarFcstSVR -> 0.02}),
+[ ScenRel3_4B, PlainsFcstSVR ] -> Categorical({N34StarFcstXNIL -> 0.0, N34StarFcstSIG -> 0.03, N34StarFcstSVR -> 0.97}),
+[ ScenRel3_4D, PlainsFcstXNIL ] -> Categorical({N34StarFcstXNIL -> 0.92, N34StarFcstSIG -> 0.06, N34StarFcstSVR -> 0.02}),
+[ ScenRel3_4D, PlainsFcstSIG ] -> Categorical({N34StarFcstXNIL -> 0.01, N34StarFcstSIG -> 0.89, N34StarFcstSVR -> 0.1}),
+[ ScenRel3_4D, PlainsFcstSVR ] -> Categorical({N34StarFcstXNIL -> 0.0, N34StarFcstSIG -> 0.01, N34StarFcstSVR -> 0.99}),
+[ ScenRel3_4GJ, PlainsFcstXNIL ] -> Categorical({N34StarFcstXNIL -> 0.92, N34StarFcstSIG -> 0.06, N34StarFcstSVR -> 0.02}),
+[ ScenRel3_4GJ, PlainsFcstSIG ] -> Categorical({N34StarFcstXNIL -> 0.03, N34StarFcstSIG -> 0.92, N34StarFcstSVR -> 0.05}),
+[ ScenRel3_4GJ, PlainsFcstSVR ] -> Categorical({N34StarFcstXNIL -> 0.01, N34StarFcstSIG -> 0.04, N34StarFcstSVR -> 0.95}),
+[ ScenRel3_4HI, PlainsFcstXNIL ] -> Categorical({N34StarFcstXNIL -> 0.99, N34StarFcstSIG -> 0.01, N34StarFcstSVR -> 0.0}),
+[ ScenRel3_4HI, PlainsFcstSIG ] -> Categorical({N34StarFcstXNIL -> 0.09, N34StarFcstSIG -> 0.9, N34StarFcstSVR -> 0.01}),
+[ ScenRel3_4HI, PlainsFcstSVR ] -> Categorical({N34StarFcstXNIL -> 0.03, N34StarFcstSIG -> 0.12, N34StarFcstSVR -> 0.85})};
+
+random TypeOutflowFrMt OutflowFrMt ~ case [InsInMt, WndHodograph] in
+	{[ InsInMtNone, WndHodographDCVZFavor ] -> Categorical({OutflowFrMtNone -> 1.0, OutflowFrMtWeak -> 0.0, OutflowFrMtStrong -> 0.0}),
+[ InsInMtNone, WndHodographStrongWest ] -> Categorical({OutflowFrMtNone -> 1.0, OutflowFrMtWeak -> 0.0, OutflowFrMtStrong -> 0.0}),
+[ InsInMtNone, WndHodographWesterly ] -> Categorical({OutflowFrMtNone -> 1.0, OutflowFrMtWeak -> 0.0, OutflowFrMtStrong -> 0.0}),
+[ InsInMtNone, WndHodographOther ] -> Categorical({OutflowFrMtNone -> 1.0, OutflowFrMtWeak -> 0.0, OutflowFrMtStrong -> 0.0}),
+[ InsInMtWeak, WndHodographDCVZFavor ] -> Categorical({OutflowFrMtNone -> 0.5, OutflowFrMtWeak -> 0.4, OutflowFrMtStrong -> 0.1}),
+[ InsInMtWeak, WndHodographStrongWest ] -> Categorical({OutflowFrMtNone -> 0.15, OutflowFrMtWeak -> 0.4, OutflowFrMtStrong -> 0.45}),
+[ InsInMtWeak, WndHodographWesterly ] -> Categorical({OutflowFrMtNone -> 0.35, OutflowFrMtWeak -> 0.6, OutflowFrMtStrong -> 0.05}),
+[ InsInMtWeak, WndHodographOther ] -> Categorical({OutflowFrMtNone -> 0.8, OutflowFrMtWeak -> 0.19, OutflowFrMtStrong -> 0.01}),
+[ InsInMtStrong, WndHodographDCVZFavor ] -> Categorical({OutflowFrMtNone -> 0.05, OutflowFrMtWeak -> 0.45, OutflowFrMtStrong -> 0.5}),
+[ InsInMtStrong, WndHodographStrongWest ] -> Categorical({OutflowFrMtNone -> 0.01, OutflowFrMtWeak -> 0.15, OutflowFrMtStrong -> 0.84}),
+[ InsInMtStrong, WndHodographWesterly ] -> Categorical({OutflowFrMtNone -> 0.1, OutflowFrMtWeak -> 0.25, OutflowFrMtStrong -> 0.65}),
+[ InsInMtStrong, WndHodographOther ] -> Categorical({OutflowFrMtNone -> 0.6, OutflowFrMtWeak -> 0.3, OutflowFrMtStrong -> 0.1})};
+
+random TypePlainsFcst PlainsFcst ~ case [CurPropConv, InsSclInScen, CapInScen, ScnRelPlFcst] in
+	{[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.04}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.92, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.0}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 1.0, PlainsFcstSIG -> 0.0, PlainsFcstSVR -> 0.0}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.95, PlainsFcstSIG -> 0.04, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.91, PlainsFcstSIG -> 0.05, PlainsFcstSVR -> 0.04}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.0}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.84, PlainsFcstSIG -> 0.12, PlainsFcstSVR -> 0.04}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.99, PlainsFcstSIG -> 0.01, PlainsFcstSVR -> 0.0}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.92, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.96, PlainsFcstSIG -> 0.03, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.95, PlainsFcstSIG -> 0.04, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.93, PlainsFcstSIG -> 0.04, PlainsFcstSVR -> 0.03}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.92, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.87, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.0}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.04}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.98, PlainsFcstSIG -> 0.02, PlainsFcstSVR -> 0.0}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.92, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.95, PlainsFcstSIG -> 0.04, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.97, PlainsFcstSIG -> 0.02, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.2}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.1}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.14, PlainsFcstSVR -> 0.06}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.09, PlainsFcstSVR -> 0.06}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.11, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.03}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.92, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.12, PlainsFcstSVR -> 0.08}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.03}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.35}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.15}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.08}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.18, PlainsFcstSVR -> 0.07}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.11, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.07, PlainsFcstSVR -> 0.03}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.1}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.3}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.15}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.07, PlainsFcstSVR -> 0.08}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.1}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.14, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.94, PlainsFcstSIG -> 0.05, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.13}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.83, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.07}),
+[ CurPropConvNone, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.93, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.01}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.45}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.2}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.1}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.14, PlainsFcstSVR -> 0.14}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.78, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.07}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.86, PlainsFcstSIG -> 0.12, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.1}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.15}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.08}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.05}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.6}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.2}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.15}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.25}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.2}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.81, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.12}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.07}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.2}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.1}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.04}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.52}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.3}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.15}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.2}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.52, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.23}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.02}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.27, PlainsFcstSVR -> 0.08}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.09, PlainsFcstSVR -> 0.06}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.3}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.77, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.13}),
+[ CurPropConvNone, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.07, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.33, PlainsFcstSVR -> 0.07}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.14, PlainsFcstSVR -> 0.01}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.97, PlainsFcstSIG -> 0.02, PlainsFcstSVR -> 0.01}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.02}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.86, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.04}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.02}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.58, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.04}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.83, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.01}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.77, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.06}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.93, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.01}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.12, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.07}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.19, PlainsFcstSVR -> 0.01}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.07}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.91, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.01}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.12, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.9, PlainsFcstSIG -> 0.08, PlainsFcstSVR -> 0.02}),
+[ CurPropConvSlight, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.93, PlainsFcstSIG -> 0.06, PlainsFcstSVR -> 0.01}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.3}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.34, PlainsFcstSVR -> 0.11}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.62, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.14, PlainsFcstSVR -> 0.01}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.14, PlainsFcstSVR -> 0.04}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.15}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.68, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.28, PlainsFcstSIG -> 0.37, PlainsFcstSVR -> 0.35}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.48, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.17}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.13}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.29, PlainsFcstSVR -> 0.11}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.82, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.02}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.63, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.07}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.05}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.2}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.04}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.32}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.25}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.18, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.15}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.15}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.78, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.02}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.12, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.25}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.73, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.12}),
+[ CurPropConvSlight, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.12, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.45}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.36, PlainsFcstSVR -> 0.24}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.15}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.2}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.12}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.83, PlainsFcstSIG -> 0.14, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.15}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.18, PlainsFcstSVR -> 0.12}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.2}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.15}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.08}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.22, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.61}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.37, PlainsFcstSVR -> 0.28}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.25}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.3}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.48, PlainsFcstSIG -> 0.29, PlainsFcstSVR -> 0.23}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.03}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.43, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.17}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.68, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.12}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.35}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.2}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.74, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.27, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.63}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.35}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.23}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.3}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.42, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.28}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.74, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.04}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.15}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.77, PlainsFcstSIG -> 0.13, PlainsFcstSVR -> 0.1}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.45}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.68, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.17}),
+[ CurPropConvSlight, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.42, PlainsFcstSVR -> 0.13}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.18, PlainsFcstSVR -> 0.07}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.06}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.78, PlainsFcstSIG -> 0.21, PlainsFcstSVR -> 0.01}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.66, PlainsFcstSIG -> 0.27, PlainsFcstSVR -> 0.07}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.02}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.08}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.78, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.06}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.04}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.2}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.2}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.11}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.08}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.24, PlainsFcstSVR -> 0.01}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.62, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.08}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.85, PlainsFcstSIG -> 0.12, PlainsFcstSVR -> 0.03}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.15, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.76, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.07}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.04}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.25}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.15}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.19, PlainsFcstSVR -> 0.06}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.27, PlainsFcstSVR -> 0.01}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.04}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.08}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvModerate, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.88, PlainsFcstSIG -> 0.1, PlainsFcstSVR -> 0.02}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.2, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.35}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.2}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.13}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.34, PlainsFcstSVR -> 0.16}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.74, PlainsFcstSIG -> 0.24, PlainsFcstSVR -> 0.02}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.1}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.67, PlainsFcstSIG -> 0.24, PlainsFcstSVR -> 0.09}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.25}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.15}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.23, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.37}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.38, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.27}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.58, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.17}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.2}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.53, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.15}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.73, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.02}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.53, PlainsFcstSVR -> 0.12}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.24, PlainsFcstSVR -> 0.11}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.3}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.24, PlainsFcstSVR -> 0.16}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.68, PlainsFcstSIG -> 0.24, PlainsFcstSVR -> 0.08}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.34, PlainsFcstSVR -> 0.36}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.3}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.2}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.27, PlainsFcstSVR -> 0.23}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.38, PlainsFcstSVR -> 0.22}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.02}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.5, PlainsFcstSVR -> 0.15}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.15}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.3}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.62, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.16}),
+[ CurPropConvModerate, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.08}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.47}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.38, PlainsFcstSVR -> 0.32}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.25}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.25}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.25}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.72, PlainsFcstSIG -> 0.24, PlainsFcstSVR -> 0.04}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.57, PlainsFcstSVR -> 0.18}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.57, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.15}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.4}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.48, PlainsFcstSIG -> 0.26, PlainsFcstSVR -> 0.26}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.26, PlainsFcstSVR -> 0.14}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.19, PlainsFcstSIG -> 0.18, PlainsFcstSVR -> 0.63}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.35}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.35}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.35}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.3}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.05}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.22, PlainsFcstSIG -> 0.58, PlainsFcstSVR -> 0.2}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.2}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.34, PlainsFcstSVR -> 0.41}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.48, PlainsFcstSIG -> 0.26, PlainsFcstSVR -> 0.26}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.58, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.17}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.15, PlainsFcstSIG -> 0.16, PlainsFcstSVR -> 0.69}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.45}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.3}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.4}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.35}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.34, PlainsFcstSVR -> 0.06}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.18, PlainsFcstSIG -> 0.62, PlainsFcstSVR -> 0.2}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.47, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.23}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.45}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.28}),
+[ CurPropConvModerate, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.27, PlainsFcstSVR -> 0.23}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.2}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.27, PlainsFcstSVR -> 0.13}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.18}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.13}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.69, PlainsFcstSIG -> 0.29, PlainsFcstSVR -> 0.02}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.54, PlainsFcstSIG -> 0.36, PlainsFcstSVR -> 0.1}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.75, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.05}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.22, PlainsFcstSVR -> 0.08}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.05}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.27, PlainsFcstSVR -> 0.18}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.33, PlainsFcstSVR -> 0.02}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.38, PlainsFcstSIG -> 0.5, PlainsFcstSVR -> 0.12}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.24, PlainsFcstSVR -> 0.06}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.67, PlainsFcstSIG -> 0.23, PlainsFcstSVR -> 0.1}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.7, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.05}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.2, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.35}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.2}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.38, PlainsFcstSVR -> 0.17}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.6, PlainsFcstSIG -> 0.38, PlainsFcstSVR -> 0.02}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.28, PlainsFcstSIG -> 0.57, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.07}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.63, PlainsFcstSIG -> 0.25, PlainsFcstSVR -> 0.12}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.62, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.1}),
+[ CurPropConvStrong, InsSclInScenLessUnstable, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.8, PlainsFcstSIG -> 0.17, PlainsFcstSVR -> 0.03}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.16, PlainsFcstSIG -> 0.47, PlainsFcstSVR -> 0.37}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.23}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.52, PlainsFcstSIG -> 0.26, PlainsFcstSVR -> 0.22}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.2}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.03}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.48, PlainsFcstSIG -> 0.39, PlainsFcstSVR -> 0.13}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.58, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.12}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.3}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.22}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.65, PlainsFcstSIG -> 0.27, PlainsFcstSVR -> 0.08}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.18, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.37}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.35}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.45, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.43, PlainsFcstSVR -> 0.22}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.62, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.03}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.2, PlainsFcstSIG -> 0.65, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.52, PlainsFcstSIG -> 0.33, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.23, PlainsFcstSIG -> 0.42, PlainsFcstSVR -> 0.35}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.47, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.23}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.23, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.37}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.35}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.3}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.3}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.57, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.03}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.15, PlainsFcstSIG -> 0.65, PlainsFcstSVR -> 0.2}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.33, PlainsFcstSVR -> 0.17}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.36, PlainsFcstSVR -> 0.39}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.22}),
+[ CurPropConvStrong, InsSclInScenAverage, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.55, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.15}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.18, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.52}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.2, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.4}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.4}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.3}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.48, PlainsFcstSVR -> 0.27}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.63, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.05}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.15, PlainsFcstSIG -> 0.63, PlainsFcstSVR -> 0.22}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.4, PlainsFcstSIG -> 0.38, PlainsFcstSVR -> 0.22}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.2, PlainsFcstSIG -> 0.37, PlainsFcstSVR -> 0.43}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.35}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenLessThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.18}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.15, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.65}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.18, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.42}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.4}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.4}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.25, PlainsFcstSIG -> 0.42, PlainsFcstSVR -> 0.33}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.58, PlainsFcstSIG -> 0.36, PlainsFcstSVR -> 0.06}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.13, PlainsFcstSIG -> 0.62, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.22, PlainsFcstSIG -> 0.35, PlainsFcstSVR -> 0.43}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.35, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.33}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenAverage, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.2}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstA ] -> Categorical({PlainsFcstXNIL -> 0.1, PlainsFcstSIG -> 0.2, PlainsFcstSVR -> 0.7}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstB ] -> Categorical({PlainsFcstXNIL -> 0.2, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.5}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstC ] -> Categorical({PlainsFcstXNIL -> 0.2, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.4}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstD ] -> Categorical({PlainsFcstXNIL -> 0.23, PlainsFcstSIG -> 0.3, PlainsFcstSVR -> 0.47}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstE ] -> Categorical({PlainsFcstXNIL -> 0.15, PlainsFcstSIG -> 0.45, PlainsFcstSVR -> 0.4}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstF ] -> Categorical({PlainsFcstXNIL -> 0.5, PlainsFcstSIG -> 0.42, PlainsFcstSVR -> 0.08}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstG ] -> Categorical({PlainsFcstXNIL -> 0.1, PlainsFcstSIG -> 0.65, PlainsFcstSVR -> 0.25}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstH ] -> Categorical({PlainsFcstXNIL -> 0.28, PlainsFcstSIG -> 0.4, PlainsFcstSVR -> 0.32}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstI ] -> Categorical({PlainsFcstXNIL -> 0.2, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.48}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstJ ] -> Categorical({PlainsFcstXNIL -> 0.3, PlainsFcstSIG -> 0.28, PlainsFcstSVR -> 0.42}),
+[ CurPropConvStrong, InsSclInScenMoreUnstable, CapInScenMoreThanAve, ScnRelPlFcstK ] -> Categorical({PlainsFcstXNIL -> 0.38, PlainsFcstSIG -> 0.32, PlainsFcstSVR -> 0.3})};
+
+random TypeQGVertMotion QGVertMotion ~ 
+	Categorical({QGVertMotionStrongUp -> 0.15,QGVertMotionWeakUp -> 0.15,QGVertMotionNeutral -> 0.5,QGVertMotionDown -> 0.2})
+;
+
+random TypeR5Fcst R5Fcst ~ case [MountainFcst, N34StarFcst] in
+	{[ MountainFcstXNIL, N34StarFcstXNIL ] -> Categorical({R5FcstXNIL -> 1.0, R5FcstSIG -> 0.0, R5FcstSVR -> 0.0}),
+[ MountainFcstXNIL, N34StarFcstSIG ] -> Categorical({R5FcstXNIL -> 0.0, R5FcstSIG -> 1.0, R5FcstSVR -> 0.0}),
+[ MountainFcstXNIL, N34StarFcstSVR ] -> Categorical({R5FcstXNIL -> 0.0, R5FcstSIG -> 0.0, R5FcstSVR -> 1.0}),
+[ MountainFcstSIG, N34StarFcstXNIL ] -> Categorical({R5FcstXNIL -> 0.0, R5FcstSIG -> 1.0, R5FcstSVR -> 0.0}),
+[ MountainFcstSIG, N34StarFcstSIG ] -> Categorical({R5FcstXNIL -> 0.0, R5FcstSIG -> 1.0, R5FcstSVR -> 0.0}),
+[ MountainFcstSIG, N34StarFcstSVR ] -> Categorical({R5FcstXNIL -> 0.0, R5FcstSIG -> 0.0, R5FcstSVR -> 1.0}),
+[ MountainFcstSVR, N34StarFcstXNIL ] -> Categorical({R5FcstXNIL -> 0.0, R5FcstSIG -> 0.0, R5FcstSVR -> 1.0}),
+[ MountainFcstSVR, N34StarFcstSIG ] -> Categorical({R5FcstXNIL -> 0.0, R5FcstSIG -> 0.0, R5FcstSVR -> 1.0}),
+[ MountainFcstSVR, N34StarFcstSVR ] -> Categorical({R5FcstXNIL -> 0.0, R5FcstSIG -> 0.0, R5FcstSVR -> 1.0})};
+
+random TypeRHRatio RHRatio ~ case Scenario in
+	{ScenarioA -> Categorical({RHRatioMoistMDryL -> 0.05, RHRatioDryMMoistL -> 0.5, RHRatioOther -> 0.45}),
+ScenarioB -> Categorical({RHRatioMoistMDryL -> 0.1, RHRatioDryMMoistL -> 0.5, RHRatioOther -> 0.4}),
+ScenarioC -> Categorical({RHRatioMoistMDryL -> 0.4, RHRatioDryMMoistL -> 0.15, RHRatioOther -> 0.45}),
+ScenarioD -> Categorical({RHRatioMoistMDryL -> 0.2, RHRatioDryMMoistL -> 0.45, RHRatioOther -> 0.35}),
+ScenarioE -> Categorical({RHRatioMoistMDryL -> 0.8, RHRatioDryMMoistL -> 0.05, RHRatioOther -> 0.15}),
+ScenarioF -> Categorical({RHRatioMoistMDryL -> 0.0, RHRatioDryMMoistL -> 0.0, RHRatioOther -> 1.0}),
+ScenarioG -> Categorical({RHRatioMoistMDryL -> 0.6, RHRatioDryMMoistL -> 0.0, RHRatioOther -> 0.4}),
+ScenarioH -> Categorical({RHRatioMoistMDryL -> 0.0, RHRatioDryMMoistL -> 0.7, RHRatioOther -> 0.3}),
+ScenarioI -> Categorical({RHRatioMoistMDryL -> 0.1, RHRatioDryMMoistL -> 0.7, RHRatioOther -> 0.2}),
+ScenarioJ -> Categorical({RHRatioMoistMDryL -> 0.4, RHRatioDryMMoistL -> 0.4, RHRatioOther -> 0.2}),
+ScenarioK -> Categorical({RHRatioMoistMDryL -> 0.15, RHRatioDryMMoistL -> 0.45, RHRatioOther -> 0.4})};
+
+random TypeRaoContMoist RaoContMoist ~ 
+	Categorical({RaoContMoistVeryWet -> 0.15,RaoContMoistWet -> 0.2,RaoContMoistNeutral -> 0.4,RaoContMoistDry -> 0.25})
+;
+
+random TypeSatContMoist SatContMoist ~ 
+	Categorical({SatContMoistVeryWet -> 0.15,SatContMoistWet -> 0.2,SatContMoistNeutral -> 0.4,SatContMoistDry -> 0.25})
+;
+
+random TypeScenRel3_4 ScenRel3_4 ~ case Scenario in
+	{ScenarioA -> Categorical({ScenRel3_4ACEFK -> 1.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 0.0}),
+ScenarioB -> Categorical({ScenRel3_4ACEFK -> 0.0, ScenRel3_4B -> 1.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 0.0}),
+ScenarioC -> Categorical({ScenRel3_4ACEFK -> 1.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 0.0}),
+ScenarioD -> Categorical({ScenRel3_4ACEFK -> 0.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 1.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 0.0}),
+ScenarioE -> Categorical({ScenRel3_4ACEFK -> 1.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 0.0}),
+ScenarioF -> Categorical({ScenRel3_4ACEFK -> 1.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 0.0}),
+ScenarioG -> Categorical({ScenRel3_4ACEFK -> 0.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 1.0, ScenRel3_4HI -> 0.0}),
+ScenarioH -> Categorical({ScenRel3_4ACEFK -> 0.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 1.0}),
+ScenarioI -> Categorical({ScenRel3_4ACEFK -> 0.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 1.0}),
+ScenarioJ -> Categorical({ScenRel3_4ACEFK -> 0.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 1.0, ScenRel3_4HI -> 0.0}),
+ScenarioK -> Categorical({ScenRel3_4ACEFK -> 1.0, ScenRel3_4B -> 0.0, ScenRel3_4D -> 0.0, ScenRel3_4GJ -> 0.0, ScenRel3_4HI -> 0.0})};
+
+random TypeScenRelAMCIN ScenRelAMCIN ~ case Scenario in
+	{ScenarioA -> Categorical({ScenRelAMCINAB -> 1.0, ScenRelAMCINCThruK -> 0.0}),
+ScenarioB -> Categorical({ScenRelAMCINAB -> 1.0, ScenRelAMCINCThruK -> 0.0}),
+ScenarioC -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0}),
+ScenarioD -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0}),
+ScenarioE -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0}),
+ScenarioF -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0}),
+ScenarioG -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0}),
+ScenarioH -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0}),
+ScenarioI -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0}),
+ScenarioJ -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0}),
+ScenarioK -> Categorical({ScenRelAMCINAB -> 0.0, ScenRelAMCINCThruK -> 1.0})};
+
+random TypeScenRelAMIns ScenRelAMIns ~ case Scenario in
+	{ScenarioA -> Categorical({ScenRelAMInsABI -> 1.0, ScenRelAMInsCDEJ -> 0.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioB -> Categorical({ScenRelAMInsABI -> 1.0, ScenRelAMInsCDEJ -> 0.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioC -> Categorical({ScenRelAMInsABI -> 0.0, ScenRelAMInsCDEJ -> 1.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioD -> Categorical({ScenRelAMInsABI -> 0.0, ScenRelAMInsCDEJ -> 1.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioE -> Categorical({ScenRelAMInsABI -> 0.0, ScenRelAMInsCDEJ -> 1.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioF -> Categorical({ScenRelAMInsABI -> 0.0, ScenRelAMInsCDEJ -> 0.0, ScenRelAMInsF -> 1.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioG -> Categorical({ScenRelAMInsABI -> 0.0, ScenRelAMInsCDEJ -> 0.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 1.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioH -> Categorical({ScenRelAMInsABI -> 0.0, ScenRelAMInsCDEJ -> 0.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 1.0, ScenRelAMInsK -> 0.0}),
+ScenarioI -> Categorical({ScenRelAMInsABI -> 1.0, ScenRelAMInsCDEJ -> 0.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioJ -> Categorical({ScenRelAMInsABI -> 0.0, ScenRelAMInsCDEJ -> 1.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 0.0}),
+ScenarioK -> Categorical({ScenRelAMInsABI -> 0.0, ScenRelAMInsCDEJ -> 0.0, ScenRelAMInsF -> 0.0, ScenRelAMInsG -> 0.0, ScenRelAMInsH -> 0.0, ScenRelAMInsK -> 1.0})};
+
+random TypeScenario Scenario ~ case Date in
+	{DateMay15_Jun14 -> Categorical({ScenarioA -> 0.1, ScenarioB -> 0.16, ScenarioC -> 0.1, ScenarioD -> 0.08, ScenarioE -> 0.08, ScenarioF -> 0.01, ScenarioG -> 0.08, ScenarioH -> 0.1, ScenarioI -> 0.09, ScenarioJ -> 0.03, ScenarioK -> 0.17}),
+DateJun15_Jul1 -> Categorical({ScenarioA -> 0.05, ScenarioB -> 0.16, ScenarioC -> 0.09, ScenarioD -> 0.09, ScenarioE -> 0.12, ScenarioF -> 0.02, ScenarioG -> 0.13, ScenarioH -> 0.06, ScenarioI -> 0.07, ScenarioJ -> 0.11, ScenarioK -> 0.1}),
+DateJul2_Jul15 -> Categorical({ScenarioA -> 0.04, ScenarioB -> 0.13, ScenarioC -> 0.1, ScenarioD -> 0.08, ScenarioE -> 0.15, ScenarioF -> 0.03, ScenarioG -> 0.14, ScenarioH -> 0.04, ScenarioI -> 0.06, ScenarioJ -> 0.15, ScenarioK -> 0.08}),
+DateJul16_Aug10 -> Categorical({ScenarioA -> 0.04, ScenarioB -> 0.13, ScenarioC -> 0.09, ScenarioD -> 0.07, ScenarioE -> 0.2, ScenarioF -> 0.08, ScenarioG -> 0.06, ScenarioH -> 0.05, ScenarioI -> 0.07, ScenarioJ -> 0.13, ScenarioK -> 0.08}),
+DateAug11_Aug20 -> Categorical({ScenarioA -> 0.04, ScenarioB -> 0.11, ScenarioC -> 0.1, ScenarioD -> 0.07, ScenarioE -> 0.17, ScenarioF -> 0.05, ScenarioG -> 0.1, ScenarioH -> 0.05, ScenarioI -> 0.07, ScenarioJ -> 0.14, ScenarioK -> 0.1}),
+DateAug20_Sep15 -> Categorical({ScenarioA -> 0.05, ScenarioB -> 0.11, ScenarioC -> 0.1, ScenarioD -> 0.08, ScenarioE -> 0.11, ScenarioF -> 0.02, ScenarioG -> 0.11, ScenarioH -> 0.06, ScenarioI -> 0.08, ScenarioJ -> 0.11, ScenarioK -> 0.17})};
+
+random TypeScnRelPlFcst ScnRelPlFcst ~ case Scenario in
+	{ScenarioA -> Categorical({ScnRelPlFcstA -> 1.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioB -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 1.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioC -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 1.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioD -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 1.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioE -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 1.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioF -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 1.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioG -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 1.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioH -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 1.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioI -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 1.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 0.0}),
+ScenarioJ -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 1.0, ScnRelPlFcstK -> 0.0}),
+ScenarioK -> Categorical({ScnRelPlFcstA -> 0.0, ScnRelPlFcstB -> 0.0, ScnRelPlFcstC -> 0.0, ScnRelPlFcstD -> 0.0, ScnRelPlFcstE -> 0.0, ScnRelPlFcstF -> 0.0, ScnRelPlFcstG -> 0.0, ScnRelPlFcstH -> 0.0, ScnRelPlFcstI -> 0.0, ScnRelPlFcstJ -> 0.0, ScnRelPlFcstK -> 1.0})};
+
+random TypeSfcWndShfDis SfcWndShfDis ~ case Scenario in
+	{ScenarioA -> Categorical({SfcWndShfDisDenvCyclone -> 0.65, SfcWndShfDisE_W_N -> 0.05, SfcWndShfDisE_W_S -> 0.1, SfcWndShfDisMovingFtorOt -> 0.08, SfcWndShfDisDryLine -> 0.04, SfcWndShfDisNone -> 0.07, SfcWndShfDisOther -> 0.01}),
+ScenarioB -> Categorical({SfcWndShfDisDenvCyclone -> 0.65, SfcWndShfDisE_W_N -> 0.05, SfcWndShfDisE_W_S -> 0.1, SfcWndShfDisMovingFtorOt -> 0.1, SfcWndShfDisDryLine -> 0.02, SfcWndShfDisNone -> 0.07, SfcWndShfDisOther -> 0.01}),
+ScenarioC -> Categorical({SfcWndShfDisDenvCyclone -> 0.0, SfcWndShfDisE_W_N -> 0.65, SfcWndShfDisE_W_S -> 0.2, SfcWndShfDisMovingFtorOt -> 0.02, SfcWndShfDisDryLine -> 0.06, SfcWndShfDisNone -> 0.05, SfcWndShfDisOther -> 0.02}),
+ScenarioD -> Categorical({SfcWndShfDisDenvCyclone -> 0.12, SfcWndShfDisE_W_N -> 0.02, SfcWndShfDisE_W_S -> 0.02, SfcWndShfDisMovingFtorOt -> 0.02, SfcWndShfDisDryLine -> 0.45, SfcWndShfDisNone -> 0.27, SfcWndShfDisOther -> 0.1}),
+ScenarioE -> Categorical({SfcWndShfDisDenvCyclone -> 0.06, SfcWndShfDisE_W_N -> 0.14, SfcWndShfDisE_W_S -> 0.04, SfcWndShfDisMovingFtorOt -> 0.04, SfcWndShfDisDryLine -> 0.25, SfcWndShfDisNone -> 0.4, SfcWndShfDisOther -> 0.07}),
+ScenarioF -> Categorical({SfcWndShfDisDenvCyclone -> 0.1, SfcWndShfDisE_W_N -> 0.1, SfcWndShfDisE_W_S -> 0.1, SfcWndShfDisMovingFtorOt -> 0.02, SfcWndShfDisDryLine -> 0.0, SfcWndShfDisNone -> 0.56, SfcWndShfDisOther -> 0.12}),
+ScenarioG -> Categorical({SfcWndShfDisDenvCyclone -> 0.02, SfcWndShfDisE_W_N -> 0.05, SfcWndShfDisE_W_S -> 0.05, SfcWndShfDisMovingFtorOt -> 0.0, SfcWndShfDisDryLine -> 0.35, SfcWndShfDisNone -> 0.33, SfcWndShfDisOther -> 0.2}),
+ScenarioH -> Categorical({SfcWndShfDisDenvCyclone -> 0.01, SfcWndShfDisE_W_N -> 0.1, SfcWndShfDisE_W_S -> 0.15, SfcWndShfDisMovingFtorOt -> 0.4, SfcWndShfDisDryLine -> 0.0, SfcWndShfDisNone -> 0.23, SfcWndShfDisOther -> 0.11}),
+ScenarioI -> Categorical({SfcWndShfDisDenvCyclone -> 0.02, SfcWndShfDisE_W_N -> 0.1, SfcWndShfDisE_W_S -> 0.5, SfcWndShfDisMovingFtorOt -> 0.3, SfcWndShfDisDryLine -> 0.01, SfcWndShfDisNone -> 0.02, SfcWndShfDisOther -> 0.05}),
+ScenarioJ -> Categorical({SfcWndShfDisDenvCyclone -> 0.06, SfcWndShfDisE_W_N -> 0.08, SfcWndShfDisE_W_S -> 0.04, SfcWndShfDisMovingFtorOt -> 0.02, SfcWndShfDisDryLine -> 0.6, SfcWndShfDisNone -> 0.14, SfcWndShfDisOther -> 0.06}),
+ScenarioK -> Categorical({SfcWndShfDisDenvCyclone -> 0.05, SfcWndShfDisE_W_N -> 0.13, SfcWndShfDisE_W_S -> 0.05, SfcWndShfDisMovingFtorOt -> 0.39, SfcWndShfDisDryLine -> 0.13, SfcWndShfDisNone -> 0.15, SfcWndShfDisOther -> 0.1})};
+
+random TypeSubjVertMo SubjVertMo ~ 
+	Categorical({SubjVertMoStronUp -> 0.15,SubjVertMoWeakUp -> 0.15,SubjVertMoNeutral -> 0.5,SubjVertMoDown -> 0.2})
+;
+
+random TypeSynForcng SynForcng ~ case Scenario in
+	{ScenarioA -> Categorical({SynForcngSigNegative -> 0.35, SynForcngNegToPos -> 0.25, SynForcngSigPositive -> 0.0, SynForcngPosToNeg -> 0.35, SynForcngLittleChange -> 0.05}),
+ScenarioB -> Categorical({SynForcngSigNegative -> 0.06, SynForcngNegToPos -> 0.1, SynForcngSigPositive -> 0.06, SynForcngPosToNeg -> 0.3, SynForcngLittleChange -> 0.48}),
+ScenarioC -> Categorical({SynForcngSigNegative -> 0.1, SynForcngNegToPos -> 0.27, SynForcngSigPositive -> 0.4, SynForcngPosToNeg -> 0.08, SynForcngLittleChange -> 0.15}),
+ScenarioD -> Categorical({SynForcngSigNegative -> 0.35, SynForcngNegToPos -> 0.2, SynForcngSigPositive -> 0.1, SynForcngPosToNeg -> 0.25, SynForcngLittleChange -> 0.1}),
+ScenarioE -> Categorical({SynForcngSigNegative -> 0.15, SynForcngNegToPos -> 0.15, SynForcngSigPositive -> 0.1, SynForcngPosToNeg -> 0.15, SynForcngLittleChange -> 0.45}),
+ScenarioF -> Categorical({SynForcngSigNegative -> 0.15, SynForcngNegToPos -> 0.1, SynForcngSigPositive -> 0.05, SynForcngPosToNeg -> 0.15, SynForcngLittleChange -> 0.55}),
+ScenarioG -> Categorical({SynForcngSigNegative -> 0.15, SynForcngNegToPos -> 0.1, SynForcngSigPositive -> 0.1, SynForcngPosToNeg -> 0.25, SynForcngLittleChange -> 0.4}),
+ScenarioH -> Categorical({SynForcngSigNegative -> 0.25, SynForcngNegToPos -> 0.25, SynForcngSigPositive -> 0.25, SynForcngPosToNeg -> 0.15, SynForcngLittleChange -> 0.1}),
+ScenarioI -> Categorical({SynForcngSigNegative -> 0.25, SynForcngNegToPos -> 0.2, SynForcngSigPositive -> 0.15, SynForcngPosToNeg -> 0.2, SynForcngLittleChange -> 0.2}),
+ScenarioJ -> Categorical({SynForcngSigNegative -> 0.01, SynForcngNegToPos -> 0.05, SynForcngSigPositive -> 0.01, SynForcngPosToNeg -> 0.05, SynForcngLittleChange -> 0.88}),
+ScenarioK -> Categorical({SynForcngSigNegative -> 0.2, SynForcngNegToPos -> 0.2, SynForcngSigPositive -> 0.35, SynForcngPosToNeg -> 0.15, SynForcngLittleChange -> 0.1})};
+
+random TypeTempDis TempDis ~ case Scenario in
+	{ScenarioA -> Categorical({TempDisQStationary -> 0.13, TempDisMoving -> 0.15, TempDisNone -> 0.1, TempDisOther -> 0.62}),
+ScenarioB -> Categorical({TempDisQStationary -> 0.15, TempDisMoving -> 0.15, TempDisNone -> 0.25, TempDisOther -> 0.45}),
+ScenarioC -> Categorical({TempDisQStationary -> 0.12, TempDisMoving -> 0.1, TempDisNone -> 0.35, TempDisOther -> 0.43}),
+ScenarioD -> Categorical({TempDisQStationary -> 0.1, TempDisMoving -> 0.15, TempDisNone -> 0.4, TempDisOther -> 0.35}),
+ScenarioE -> Categorical({TempDisQStationary -> 0.04, TempDisMoving -> 0.04, TempDisNone -> 0.82, TempDisOther -> 0.1}),
+ScenarioF -> Categorical({TempDisQStationary -> 0.05, TempDisMoving -> 0.12, TempDisNone -> 0.75, TempDisOther -> 0.08}),
+ScenarioG -> Categorical({TempDisQStationary -> 0.03, TempDisMoving -> 0.03, TempDisNone -> 0.84, TempDisOther -> 0.1}),
+ScenarioH -> Categorical({TempDisQStationary -> 0.05, TempDisMoving -> 0.4, TempDisNone -> 0.5, TempDisOther -> 0.05}),
+ScenarioI -> Categorical({TempDisQStationary -> 0.8, TempDisMoving -> 0.19, TempDisNone -> 0.0, TempDisOther -> 0.01}),
+ScenarioJ -> Categorical({TempDisQStationary -> 0.1, TempDisMoving -> 0.05, TempDisNone -> 0.4, TempDisOther -> 0.45}),
+ScenarioK -> Categorical({TempDisQStationary -> 0.2, TempDisMoving -> 0.3, TempDisNone -> 0.3, TempDisOther -> 0.2})};
+
+random TypeVISCloudCov VISCloudCov ~ 
+	Categorical({VISCloudCovCloudy -> 0.1,VISCloudCovPC -> 0.5,VISCloudCovClear -> 0.4})
+;
+
+random TypeWindAloft WindAloft ~ case Scenario in
+	{ScenarioA -> Categorical({WindAloftLV -> 0.0, WindAloftSWQuad -> 0.95, WindAloftNWQuad -> 0.01, WindAloftAllElse -> 0.04}),
+ScenarioB -> Categorical({WindAloftLV -> 0.2, WindAloftSWQuad -> 0.3, WindAloftNWQuad -> 0.2, WindAloftAllElse -> 0.3}),
+ScenarioC -> Categorical({WindAloftLV -> 0.05, WindAloftSWQuad -> 0.09, WindAloftNWQuad -> 0.59, WindAloftAllElse -> 0.27}),
+ScenarioD -> Categorical({WindAloftLV -> 0.03, WindAloftSWQuad -> 0.32, WindAloftNWQuad -> 0.42, WindAloftAllElse -> 0.23}),
+ScenarioE -> Categorical({WindAloftLV -> 0.07, WindAloftSWQuad -> 0.66, WindAloftNWQuad -> 0.02, WindAloftAllElse -> 0.25}),
+ScenarioF -> Categorical({WindAloftLV -> 0.5, WindAloftSWQuad -> 0.0, WindAloftNWQuad -> 0.0, WindAloftAllElse -> 0.5}),
+ScenarioG -> Categorical({WindAloftLV -> 0.25, WindAloftSWQuad -> 0.3, WindAloftNWQuad -> 0.25, WindAloftAllElse -> 0.2}),
+ScenarioH -> Categorical({WindAloftLV -> 0.2, WindAloftSWQuad -> 0.14, WindAloftNWQuad -> 0.43, WindAloftAllElse -> 0.23}),
+ScenarioI -> Categorical({WindAloftLV -> 0.2, WindAloftSWQuad -> 0.41, WindAloftNWQuad -> 0.1, WindAloftAllElse -> 0.29}),
+ScenarioJ -> Categorical({WindAloftLV -> 0.96, WindAloftSWQuad -> 0.0, WindAloftNWQuad -> 0.0, WindAloftAllElse -> 0.04}),
+ScenarioK -> Categorical({WindAloftLV -> 0.03, WindAloftSWQuad -> 0.08, WindAloftNWQuad -> 0.33, WindAloftAllElse -> 0.56})};
+
+random TypeWindFieldMt WindFieldMt ~ case Scenario in
+	{ScenarioA -> Categorical({WindFieldMtWesterly -> 0.8, WindFieldMtLVorOther -> 0.2}),
+ScenarioB -> Categorical({WindFieldMtWesterly -> 0.35, WindFieldMtLVorOther -> 0.65}),
+ScenarioC -> Categorical({WindFieldMtWesterly -> 0.75, WindFieldMtLVorOther -> 0.25}),
+ScenarioD -> Categorical({WindFieldMtWesterly -> 0.7, WindFieldMtLVorOther -> 0.3}),
+ScenarioE -> Categorical({WindFieldMtWesterly -> 0.65, WindFieldMtLVorOther -> 0.35}),
+ScenarioF -> Categorical({WindFieldMtWesterly -> 0.15, WindFieldMtLVorOther -> 0.85}),
+ScenarioG -> Categorical({WindFieldMtWesterly -> 0.7, WindFieldMtLVorOther -> 0.3}),
+ScenarioH -> Categorical({WindFieldMtWesterly -> 0.3, WindFieldMtLVorOther -> 0.7}),
+ScenarioI -> Categorical({WindFieldMtWesterly -> 0.5, WindFieldMtLVorOther -> 0.5}),
+ScenarioJ -> Categorical({WindFieldMtWesterly -> 0.01, WindFieldMtLVorOther -> 0.99}),
+ScenarioK -> Categorical({WindFieldMtWesterly -> 0.7, WindFieldMtLVorOther -> 0.3})};
+
+random TypeWindFieldPln WindFieldPln ~ case Scenario in
+	{ScenarioA -> Categorical({WindFieldPlnLV -> 0.05, WindFieldPlnDenvCyclone -> 0.6, WindFieldPlnLongAnticyc -> 0.02, WindFieldPlnE_NE -> 0.1, WindFieldPlnSEQuad -> 0.23, WindFieldPlnWidespdDnsl -> 0.0}),
+ScenarioB -> Categorical({WindFieldPlnLV -> 0.08, WindFieldPlnDenvCyclone -> 0.6, WindFieldPlnLongAnticyc -> 0.02, WindFieldPlnE_NE -> 0.1, WindFieldPlnSEQuad -> 0.2, WindFieldPlnWidespdDnsl -> 0.0}),
+ScenarioC -> Categorical({WindFieldPlnLV -> 0.1, WindFieldPlnDenvCyclone -> 0.0, WindFieldPlnLongAnticyc -> 0.75, WindFieldPlnE_NE -> 0.0, WindFieldPlnSEQuad -> 0.0, WindFieldPlnWidespdDnsl -> 0.15}),
+ScenarioD -> Categorical({WindFieldPlnLV -> 0.1, WindFieldPlnDenvCyclone -> 0.15, WindFieldPlnLongAnticyc -> 0.2, WindFieldPlnE_NE -> 0.05, WindFieldPlnSEQuad -> 0.3, WindFieldPlnWidespdDnsl -> 0.2}),
+ScenarioE -> Categorical({WindFieldPlnLV -> 0.43, WindFieldPlnDenvCyclone -> 0.1, WindFieldPlnLongAnticyc -> 0.15, WindFieldPlnE_NE -> 0.06, WindFieldPlnSEQuad -> 0.06, WindFieldPlnWidespdDnsl -> 0.2}),
+ScenarioF -> Categorical({WindFieldPlnLV -> 0.6, WindFieldPlnDenvCyclone -> 0.07, WindFieldPlnLongAnticyc -> 0.01, WindFieldPlnE_NE -> 0.12, WindFieldPlnSEQuad -> 0.2, WindFieldPlnWidespdDnsl -> 0.0}),
+ScenarioG -> Categorical({WindFieldPlnLV -> 0.25, WindFieldPlnDenvCyclone -> 0.01, WindFieldPlnLongAnticyc -> 0.3, WindFieldPlnE_NE -> 0.01, WindFieldPlnSEQuad -> 0.03, WindFieldPlnWidespdDnsl -> 0.4}),
+ScenarioH -> Categorical({WindFieldPlnLV -> 0.04, WindFieldPlnDenvCyclone -> 0.02, WindFieldPlnLongAnticyc -> 0.04, WindFieldPlnE_NE -> 0.8, WindFieldPlnSEQuad -> 0.1, WindFieldPlnWidespdDnsl -> 0.0}),
+ScenarioI -> Categorical({WindFieldPlnLV -> 0.2, WindFieldPlnDenvCyclone -> 0.3, WindFieldPlnLongAnticyc -> 0.05, WindFieldPlnE_NE -> 0.37, WindFieldPlnSEQuad -> 0.07, WindFieldPlnWidespdDnsl -> 0.01}),
+ScenarioJ -> Categorical({WindFieldPlnLV -> 0.6, WindFieldPlnDenvCyclone -> 0.08, WindFieldPlnLongAnticyc -> 0.07, WindFieldPlnE_NE -> 0.03, WindFieldPlnSEQuad -> 0.2, WindFieldPlnWidespdDnsl -> 0.02}),
+ScenarioK -> Categorical({WindFieldPlnLV -> 0.1, WindFieldPlnDenvCyclone -> 0.05, WindFieldPlnLongAnticyc -> 0.1, WindFieldPlnE_NE -> 0.05, WindFieldPlnSEQuad -> 0.2, WindFieldPlnWidespdDnsl -> 0.5})};
+
+random TypeWndHodograph WndHodograph ~ 
+	Categorical({WndHodographDCVZFavor -> 0.3,WndHodographStrongWest -> 0.25,WndHodographWesterly -> 0.25,WndHodographOther -> 0.2})
+;
+
+query WndHodograph;

@@ -1,0 +1,49 @@
+type TypeA;
+distinct TypeA Ayoung, Aadult, Aold;
+
+type TypeE;
+distinct TypeE Ehigh, Euni;
+
+type TypeO;
+distinct TypeO Oemp, Oself;
+
+type TypeR;
+distinct TypeR Rsmall, Rbig;
+
+type TypeS;
+distinct TypeS SM, SF;
+
+type TypeT;
+distinct TypeT Tcar, Ttrain, Tother;
+
+random TypeA A ~ 
+	Categorical({Ayoung -> 0.3,Aadult -> 0.5,Aold -> 0.2})
+;
+
+random TypeE E ~ case [A, S] in
+	{[ Ayoung, SM ] -> Categorical({Ehigh -> 0.75, Euni -> 0.25}),
+[ Ayoung, SF ] -> Categorical({Ehigh -> 0.64, Euni -> 0.36}),
+[ Aadult, SM ] -> Categorical({Ehigh -> 0.72, Euni -> 0.28}),
+[ Aadult, SF ] -> Categorical({Ehigh -> 0.7, Euni -> 0.3}),
+[ Aold, SM ] -> Categorical({Ehigh -> 0.88, Euni -> 0.12}),
+[ Aold, SF ] -> Categorical({Ehigh -> 0.9, Euni -> 0.1})};
+
+random TypeO O ~ case E in
+	{Ehigh -> Categorical({Oemp -> 0.96, Oself -> 0.04}),
+Euni -> Categorical({Oemp -> 0.92, Oself -> 0.08})};
+
+random TypeR R ~ case E in
+	{Ehigh -> Categorical({Rsmall -> 0.25, Rbig -> 0.75}),
+Euni -> Categorical({Rsmall -> 0.2, Rbig -> 0.8})};
+
+random TypeS S ~ 
+	Categorical({SM -> 0.6,SF -> 0.4})
+;
+
+random TypeT T ~ case [O, R] in
+	{[ Oemp, Rsmall ] -> Categorical({Tcar -> 0.48, Ttrain -> 0.42, Tother -> 0.1}),
+[ Oemp, Rbig ] -> Categorical({Tcar -> 0.58, Ttrain -> 0.24, Tother -> 0.18}),
+[ Oself, Rsmall ] -> Categorical({Tcar -> 0.56, Ttrain -> 0.36, Tother -> 0.08}),
+[ Oself, Rbig ] -> Categorical({Tcar -> 0.7, Ttrain -> 0.21, Tother -> 0.09})};
+
+query T;

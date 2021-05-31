@@ -1,0 +1,549 @@
+type TypeAccident;
+distinct TypeAccident AccidentNone, AccidentMild, AccidentModerate, AccidentSevere;
+
+type TypeAge;
+distinct TypeAge AgeAdolescent, AgeAdult, AgeSenior;
+
+type TypeAirbag;
+distinct TypeAirbag AirbagTrue, AirbagFalse;
+
+type TypeAntiTheft;
+distinct TypeAntiTheft AntiTheftTrue, AntiTheftFalse;
+
+type TypeAntilock;
+distinct TypeAntilock AntilockTrue, AntilockFalse;
+
+type TypeCarValue;
+distinct TypeCarValue CarValueFiveThou, CarValueTenThou, CarValueTwentyThou, CarValueFiftyThou, CarValueMillion;
+
+type TypeCushioning;
+distinct TypeCushioning CushioningPoor, CushioningFair, CushioningGood, CushioningExcellent;
+
+type TypeDrivHist;
+distinct TypeDrivHist DrivHistZero, DrivHistOne, DrivHistMany;
+
+type TypeDrivQuality;
+distinct TypeDrivQuality DrivQualityPoor, DrivQualityNormal, DrivQualityExcellent;
+
+type TypeDrivingSkill;
+distinct TypeDrivingSkill DrivingSkillSubStandard, DrivingSkillNormal, DrivingSkillExpert;
+
+type TypeGoodStudent;
+distinct TypeGoodStudent GoodStudentTrue, GoodStudentFalse;
+
+type TypeHomeBase;
+distinct TypeHomeBase HomeBaseSecure, HomeBaseCity, HomeBaseSuburb, HomeBaseRural;
+
+type TypeILiCost;
+distinct TypeILiCost ILiCostThousand, ILiCostTenThou, ILiCostHundredThou, ILiCostMillion;
+
+type TypeMakeModel;
+distinct TypeMakeModel MakeModelSportsCar, MakeModelEconomy, MakeModelFamilySedan, MakeModelLuxury, MakeModelSuperLuxury;
+
+type TypeMedCost;
+distinct TypeMedCost MedCostThousand, MedCostTenThou, MedCostHundredThou, MedCostMillion;
+
+type TypeMileage;
+distinct TypeMileage MileageFiveThou, MileageTwentyThou, MileageFiftyThou, MileageDomino;
+
+type TypeOtherCar;
+distinct TypeOtherCar OtherCarTrue, OtherCarFalse;
+
+type TypeOtherCarCost;
+distinct TypeOtherCarCost OtherCarCostThousand, OtherCarCostTenThou, OtherCarCostHundredThou, OtherCarCostMillion;
+
+type TypePropCost;
+distinct TypePropCost PropCostThousand, PropCostTenThou, PropCostHundredThou, PropCostMillion;
+
+type TypeRiskAversion;
+distinct TypeRiskAversion RiskAversionPsychopath, RiskAversionAdventurous, RiskAversionNormal, RiskAversionCautious;
+
+type TypeRuggedAuto;
+distinct TypeRuggedAuto RuggedAutoEggShell, RuggedAutoFootball, RuggedAutoTank;
+
+type TypeSeniorTrain;
+distinct TypeSeniorTrain SeniorTrainTrue, SeniorTrainFalse;
+
+type TypeSocioEcon;
+distinct TypeSocioEcon SocioEconProle, SocioEconMiddle, SocioEconUpperMiddle, SocioEconWealthy;
+
+type TypeTheft;
+distinct TypeTheft TheftTrue, TheftFalse;
+
+type TypeThisCarCost;
+distinct TypeThisCarCost ThisCarCostThousand, ThisCarCostTenThou, ThisCarCostHundredThou, ThisCarCostMillion;
+
+type TypeThisCarDam;
+distinct TypeThisCarDam ThisCarDamNone, ThisCarDamMild, ThisCarDamModerate, ThisCarDamSevere;
+
+type TypeVehicleYear;
+distinct TypeVehicleYear VehicleYearCurrent, VehicleYearOlder;
+
+random TypeAccident Accident ~ case [Antilock, Mileage, DrivQuality] in
+	{[ AntilockTrue, MileageFiveThou, DrivQualityPoor ] -> Categorical({AccidentNone -> 0.7, AccidentMild -> 0.2, AccidentModerate -> 0.07, AccidentSevere -> 0.03}),
+[ AntilockTrue, MileageFiveThou, DrivQualityNormal ] -> Categorical({AccidentNone -> 0.99, AccidentMild -> 0.007, AccidentModerate -> 0.002, AccidentSevere -> 0.001}),
+[ AntilockTrue, MileageFiveThou, DrivQualityExcellent ] -> Categorical({AccidentNone -> 0.999, AccidentMild -> 0.0007, AccidentModerate -> 0.0002, AccidentSevere -> 0.0001}),
+[ AntilockTrue, MileageTwentyThou, DrivQualityPoor ] -> Categorical({AccidentNone -> 0.4, AccidentMild -> 0.3, AccidentModerate -> 0.2, AccidentSevere -> 0.1}),
+[ AntilockTrue, MileageTwentyThou, DrivQualityNormal ] -> Categorical({AccidentNone -> 0.98, AccidentMild -> 0.01, AccidentModerate -> 0.005, AccidentSevere -> 0.005}),
+[ AntilockTrue, MileageTwentyThou, DrivQualityExcellent ] -> Categorical({AccidentNone -> 0.995, AccidentMild -> 0.003, AccidentModerate -> 0.001, AccidentSevere -> 0.001}),
+[ AntilockTrue, MileageFiftyThou, DrivQualityPoor ] -> Categorical({AccidentNone -> 0.3, AccidentMild -> 0.3, AccidentModerate -> 0.2, AccidentSevere -> 0.2}),
+[ AntilockTrue, MileageFiftyThou, DrivQualityNormal ] -> Categorical({AccidentNone -> 0.97, AccidentMild -> 0.02, AccidentModerate -> 0.007, AccidentSevere -> 0.003}),
+[ AntilockTrue, MileageFiftyThou, DrivQualityExcellent ] -> Categorical({AccidentNone -> 0.99, AccidentMild -> 0.007, AccidentModerate -> 0.002, AccidentSevere -> 0.001}),
+[ AntilockTrue, MileageDomino, DrivQualityPoor ] -> Categorical({AccidentNone -> 0.2, AccidentMild -> 0.2, AccidentModerate -> 0.3, AccidentSevere -> 0.3}),
+[ AntilockTrue, MileageDomino, DrivQualityNormal ] -> Categorical({AccidentNone -> 0.95, AccidentMild -> 0.03, AccidentModerate -> 0.01, AccidentSevere -> 0.01}),
+[ AntilockTrue, MileageDomino, DrivQualityExcellent ] -> Categorical({AccidentNone -> 0.985, AccidentMild -> 0.01, AccidentModerate -> 0.003, AccidentSevere -> 0.002}),
+[ AntilockFalse, MileageFiveThou, DrivQualityPoor ] -> Categorical({AccidentNone -> 0.6, AccidentMild -> 0.2, AccidentModerate -> 0.1, AccidentSevere -> 0.1}),
+[ AntilockFalse, MileageFiveThou, DrivQualityNormal ] -> Categorical({AccidentNone -> 0.98, AccidentMild -> 0.01, AccidentModerate -> 0.005, AccidentSevere -> 0.005}),
+[ AntilockFalse, MileageFiveThou, DrivQualityExcellent ] -> Categorical({AccidentNone -> 0.995, AccidentMild -> 0.003, AccidentModerate -> 0.001, AccidentSevere -> 0.001}),
+[ AntilockFalse, MileageTwentyThou, DrivQualityPoor ] -> Categorical({AccidentNone -> 0.3, AccidentMild -> 0.2, AccidentModerate -> 0.2, AccidentSevere -> 0.3}),
+[ AntilockFalse, MileageTwentyThou, DrivQualityNormal ] -> Categorical({AccidentNone -> 0.96, AccidentMild -> 0.02, AccidentModerate -> 0.015, AccidentSevere -> 0.005}),
+[ AntilockFalse, MileageTwentyThou, DrivQualityExcellent ] -> Categorical({AccidentNone -> 0.99, AccidentMild -> 0.007, AccidentModerate -> 0.002, AccidentSevere -> 0.001}),
+[ AntilockFalse, MileageFiftyThou, DrivQualityPoor ] -> Categorical({AccidentNone -> 0.2, AccidentMild -> 0.2, AccidentModerate -> 0.2, AccidentSevere -> 0.4}),
+[ AntilockFalse, MileageFiftyThou, DrivQualityNormal ] -> Categorical({AccidentNone -> 0.95, AccidentMild -> 0.03, AccidentModerate -> 0.015, AccidentSevere -> 0.005}),
+[ AntilockFalse, MileageFiftyThou, DrivQualityExcellent ] -> Categorical({AccidentNone -> 0.98, AccidentMild -> 0.01, AccidentModerate -> 0.005, AccidentSevere -> 0.005}),
+[ AntilockFalse, MileageDomino, DrivQualityPoor ] -> Categorical({AccidentNone -> 0.1, AccidentMild -> 0.1, AccidentModerate -> 0.3, AccidentSevere -> 0.5}),
+[ AntilockFalse, MileageDomino, DrivQualityNormal ] -> Categorical({AccidentNone -> 0.94, AccidentMild -> 0.03, AccidentModerate -> 0.02, AccidentSevere -> 0.01}),
+[ AntilockFalse, MileageDomino, DrivQualityExcellent ] -> Categorical({AccidentNone -> 0.98, AccidentMild -> 0.01, AccidentModerate -> 0.007, AccidentSevere -> 0.003})};
+
+random TypeAge Age ~ 
+	Categorical({AgeAdolescent -> 0.2,AgeAdult -> 0.6,AgeSenior -> 0.2})
+;
+
+random TypeAirbag Airbag ~ case [MakeModel, VehicleYear] in
+	{[ MakeModelSportsCar, VehicleYearCurrent ] -> Categorical({AirbagTrue -> 1.0, AirbagFalse -> 0.0}),
+[ MakeModelSportsCar, VehicleYearOlder ] -> Categorical({AirbagTrue -> 0.1, AirbagFalse -> 0.9}),
+[ MakeModelEconomy, VehicleYearCurrent ] -> Categorical({AirbagTrue -> 1.0, AirbagFalse -> 0.0}),
+[ MakeModelEconomy, VehicleYearOlder ] -> Categorical({AirbagTrue -> 0.05, AirbagFalse -> 0.95}),
+[ MakeModelFamilySedan, VehicleYearCurrent ] -> Categorical({AirbagTrue -> 1.0, AirbagFalse -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearOlder ] -> Categorical({AirbagTrue -> 0.2, AirbagFalse -> 0.8}),
+[ MakeModelLuxury, VehicleYearCurrent ] -> Categorical({AirbagTrue -> 1.0, AirbagFalse -> 0.0}),
+[ MakeModelLuxury, VehicleYearOlder ] -> Categorical({AirbagTrue -> 0.6, AirbagFalse -> 0.4}),
+[ MakeModelSuperLuxury, VehicleYearCurrent ] -> Categorical({AirbagTrue -> 1.0, AirbagFalse -> 0.0}),
+[ MakeModelSuperLuxury, VehicleYearOlder ] -> Categorical({AirbagTrue -> 0.1, AirbagFalse -> 0.9})};
+
+random TypeAntiTheft AntiTheft ~ case [RiskAversion, SocioEcon] in
+	{[ RiskAversionPsychopath, SocioEconProle ] -> Categorical({AntiTheftTrue -> 1e-06, AntiTheftFalse -> 0.999999}),
+[ RiskAversionPsychopath, SocioEconMiddle ] -> Categorical({AntiTheftTrue -> 1e-06, AntiTheftFalse -> 0.999999}),
+[ RiskAversionPsychopath, SocioEconUpperMiddle ] -> Categorical({AntiTheftTrue -> 0.05, AntiTheftFalse -> 0.95}),
+[ RiskAversionPsychopath, SocioEconWealthy ] -> Categorical({AntiTheftTrue -> 0.5, AntiTheftFalse -> 0.5}),
+[ RiskAversionAdventurous, SocioEconProle ] -> Categorical({AntiTheftTrue -> 1e-06, AntiTheftFalse -> 0.999999}),
+[ RiskAversionAdventurous, SocioEconMiddle ] -> Categorical({AntiTheftTrue -> 1e-06, AntiTheftFalse -> 0.999999}),
+[ RiskAversionAdventurous, SocioEconUpperMiddle ] -> Categorical({AntiTheftTrue -> 0.2, AntiTheftFalse -> 0.8}),
+[ RiskAversionAdventurous, SocioEconWealthy ] -> Categorical({AntiTheftTrue -> 0.5, AntiTheftFalse -> 0.5}),
+[ RiskAversionNormal, SocioEconProle ] -> Categorical({AntiTheftTrue -> 0.1, AntiTheftFalse -> 0.9}),
+[ RiskAversionNormal, SocioEconMiddle ] -> Categorical({AntiTheftTrue -> 0.3, AntiTheftFalse -> 0.7}),
+[ RiskAversionNormal, SocioEconUpperMiddle ] -> Categorical({AntiTheftTrue -> 0.9, AntiTheftFalse -> 0.1}),
+[ RiskAversionNormal, SocioEconWealthy ] -> Categorical({AntiTheftTrue -> 0.8, AntiTheftFalse -> 0.2}),
+[ RiskAversionCautious, SocioEconProle ] -> Categorical({AntiTheftTrue -> 0.95, AntiTheftFalse -> 0.05}),
+[ RiskAversionCautious, SocioEconMiddle ] -> Categorical({AntiTheftTrue -> 0.999999, AntiTheftFalse -> 1e-06}),
+[ RiskAversionCautious, SocioEconUpperMiddle ] -> Categorical({AntiTheftTrue -> 0.999999, AntiTheftFalse -> 1e-06}),
+[ RiskAversionCautious, SocioEconWealthy ] -> Categorical({AntiTheftTrue -> 0.999999, AntiTheftFalse -> 1e-06})};
+
+random TypeAntilock Antilock ~ case [MakeModel, VehicleYear] in
+	{[ MakeModelSportsCar, VehicleYearCurrent ] -> Categorical({AntilockTrue -> 0.9, AntilockFalse -> 0.1}),
+[ MakeModelSportsCar, VehicleYearOlder ] -> Categorical({AntilockTrue -> 0.1, AntilockFalse -> 0.9}),
+[ MakeModelEconomy, VehicleYearCurrent ] -> Categorical({AntilockTrue -> 0.001, AntilockFalse -> 0.999}),
+[ MakeModelEconomy, VehicleYearOlder ] -> Categorical({AntilockTrue -> 0.0, AntilockFalse -> 1.0}),
+[ MakeModelFamilySedan, VehicleYearCurrent ] -> Categorical({AntilockTrue -> 0.4, AntilockFalse -> 0.6}),
+[ MakeModelFamilySedan, VehicleYearOlder ] -> Categorical({AntilockTrue -> 0.0, AntilockFalse -> 1.0}),
+[ MakeModelLuxury, VehicleYearCurrent ] -> Categorical({AntilockTrue -> 0.99, AntilockFalse -> 0.01}),
+[ MakeModelLuxury, VehicleYearOlder ] -> Categorical({AntilockTrue -> 0.3, AntilockFalse -> 0.7}),
+[ MakeModelSuperLuxury, VehicleYearCurrent ] -> Categorical({AntilockTrue -> 0.99, AntilockFalse -> 0.01}),
+[ MakeModelSuperLuxury, VehicleYearOlder ] -> Categorical({AntilockTrue -> 0.15, AntilockFalse -> 0.85})};
+
+random TypeCarValue CarValue ~ case [MakeModel, VehicleYear, Mileage] in
+	{[ MakeModelSportsCar, VehicleYearCurrent, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.1, CarValueTwentyThou -> 0.8, CarValueFiftyThou -> 0.09, CarValueMillion -> 0.01}),
+[ MakeModelSportsCar, VehicleYearCurrent, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.1, CarValueTwentyThou -> 0.8, CarValueFiftyThou -> 0.09, CarValueMillion -> 0.01}),
+[ MakeModelSportsCar, VehicleYearCurrent, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.1, CarValueTwentyThou -> 0.8, CarValueFiftyThou -> 0.09, CarValueMillion -> 0.01}),
+[ MakeModelSportsCar, VehicleYearCurrent, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.1, CarValueTwentyThou -> 0.8, CarValueFiftyThou -> 0.09, CarValueMillion -> 0.01}),
+[ MakeModelSportsCar, VehicleYearOlder, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.03, CarValueTenThou -> 0.3, CarValueTwentyThou -> 0.6, CarValueFiftyThou -> 0.06, CarValueMillion -> 0.01}),
+[ MakeModelSportsCar, VehicleYearOlder, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.16, CarValueTenThou -> 0.5, CarValueTwentyThou -> 0.3, CarValueFiftyThou -> 0.03, CarValueMillion -> 0.01}),
+[ MakeModelSportsCar, VehicleYearOlder, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.4, CarValueTenThou -> 0.47, CarValueTwentyThou -> 0.1, CarValueFiftyThou -> 0.02, CarValueMillion -> 0.01}),
+[ MakeModelSportsCar, VehicleYearOlder, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.9, CarValueTenThou -> 0.06, CarValueTwentyThou -> 0.02, CarValueFiftyThou -> 0.01, CarValueMillion -> 0.01}),
+[ MakeModelEconomy, VehicleYearCurrent, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.1, CarValueTenThou -> 0.8, CarValueTwentyThou -> 0.1, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelEconomy, VehicleYearCurrent, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.1, CarValueTenThou -> 0.8, CarValueTwentyThou -> 0.1, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelEconomy, VehicleYearCurrent, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.1, CarValueTenThou -> 0.8, CarValueTwentyThou -> 0.1, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelEconomy, VehicleYearCurrent, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.1, CarValueTenThou -> 0.8, CarValueTwentyThou -> 0.1, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelEconomy, VehicleYearOlder, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.25, CarValueTenThou -> 0.7, CarValueTwentyThou -> 0.05, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelEconomy, VehicleYearOlder, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.7, CarValueTenThou -> 0.2999, CarValueTwentyThou -> 0.0001, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelEconomy, VehicleYearOlder, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.99, CarValueTenThou -> 0.009999, CarValueTwentyThou -> 1e-06, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelEconomy, VehicleYearOlder, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.999998, CarValueTenThou -> 1e-06, CarValueTwentyThou -> 1e-06, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearCurrent, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.1, CarValueTwentyThou -> 0.9, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearCurrent, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.1, CarValueTwentyThou -> 0.9, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearCurrent, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.1, CarValueTwentyThou -> 0.9, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearCurrent, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.1, CarValueTwentyThou -> 0.9, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearOlder, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.2, CarValueTenThou -> 0.3, CarValueTwentyThou -> 0.5, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearOlder, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.5, CarValueTenThou -> 0.3, CarValueTwentyThou -> 0.2, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearOlder, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.7, CarValueTenThou -> 0.2, CarValueTwentyThou -> 0.1, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearOlder, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.99, CarValueTenThou -> 0.009999, CarValueTwentyThou -> 1e-06, CarValueFiftyThou -> 0.0, CarValueMillion -> 0.0}),
+[ MakeModelLuxury, VehicleYearCurrent, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.0, CarValueTwentyThou -> 0.0, CarValueFiftyThou -> 1.0, CarValueMillion -> 0.0}),
+[ MakeModelLuxury, VehicleYearCurrent, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.0, CarValueTwentyThou -> 0.0, CarValueFiftyThou -> 1.0, CarValueMillion -> 0.0}),
+[ MakeModelLuxury, VehicleYearCurrent, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.0, CarValueTwentyThou -> 0.0, CarValueFiftyThou -> 1.0, CarValueMillion -> 0.0}),
+[ MakeModelLuxury, VehicleYearCurrent, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.0, CarValueTwentyThou -> 0.0, CarValueFiftyThou -> 1.0, CarValueMillion -> 0.0}),
+[ MakeModelLuxury, VehicleYearOlder, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.01, CarValueTenThou -> 0.09, CarValueTwentyThou -> 0.2, CarValueFiftyThou -> 0.7, CarValueMillion -> 0.0}),
+[ MakeModelLuxury, VehicleYearOlder, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.05, CarValueTenThou -> 0.15, CarValueTwentyThou -> 0.3, CarValueFiftyThou -> 0.5, CarValueMillion -> 0.0}),
+[ MakeModelLuxury, VehicleYearOlder, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.1, CarValueTenThou -> 0.3, CarValueTwentyThou -> 0.3, CarValueFiftyThou -> 0.3, CarValueMillion -> 0.0}),
+[ MakeModelLuxury, VehicleYearOlder, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.2, CarValueTenThou -> 0.2, CarValueTwentyThou -> 0.3, CarValueFiftyThou -> 0.3, CarValueMillion -> 0.0}),
+[ MakeModelSuperLuxury, VehicleYearCurrent, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.0, CarValueTwentyThou -> 0.0, CarValueFiftyThou -> 0.0, CarValueMillion -> 1.0}),
+[ MakeModelSuperLuxury, VehicleYearCurrent, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.0, CarValueTwentyThou -> 0.0, CarValueFiftyThou -> 0.0, CarValueMillion -> 1.0}),
+[ MakeModelSuperLuxury, VehicleYearCurrent, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.0, CarValueTwentyThou -> 0.0, CarValueFiftyThou -> 0.0, CarValueMillion -> 1.0}),
+[ MakeModelSuperLuxury, VehicleYearCurrent, MileageDomino ] -> Categorical({CarValueFiveThou -> 0.0, CarValueTenThou -> 0.0, CarValueTwentyThou -> 0.0, CarValueFiftyThou -> 0.0, CarValueMillion -> 1.0}),
+[ MakeModelSuperLuxury, VehicleYearOlder, MileageFiveThou ] -> Categorical({CarValueFiveThou -> 1e-06, CarValueTenThou -> 1e-06, CarValueTwentyThou -> 1e-06, CarValueFiftyThou -> 1e-06, CarValueMillion -> 0.999996}),
+[ MakeModelSuperLuxury, VehicleYearOlder, MileageTwentyThou ] -> Categorical({CarValueFiveThou -> 1e-06, CarValueTenThou -> 1e-06, CarValueTwentyThou -> 1e-06, CarValueFiftyThou -> 1e-06, CarValueMillion -> 0.999996}),
+[ MakeModelSuperLuxury, VehicleYearOlder, MileageFiftyThou ] -> Categorical({CarValueFiveThou -> 1e-06, CarValueTenThou -> 1e-06, CarValueTwentyThou -> 1e-06, CarValueFiftyThou -> 1e-06, CarValueMillion -> 0.999996}),
+[ MakeModelSuperLuxury, VehicleYearOlder, MileageDomino ] -> Categorical({CarValueFiveThou -> 1e-06, CarValueTenThou -> 1e-06, CarValueTwentyThou -> 1e-06, CarValueFiftyThou -> 1e-06, CarValueMillion -> 0.999996})};
+
+random TypeCushioning Cushioning ~ case [RuggedAuto, Airbag] in
+	{[ RuggedAutoEggShell, AirbagTrue ] -> Categorical({CushioningPoor -> 0.5, CushioningFair -> 0.3, CushioningGood -> 0.2, CushioningExcellent -> 0.0}),
+[ RuggedAutoEggShell, AirbagFalse ] -> Categorical({CushioningPoor -> 0.7, CushioningFair -> 0.3, CushioningGood -> 0.0, CushioningExcellent -> 0.0}),
+[ RuggedAutoFootball, AirbagTrue ] -> Categorical({CushioningPoor -> 0.0, CushioningFair -> 0.1, CushioningGood -> 0.6, CushioningExcellent -> 0.3}),
+[ RuggedAutoFootball, AirbagFalse ] -> Categorical({CushioningPoor -> 0.1, CushioningFair -> 0.6, CushioningGood -> 0.3, CushioningExcellent -> 0.0}),
+[ RuggedAutoTank, AirbagTrue ] -> Categorical({CushioningPoor -> 0.0, CushioningFair -> 0.0, CushioningGood -> 0.0, CushioningExcellent -> 1.0}),
+[ RuggedAutoTank, AirbagFalse ] -> Categorical({CushioningPoor -> 0.0, CushioningFair -> 0.0, CushioningGood -> 0.7, CushioningExcellent -> 0.3})};
+
+random TypeDrivHist DrivHist ~ case [DrivingSkill, RiskAversion] in
+	{[ DrivingSkillSubStandard, RiskAversionPsychopath ] -> Categorical({DrivHistZero -> 0.001, DrivHistOne -> 0.004, DrivHistMany -> 0.995}),
+[ DrivingSkillSubStandard, RiskAversionAdventurous ] -> Categorical({DrivHistZero -> 0.002, DrivHistOne -> 0.008, DrivHistMany -> 0.99}),
+[ DrivingSkillSubStandard, RiskAversionNormal ] -> Categorical({DrivHistZero -> 0.03, DrivHistOne -> 0.15, DrivHistMany -> 0.82}),
+[ DrivingSkillSubStandard, RiskAversionCautious ] -> Categorical({DrivHistZero -> 0.3, DrivHistOne -> 0.3, DrivHistMany -> 0.4}),
+[ DrivingSkillNormal, RiskAversionPsychopath ] -> Categorical({DrivHistZero -> 0.1, DrivHistOne -> 0.3, DrivHistMany -> 0.6}),
+[ DrivingSkillNormal, RiskAversionAdventurous ] -> Categorical({DrivHistZero -> 0.5, DrivHistOne -> 0.3, DrivHistMany -> 0.2}),
+[ DrivingSkillNormal, RiskAversionNormal ] -> Categorical({DrivHistZero -> 0.9, DrivHistOne -> 0.07, DrivHistMany -> 0.03}),
+[ DrivingSkillNormal, RiskAversionCautious ] -> Categorical({DrivHistZero -> 0.95, DrivHistOne -> 0.04, DrivHistMany -> 0.01}),
+[ DrivingSkillExpert, RiskAversionPsychopath ] -> Categorical({DrivHistZero -> 0.3, DrivHistOne -> 0.3, DrivHistMany -> 0.4}),
+[ DrivingSkillExpert, RiskAversionAdventurous ] -> Categorical({DrivHistZero -> 0.6, DrivHistOne -> 0.3, DrivHistMany -> 0.1}),
+[ DrivingSkillExpert, RiskAversionNormal ] -> Categorical({DrivHistZero -> 0.99, DrivHistOne -> 0.009999, DrivHistMany -> 1e-06}),
+[ DrivingSkillExpert, RiskAversionCautious ] -> Categorical({DrivHistZero -> 0.999998, DrivHistOne -> 1e-06, DrivHistMany -> 1e-06})};
+
+random TypeDrivQuality DrivQuality ~ case [DrivingSkill, RiskAversion] in
+	{[ DrivingSkillSubStandard, RiskAversionPsychopath ] -> Categorical({DrivQualityPoor -> 1.0, DrivQualityNormal -> 0.0, DrivQualityExcellent -> 0.0}),
+[ DrivingSkillSubStandard, RiskAversionAdventurous ] -> Categorical({DrivQualityPoor -> 1.0, DrivQualityNormal -> 0.0, DrivQualityExcellent -> 0.0}),
+[ DrivingSkillSubStandard, RiskAversionNormal ] -> Categorical({DrivQualityPoor -> 1.0, DrivQualityNormal -> 0.0, DrivQualityExcellent -> 0.0}),
+[ DrivingSkillSubStandard, RiskAversionCautious ] -> Categorical({DrivQualityPoor -> 1.0, DrivQualityNormal -> 0.0, DrivQualityExcellent -> 0.0}),
+[ DrivingSkillNormal, RiskAversionPsychopath ] -> Categorical({DrivQualityPoor -> 0.5, DrivQualityNormal -> 0.2, DrivQualityExcellent -> 0.3}),
+[ DrivingSkillNormal, RiskAversionAdventurous ] -> Categorical({DrivQualityPoor -> 0.3, DrivQualityNormal -> 0.4, DrivQualityExcellent -> 0.3}),
+[ DrivingSkillNormal, RiskAversionNormal ] -> Categorical({DrivQualityPoor -> 0.0, DrivQualityNormal -> 1.0, DrivQualityExcellent -> 0.0}),
+[ DrivingSkillNormal, RiskAversionCautious ] -> Categorical({DrivQualityPoor -> 0.0, DrivQualityNormal -> 0.8, DrivQualityExcellent -> 0.2}),
+[ DrivingSkillExpert, RiskAversionPsychopath ] -> Categorical({DrivQualityPoor -> 0.3, DrivQualityNormal -> 0.2, DrivQualityExcellent -> 0.5}),
+[ DrivingSkillExpert, RiskAversionAdventurous ] -> Categorical({DrivQualityPoor -> 0.01, DrivQualityNormal -> 0.01, DrivQualityExcellent -> 0.98}),
+[ DrivingSkillExpert, RiskAversionNormal ] -> Categorical({DrivQualityPoor -> 0.0, DrivQualityNormal -> 0.0, DrivQualityExcellent -> 1.0}),
+[ DrivingSkillExpert, RiskAversionCautious ] -> Categorical({DrivQualityPoor -> 0.0, DrivQualityNormal -> 0.0, DrivQualityExcellent -> 1.0})};
+
+random TypeDrivingSkill DrivingSkill ~ case [Age, SeniorTrain] in
+	{[ AgeAdolescent, SeniorTrainTrue ] -> Categorical({DrivingSkillSubStandard -> 0.5, DrivingSkillNormal -> 0.45, DrivingSkillExpert -> 0.05}),
+[ AgeAdolescent, SeniorTrainFalse ] -> Categorical({DrivingSkillSubStandard -> 0.5, DrivingSkillNormal -> 0.45, DrivingSkillExpert -> 0.05}),
+[ AgeAdult, SeniorTrainTrue ] -> Categorical({DrivingSkillSubStandard -> 0.3, DrivingSkillNormal -> 0.6, DrivingSkillExpert -> 0.1}),
+[ AgeAdult, SeniorTrainFalse ] -> Categorical({DrivingSkillSubStandard -> 0.3, DrivingSkillNormal -> 0.6, DrivingSkillExpert -> 0.1}),
+[ AgeSenior, SeniorTrainTrue ] -> Categorical({DrivingSkillSubStandard -> 0.1, DrivingSkillNormal -> 0.6, DrivingSkillExpert -> 0.3}),
+[ AgeSenior, SeniorTrainFalse ] -> Categorical({DrivingSkillSubStandard -> 0.4, DrivingSkillNormal -> 0.5, DrivingSkillExpert -> 0.1})};
+
+random TypeGoodStudent GoodStudent ~ case [SocioEcon, Age] in
+	{[ SocioEconProle, AgeAdolescent ] -> Categorical({GoodStudentTrue -> 0.1, GoodStudentFalse -> 0.9}),
+[ SocioEconProle, AgeAdult ] -> Categorical({GoodStudentTrue -> 0.0, GoodStudentFalse -> 1.0}),
+[ SocioEconProle, AgeSenior ] -> Categorical({GoodStudentTrue -> 0.0, GoodStudentFalse -> 1.0}),
+[ SocioEconMiddle, AgeAdolescent ] -> Categorical({GoodStudentTrue -> 0.2, GoodStudentFalse -> 0.8}),
+[ SocioEconMiddle, AgeAdult ] -> Categorical({GoodStudentTrue -> 0.0, GoodStudentFalse -> 1.0}),
+[ SocioEconMiddle, AgeSenior ] -> Categorical({GoodStudentTrue -> 0.0, GoodStudentFalse -> 1.0}),
+[ SocioEconUpperMiddle, AgeAdolescent ] -> Categorical({GoodStudentTrue -> 0.5, GoodStudentFalse -> 0.5}),
+[ SocioEconUpperMiddle, AgeAdult ] -> Categorical({GoodStudentTrue -> 0.0, GoodStudentFalse -> 1.0}),
+[ SocioEconUpperMiddle, AgeSenior ] -> Categorical({GoodStudentTrue -> 0.0, GoodStudentFalse -> 1.0}),
+[ SocioEconWealthy, AgeAdolescent ] -> Categorical({GoodStudentTrue -> 0.4, GoodStudentFalse -> 0.6}),
+[ SocioEconWealthy, AgeAdult ] -> Categorical({GoodStudentTrue -> 0.0, GoodStudentFalse -> 1.0}),
+[ SocioEconWealthy, AgeSenior ] -> Categorical({GoodStudentTrue -> 0.0, GoodStudentFalse -> 1.0})};
+
+random TypeHomeBase HomeBase ~ case [RiskAversion, SocioEcon] in
+	{[ RiskAversionPsychopath, SocioEconProle ] -> Categorical({HomeBaseSecure -> 1e-06, HomeBaseCity -> 0.8, HomeBaseSuburb -> 0.049999, HomeBaseRural -> 0.15}),
+[ RiskAversionPsychopath, SocioEconMiddle ] -> Categorical({HomeBaseSecure -> 0.15, HomeBaseCity -> 0.8, HomeBaseSuburb -> 0.04, HomeBaseRural -> 0.01}),
+[ RiskAversionPsychopath, SocioEconUpperMiddle ] -> Categorical({HomeBaseSecure -> 0.35, HomeBaseCity -> 0.6, HomeBaseSuburb -> 0.04, HomeBaseRural -> 0.01}),
+[ RiskAversionPsychopath, SocioEconWealthy ] -> Categorical({HomeBaseSecure -> 0.489999, HomeBaseCity -> 0.5, HomeBaseSuburb -> 1e-06, HomeBaseRural -> 0.01}),
+[ RiskAversionAdventurous, SocioEconProle ] -> Categorical({HomeBaseSecure -> 1e-06, HomeBaseCity -> 0.8, HomeBaseSuburb -> 0.05, HomeBaseRural -> 0.149999}),
+[ RiskAversionAdventurous, SocioEconMiddle ] -> Categorical({HomeBaseSecure -> 0.01, HomeBaseCity -> 0.25, HomeBaseSuburb -> 0.6, HomeBaseRural -> 0.14}),
+[ RiskAversionAdventurous, SocioEconUpperMiddle ] -> Categorical({HomeBaseSecure -> 0.2, HomeBaseCity -> 0.4, HomeBaseSuburb -> 0.3, HomeBaseRural -> 0.1}),
+[ RiskAversionAdventurous, SocioEconWealthy ] -> Categorical({HomeBaseSecure -> 0.95, HomeBaseCity -> 1e-06, HomeBaseSuburb -> 1e-06, HomeBaseRural -> 0.049998}),
+[ RiskAversionNormal, SocioEconProle ] -> Categorical({HomeBaseSecure -> 1e-06, HomeBaseCity -> 0.8, HomeBaseSuburb -> 0.05, HomeBaseRural -> 0.149999}),
+[ RiskAversionNormal, SocioEconMiddle ] -> Categorical({HomeBaseSecure -> 0.299999, HomeBaseCity -> 1e-06, HomeBaseSuburb -> 0.6, HomeBaseRural -> 0.1}),
+[ RiskAversionNormal, SocioEconUpperMiddle ] -> Categorical({HomeBaseSecure -> 0.5, HomeBaseCity -> 1e-06, HomeBaseSuburb -> 0.4, HomeBaseRural -> 0.099999}),
+[ RiskAversionNormal, SocioEconWealthy ] -> Categorical({HomeBaseSecure -> 0.85, HomeBaseCity -> 1e-06, HomeBaseSuburb -> 0.001, HomeBaseRural -> 0.148999}),
+[ RiskAversionCautious, SocioEconProle ] -> Categorical({HomeBaseSecure -> 1e-06, HomeBaseCity -> 0.8, HomeBaseSuburb -> 0.05, HomeBaseRural -> 0.149999}),
+[ RiskAversionCautious, SocioEconMiddle ] -> Categorical({HomeBaseSecure -> 0.95, HomeBaseCity -> 1e-06, HomeBaseSuburb -> 0.024445, HomeBaseRural -> 0.025554}),
+[ RiskAversionCautious, SocioEconUpperMiddle ] -> Categorical({HomeBaseSecure -> 0.999997, HomeBaseCity -> 1e-06, HomeBaseSuburb -> 1e-06, HomeBaseRural -> 1e-06}),
+[ RiskAversionCautious, SocioEconWealthy ] -> Categorical({HomeBaseSecure -> 0.999997, HomeBaseCity -> 1e-06, HomeBaseSuburb -> 1e-06, HomeBaseRural -> 1e-06})};
+
+random TypeILiCost ILiCost ~ case Accident in
+	{AccidentNone -> Categorical({ILiCostThousand -> 1.0, ILiCostTenThou -> 0.0, ILiCostHundredThou -> 0.0, ILiCostMillion -> 0.0}),
+AccidentMild -> Categorical({ILiCostThousand -> 0.999, ILiCostTenThou -> 0.000998, ILiCostHundredThou -> 1e-06, ILiCostMillion -> 1e-06}),
+AccidentModerate -> Categorical({ILiCostThousand -> 0.9, ILiCostTenThou -> 0.05, ILiCostHundredThou -> 0.03, ILiCostMillion -> 0.02}),
+AccidentSevere -> Categorical({ILiCostThousand -> 0.8, ILiCostTenThou -> 0.1, ILiCostHundredThou -> 0.06, ILiCostMillion -> 0.04})};
+
+random TypeMakeModel MakeModel ~ case [SocioEcon, RiskAversion] in
+	{[ SocioEconProle, RiskAversionPsychopath ] -> Categorical({MakeModelSportsCar -> 0.1, MakeModelEconomy -> 0.7, MakeModelFamilySedan -> 0.2, MakeModelLuxury -> 0.0, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconProle, RiskAversionAdventurous ] -> Categorical({MakeModelSportsCar -> 0.1, MakeModelEconomy -> 0.7, MakeModelFamilySedan -> 0.2, MakeModelLuxury -> 0.0, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconProle, RiskAversionNormal ] -> Categorical({MakeModelSportsCar -> 0.1, MakeModelEconomy -> 0.7, MakeModelFamilySedan -> 0.2, MakeModelLuxury -> 0.0, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconProle, RiskAversionCautious ] -> Categorical({MakeModelSportsCar -> 0.1, MakeModelEconomy -> 0.7, MakeModelFamilySedan -> 0.2, MakeModelLuxury -> 0.0, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconMiddle, RiskAversionPsychopath ] -> Categorical({MakeModelSportsCar -> 0.15, MakeModelEconomy -> 0.2, MakeModelFamilySedan -> 0.65, MakeModelLuxury -> 0.0, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconMiddle, RiskAversionAdventurous ] -> Categorical({MakeModelSportsCar -> 0.15, MakeModelEconomy -> 0.2, MakeModelFamilySedan -> 0.65, MakeModelLuxury -> 0.0, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconMiddle, RiskAversionNormal ] -> Categorical({MakeModelSportsCar -> 0.15, MakeModelEconomy -> 0.2, MakeModelFamilySedan -> 0.65, MakeModelLuxury -> 0.0, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconMiddle, RiskAversionCautious ] -> Categorical({MakeModelSportsCar -> 0.15, MakeModelEconomy -> 0.2, MakeModelFamilySedan -> 0.65, MakeModelLuxury -> 0.0, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconUpperMiddle, RiskAversionPsychopath ] -> Categorical({MakeModelSportsCar -> 0.2, MakeModelEconomy -> 0.05, MakeModelFamilySedan -> 0.3, MakeModelLuxury -> 0.45, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconUpperMiddle, RiskAversionAdventurous ] -> Categorical({MakeModelSportsCar -> 0.2, MakeModelEconomy -> 0.05, MakeModelFamilySedan -> 0.3, MakeModelLuxury -> 0.45, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconUpperMiddle, RiskAversionNormal ] -> Categorical({MakeModelSportsCar -> 0.2, MakeModelEconomy -> 0.05, MakeModelFamilySedan -> 0.3, MakeModelLuxury -> 0.45, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconUpperMiddle, RiskAversionCautious ] -> Categorical({MakeModelSportsCar -> 0.2, MakeModelEconomy -> 0.05, MakeModelFamilySedan -> 0.3, MakeModelLuxury -> 0.45, MakeModelSuperLuxury -> 0.0}),
+[ SocioEconWealthy, RiskAversionPsychopath ] -> Categorical({MakeModelSportsCar -> 0.3, MakeModelEconomy -> 0.01, MakeModelFamilySedan -> 0.09, MakeModelLuxury -> 0.4, MakeModelSuperLuxury -> 0.2}),
+[ SocioEconWealthy, RiskAversionAdventurous ] -> Categorical({MakeModelSportsCar -> 0.3, MakeModelEconomy -> 0.01, MakeModelFamilySedan -> 0.09, MakeModelLuxury -> 0.4, MakeModelSuperLuxury -> 0.2}),
+[ SocioEconWealthy, RiskAversionNormal ] -> Categorical({MakeModelSportsCar -> 0.3, MakeModelEconomy -> 0.01, MakeModelFamilySedan -> 0.09, MakeModelLuxury -> 0.4, MakeModelSuperLuxury -> 0.2}),
+[ SocioEconWealthy, RiskAversionCautious ] -> Categorical({MakeModelSportsCar -> 0.3, MakeModelEconomy -> 0.01, MakeModelFamilySedan -> 0.09, MakeModelLuxury -> 0.4, MakeModelSuperLuxury -> 0.2})};
+
+random TypeMedCost MedCost ~ case [Accident, Age, Cushioning] in
+	{[ AccidentNone, AgeAdolescent, CushioningPoor ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeAdolescent, CushioningFair ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeAdolescent, CushioningGood ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeAdolescent, CushioningExcellent ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeAdult, CushioningPoor ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeAdult, CushioningFair ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeAdult, CushioningGood ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeAdult, CushioningExcellent ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeSenior, CushioningPoor ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeSenior, CushioningFair ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeSenior, CushioningGood ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentNone, AgeSenior, CushioningExcellent ] -> Categorical({MedCostThousand -> 1.0, MedCostTenThou -> 0.0, MedCostHundredThou -> 0.0, MedCostMillion -> 0.0}),
+[ AccidentMild, AgeAdolescent, CushioningPoor ] -> Categorical({MedCostThousand -> 0.96, MedCostTenThou -> 0.03, MedCostHundredThou -> 0.009, MedCostMillion -> 0.001}),
+[ AccidentMild, AgeAdolescent, CushioningFair ] -> Categorical({MedCostThousand -> 0.98, MedCostTenThou -> 0.019, MedCostHundredThou -> 0.0009, MedCostMillion -> 0.0001}),
+[ AccidentMild, AgeAdolescent, CushioningGood ] -> Categorical({MedCostThousand -> 0.99, MedCostTenThou -> 0.0099, MedCostHundredThou -> 9e-05, MedCostMillion -> 1e-05}),
+[ AccidentMild, AgeAdolescent, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.999, MedCostTenThou -> 0.00099, MedCostHundredThou -> 9e-06, MedCostMillion -> 1e-06}),
+[ AccidentMild, AgeAdult, CushioningPoor ] -> Categorical({MedCostThousand -> 0.96, MedCostTenThou -> 0.03, MedCostHundredThou -> 0.009, MedCostMillion -> 0.001}),
+[ AccidentMild, AgeAdult, CushioningFair ] -> Categorical({MedCostThousand -> 0.98, MedCostTenThou -> 0.019, MedCostHundredThou -> 0.0009, MedCostMillion -> 0.0001}),
+[ AccidentMild, AgeAdult, CushioningGood ] -> Categorical({MedCostThousand -> 0.99, MedCostTenThou -> 0.0099, MedCostHundredThou -> 9e-05, MedCostMillion -> 1e-05}),
+[ AccidentMild, AgeAdult, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.999, MedCostTenThou -> 0.00099, MedCostHundredThou -> 9e-06, MedCostMillion -> 1e-06}),
+[ AccidentMild, AgeSenior, CushioningPoor ] -> Categorical({MedCostThousand -> 0.9, MedCostTenThou -> 0.07, MedCostHundredThou -> 0.02, MedCostMillion -> 0.01}),
+[ AccidentMild, AgeSenior, CushioningFair ] -> Categorical({MedCostThousand -> 0.95, MedCostTenThou -> 0.04, MedCostHundredThou -> 0.007, MedCostMillion -> 0.003}),
+[ AccidentMild, AgeSenior, CushioningGood ] -> Categorical({MedCostThousand -> 0.97, MedCostTenThou -> 0.025, MedCostHundredThou -> 0.003, MedCostMillion -> 0.002}),
+[ AccidentMild, AgeSenior, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.99, MedCostTenThou -> 0.007, MedCostHundredThou -> 0.002, MedCostMillion -> 0.001}),
+[ AccidentModerate, AgeAdolescent, CushioningPoor ] -> Categorical({MedCostThousand -> 0.5, MedCostTenThou -> 0.2, MedCostHundredThou -> 0.2, MedCostMillion -> 0.1}),
+[ AccidentModerate, AgeAdolescent, CushioningFair ] -> Categorical({MedCostThousand -> 0.8, MedCostTenThou -> 0.15, MedCostHundredThou -> 0.03, MedCostMillion -> 0.02}),
+[ AccidentModerate, AgeAdolescent, CushioningGood ] -> Categorical({MedCostThousand -> 0.95, MedCostTenThou -> 0.02, MedCostHundredThou -> 0.02, MedCostMillion -> 0.01}),
+[ AccidentModerate, AgeAdolescent, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.99, MedCostTenThou -> 0.007, MedCostHundredThou -> 0.002, MedCostMillion -> 0.001}),
+[ AccidentModerate, AgeAdult, CushioningPoor ] -> Categorical({MedCostThousand -> 0.5, MedCostTenThou -> 0.2, MedCostHundredThou -> 0.2, MedCostMillion -> 0.1}),
+[ AccidentModerate, AgeAdult, CushioningFair ] -> Categorical({MedCostThousand -> 0.8, MedCostTenThou -> 0.15, MedCostHundredThou -> 0.03, MedCostMillion -> 0.02}),
+[ AccidentModerate, AgeAdult, CushioningGood ] -> Categorical({MedCostThousand -> 0.95, MedCostTenThou -> 0.02, MedCostHundredThou -> 0.02, MedCostMillion -> 0.01}),
+[ AccidentModerate, AgeAdult, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.99, MedCostTenThou -> 0.007, MedCostHundredThou -> 0.002, MedCostMillion -> 0.001}),
+[ AccidentModerate, AgeSenior, CushioningPoor ] -> Categorical({MedCostThousand -> 0.3, MedCostTenThou -> 0.3, MedCostHundredThou -> 0.2, MedCostMillion -> 0.2}),
+[ AccidentModerate, AgeSenior, CushioningFair ] -> Categorical({MedCostThousand -> 0.5, MedCostTenThou -> 0.2, MedCostHundredThou -> 0.2, MedCostMillion -> 0.1}),
+[ AccidentModerate, AgeSenior, CushioningGood ] -> Categorical({MedCostThousand -> 0.9, MedCostTenThou -> 0.07, MedCostHundredThou -> 0.02, MedCostMillion -> 0.01}),
+[ AccidentModerate, AgeSenior, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.95, MedCostTenThou -> 0.03, MedCostHundredThou -> 0.01, MedCostMillion -> 0.01}),
+[ AccidentSevere, AgeAdolescent, CushioningPoor ] -> Categorical({MedCostThousand -> 0.3, MedCostTenThou -> 0.3, MedCostHundredThou -> 0.2, MedCostMillion -> 0.2}),
+[ AccidentSevere, AgeAdolescent, CushioningFair ] -> Categorical({MedCostThousand -> 0.5, MedCostTenThou -> 0.2, MedCostHundredThou -> 0.2, MedCostMillion -> 0.1}),
+[ AccidentSevere, AgeAdolescent, CushioningGood ] -> Categorical({MedCostThousand -> 0.9, MedCostTenThou -> 0.07, MedCostHundredThou -> 0.02, MedCostMillion -> 0.01}),
+[ AccidentSevere, AgeAdolescent, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.95, MedCostTenThou -> 0.03, MedCostHundredThou -> 0.01, MedCostMillion -> 0.01}),
+[ AccidentSevere, AgeAdult, CushioningPoor ] -> Categorical({MedCostThousand -> 0.3, MedCostTenThou -> 0.3, MedCostHundredThou -> 0.2, MedCostMillion -> 0.2}),
+[ AccidentSevere, AgeAdult, CushioningFair ] -> Categorical({MedCostThousand -> 0.5, MedCostTenThou -> 0.2, MedCostHundredThou -> 0.2, MedCostMillion -> 0.1}),
+[ AccidentSevere, AgeAdult, CushioningGood ] -> Categorical({MedCostThousand -> 0.9, MedCostTenThou -> 0.07, MedCostHundredThou -> 0.02, MedCostMillion -> 0.01}),
+[ AccidentSevere, AgeAdult, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.95, MedCostTenThou -> 0.03, MedCostHundredThou -> 0.01, MedCostMillion -> 0.01}),
+[ AccidentSevere, AgeSenior, CushioningPoor ] -> Categorical({MedCostThousand -> 0.2, MedCostTenThou -> 0.2, MedCostHundredThou -> 0.3, MedCostMillion -> 0.3}),
+[ AccidentSevere, AgeSenior, CushioningFair ] -> Categorical({MedCostThousand -> 0.3, MedCostTenThou -> 0.3, MedCostHundredThou -> 0.2, MedCostMillion -> 0.2}),
+[ AccidentSevere, AgeSenior, CushioningGood ] -> Categorical({MedCostThousand -> 0.6, MedCostTenThou -> 0.3, MedCostHundredThou -> 0.07, MedCostMillion -> 0.03}),
+[ AccidentSevere, AgeSenior, CushioningExcellent ] -> Categorical({MedCostThousand -> 0.9, MedCostTenThou -> 0.05, MedCostHundredThou -> 0.03, MedCostMillion -> 0.02})};
+
+random TypeMileage Mileage ~ 
+	Categorical({MileageFiveThou -> 0.1,MileageTwentyThou -> 0.4,MileageFiftyThou -> 0.4,MileageDomino -> 0.1})
+;
+
+random TypeOtherCar OtherCar ~ case SocioEcon in
+	{SocioEconProle -> Categorical({OtherCarTrue -> 0.5, OtherCarFalse -> 0.5}),
+SocioEconMiddle -> Categorical({OtherCarTrue -> 0.8, OtherCarFalse -> 0.2}),
+SocioEconUpperMiddle -> Categorical({OtherCarTrue -> 0.9, OtherCarFalse -> 0.1}),
+SocioEconWealthy -> Categorical({OtherCarTrue -> 0.95, OtherCarFalse -> 0.05})};
+
+random TypeOtherCarCost OtherCarCost ~ case [Accident, RuggedAuto] in
+	{[ AccidentNone, RuggedAutoEggShell ] -> Categorical({OtherCarCostThousand -> 1.0, OtherCarCostTenThou -> 0.0, OtherCarCostHundredThou -> 0.0, OtherCarCostMillion -> 0.0}),
+[ AccidentNone, RuggedAutoFootball ] -> Categorical({OtherCarCostThousand -> 1.0, OtherCarCostTenThou -> 0.0, OtherCarCostHundredThou -> 0.0, OtherCarCostMillion -> 0.0}),
+[ AccidentNone, RuggedAutoTank ] -> Categorical({OtherCarCostThousand -> 1.0, OtherCarCostTenThou -> 0.0, OtherCarCostHundredThou -> 0.0, OtherCarCostMillion -> 0.0}),
+[ AccidentMild, RuggedAutoEggShell ] -> Categorical({OtherCarCostThousand -> 0.99, OtherCarCostTenThou -> 0.005, OtherCarCostHundredThou -> 0.00499, OtherCarCostMillion -> 1e-05}),
+[ AccidentMild, RuggedAutoFootball ] -> Categorical({OtherCarCostThousand -> 0.9799657, OtherCarCostTenThou -> 0.00999965, OtherCarCostHundredThou -> 0.009984651, OtherCarCostMillion -> 4.999825e-05}),
+[ AccidentMild, RuggedAutoTank ] -> Categorical({OtherCarCostThousand -> 0.95, OtherCarCostTenThou -> 0.03, OtherCarCostHundredThou -> 0.01998, OtherCarCostMillion -> 2e-05}),
+[ AccidentModerate, RuggedAutoEggShell ] -> Categorical({OtherCarCostThousand -> 0.6, OtherCarCostTenThou -> 0.2, OtherCarCostHundredThou -> 0.19998, OtherCarCostMillion -> 2e-05}),
+[ AccidentModerate, RuggedAutoFootball ] -> Categorical({OtherCarCostThousand -> 0.5, OtherCarCostTenThou -> 0.2, OtherCarCostHundredThou -> 0.29997, OtherCarCostMillion -> 3e-05}),
+[ AccidentModerate, RuggedAutoTank ] -> Categorical({OtherCarCostThousand -> 0.4, OtherCarCostTenThou -> 0.3, OtherCarCostHundredThou -> 0.29996, OtherCarCostMillion -> 4e-05}),
+[ AccidentSevere, RuggedAutoEggShell ] -> Categorical({OtherCarCostThousand -> 0.2, OtherCarCostTenThou -> 0.4, OtherCarCostHundredThou -> 0.39996, OtherCarCostMillion -> 4e-05}),
+[ AccidentSevere, RuggedAutoFootball ] -> Categorical({OtherCarCostThousand -> 0.1, OtherCarCostTenThou -> 0.5, OtherCarCostHundredThou -> 0.39994, OtherCarCostMillion -> 6e-05}),
+[ AccidentSevere, RuggedAutoTank ] -> Categorical({OtherCarCostThousand -> 0.005, OtherCarCostTenThou -> 0.55, OtherCarCostHundredThou -> 0.4449, OtherCarCostMillion -> 0.0001})};
+
+random TypePropCost PropCost ~ case [OtherCarCost, ThisCarCost] in
+	{[ OtherCarCostThousand, ThisCarCostThousand ] -> Categorical({PropCostThousand -> 0.7, PropCostTenThou -> 0.3, PropCostHundredThou -> 0.0, PropCostMillion -> 0.0}),
+[ OtherCarCostThousand, ThisCarCostTenThou ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.95, PropCostHundredThou -> 0.05, PropCostMillion -> 0.0}),
+[ OtherCarCostThousand, ThisCarCostHundredThou ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.98, PropCostMillion -> 0.02}),
+[ OtherCarCostThousand, ThisCarCostMillion ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.0, PropCostMillion -> 1.0}),
+[ OtherCarCostTenThou, ThisCarCostThousand ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.95, PropCostHundredThou -> 0.05, PropCostMillion -> 0.0}),
+[ OtherCarCostTenThou, ThisCarCostTenThou ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.6, PropCostHundredThou -> 0.4, PropCostMillion -> 0.0}),
+[ OtherCarCostTenThou, ThisCarCostHundredThou ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.95, PropCostMillion -> 0.05}),
+[ OtherCarCostTenThou, ThisCarCostMillion ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.0, PropCostMillion -> 1.0}),
+[ OtherCarCostHundredThou, ThisCarCostThousand ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.98, PropCostMillion -> 0.02}),
+[ OtherCarCostHundredThou, ThisCarCostTenThou ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.8, PropCostMillion -> 0.2}),
+[ OtherCarCostHundredThou, ThisCarCostHundredThou ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.6, PropCostMillion -> 0.4}),
+[ OtherCarCostHundredThou, ThisCarCostMillion ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.0, PropCostMillion -> 1.0}),
+[ OtherCarCostMillion, ThisCarCostThousand ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.0, PropCostMillion -> 1.0}),
+[ OtherCarCostMillion, ThisCarCostTenThou ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.0, PropCostMillion -> 1.0}),
+[ OtherCarCostMillion, ThisCarCostHundredThou ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.0, PropCostMillion -> 1.0}),
+[ OtherCarCostMillion, ThisCarCostMillion ] -> Categorical({PropCostThousand -> 0.0, PropCostTenThou -> 0.0, PropCostHundredThou -> 0.0, PropCostMillion -> 1.0})};
+
+random TypeRiskAversion RiskAversion ~ case [Age, SocioEcon] in
+	{[ AgeAdolescent, SocioEconProle ] -> Categorical({RiskAversionPsychopath -> 0.02, RiskAversionAdventurous -> 0.58, RiskAversionNormal -> 0.3, RiskAversionCautious -> 0.1}),
+[ AgeAdolescent, SocioEconMiddle ] -> Categorical({RiskAversionPsychopath -> 0.02, RiskAversionAdventurous -> 0.38, RiskAversionNormal -> 0.5, RiskAversionCautious -> 0.1}),
+[ AgeAdolescent, SocioEconUpperMiddle ] -> Categorical({RiskAversionPsychopath -> 0.02, RiskAversionAdventurous -> 0.48, RiskAversionNormal -> 0.4, RiskAversionCautious -> 0.1}),
+[ AgeAdolescent, SocioEconWealthy ] -> Categorical({RiskAversionPsychopath -> 0.02, RiskAversionAdventurous -> 0.58, RiskAversionNormal -> 0.3, RiskAversionCautious -> 0.1}),
+[ AgeAdult, SocioEconProle ] -> Categorical({RiskAversionPsychopath -> 0.015, RiskAversionAdventurous -> 0.285, RiskAversionNormal -> 0.5, RiskAversionCautious -> 0.2}),
+[ AgeAdult, SocioEconMiddle ] -> Categorical({RiskAversionPsychopath -> 0.015, RiskAversionAdventurous -> 0.185, RiskAversionNormal -> 0.6, RiskAversionCautious -> 0.2}),
+[ AgeAdult, SocioEconUpperMiddle ] -> Categorical({RiskAversionPsychopath -> 0.015, RiskAversionAdventurous -> 0.285, RiskAversionNormal -> 0.5, RiskAversionCautious -> 0.2}),
+[ AgeAdult, SocioEconWealthy ] -> Categorical({RiskAversionPsychopath -> 0.015, RiskAversionAdventurous -> 0.285, RiskAversionNormal -> 0.4, RiskAversionCautious -> 0.3}),
+[ AgeSenior, SocioEconProle ] -> Categorical({RiskAversionPsychopath -> 0.01, RiskAversionAdventurous -> 0.09, RiskAversionNormal -> 0.4, RiskAversionCautious -> 0.5}),
+[ AgeSenior, SocioEconMiddle ] -> Categorical({RiskAversionPsychopath -> 0.01, RiskAversionAdventurous -> 0.04, RiskAversionNormal -> 0.35, RiskAversionCautious -> 0.6}),
+[ AgeSenior, SocioEconUpperMiddle ] -> Categorical({RiskAversionPsychopath -> 0.01, RiskAversionAdventurous -> 0.09, RiskAversionNormal -> 0.4, RiskAversionCautious -> 0.5}),
+[ AgeSenior, SocioEconWealthy ] -> Categorical({RiskAversionPsychopath -> 0.01, RiskAversionAdventurous -> 0.09, RiskAversionNormal -> 0.4, RiskAversionCautious -> 0.5})};
+
+random TypeRuggedAuto RuggedAuto ~ case [MakeModel, VehicleYear] in
+	{[ MakeModelSportsCar, VehicleYearCurrent ] -> Categorical({RuggedAutoEggShell -> 0.95, RuggedAutoFootball -> 0.04, RuggedAutoTank -> 0.01}),
+[ MakeModelSportsCar, VehicleYearOlder ] -> Categorical({RuggedAutoEggShell -> 0.95, RuggedAutoFootball -> 0.04, RuggedAutoTank -> 0.01}),
+[ MakeModelEconomy, VehicleYearCurrent ] -> Categorical({RuggedAutoEggShell -> 0.5, RuggedAutoFootball -> 0.5, RuggedAutoTank -> 0.0}),
+[ MakeModelEconomy, VehicleYearOlder ] -> Categorical({RuggedAutoEggShell -> 0.9, RuggedAutoFootball -> 0.1, RuggedAutoTank -> 0.0}),
+[ MakeModelFamilySedan, VehicleYearCurrent ] -> Categorical({RuggedAutoEggShell -> 0.2, RuggedAutoFootball -> 0.6, RuggedAutoTank -> 0.2}),
+[ MakeModelFamilySedan, VehicleYearOlder ] -> Categorical({RuggedAutoEggShell -> 0.05, RuggedAutoFootball -> 0.55, RuggedAutoTank -> 0.4}),
+[ MakeModelLuxury, VehicleYearCurrent ] -> Categorical({RuggedAutoEggShell -> 0.1, RuggedAutoFootball -> 0.6, RuggedAutoTank -> 0.3}),
+[ MakeModelLuxury, VehicleYearOlder ] -> Categorical({RuggedAutoEggShell -> 0.1, RuggedAutoFootball -> 0.6, RuggedAutoTank -> 0.3}),
+[ MakeModelSuperLuxury, VehicleYearCurrent ] -> Categorical({RuggedAutoEggShell -> 0.05, RuggedAutoFootball -> 0.55, RuggedAutoTank -> 0.4}),
+[ MakeModelSuperLuxury, VehicleYearOlder ] -> Categorical({RuggedAutoEggShell -> 0.05, RuggedAutoFootball -> 0.55, RuggedAutoTank -> 0.4})};
+
+random TypeSeniorTrain SeniorTrain ~ case [Age, RiskAversion] in
+	{[ AgeAdolescent, RiskAversionPsychopath ] -> Categorical({SeniorTrainTrue -> 0.0, SeniorTrainFalse -> 1.0}),
+[ AgeAdolescent, RiskAversionAdventurous ] -> Categorical({SeniorTrainTrue -> 0.0, SeniorTrainFalse -> 1.0}),
+[ AgeAdolescent, RiskAversionNormal ] -> Categorical({SeniorTrainTrue -> 0.0, SeniorTrainFalse -> 1.0}),
+[ AgeAdolescent, RiskAversionCautious ] -> Categorical({SeniorTrainTrue -> 0.0, SeniorTrainFalse -> 1.0}),
+[ AgeAdult, RiskAversionPsychopath ] -> Categorical({SeniorTrainTrue -> 0.0, SeniorTrainFalse -> 1.0}),
+[ AgeAdult, RiskAversionAdventurous ] -> Categorical({SeniorTrainTrue -> 0.0, SeniorTrainFalse -> 1.0}),
+[ AgeAdult, RiskAversionNormal ] -> Categorical({SeniorTrainTrue -> 0.0, SeniorTrainFalse -> 1.0}),
+[ AgeAdult, RiskAversionCautious ] -> Categorical({SeniorTrainTrue -> 0.0, SeniorTrainFalse -> 1.0}),
+[ AgeSenior, RiskAversionPsychopath ] -> Categorical({SeniorTrainTrue -> 1e-06, SeniorTrainFalse -> 0.999999}),
+[ AgeSenior, RiskAversionAdventurous ] -> Categorical({SeniorTrainTrue -> 1e-06, SeniorTrainFalse -> 0.999999}),
+[ AgeSenior, RiskAversionNormal ] -> Categorical({SeniorTrainTrue -> 0.3, SeniorTrainFalse -> 0.7}),
+[ AgeSenior, RiskAversionCautious ] -> Categorical({SeniorTrainTrue -> 0.9, SeniorTrainFalse -> 0.1})};
+
+random TypeSocioEcon SocioEcon ~ case Age in
+	{AgeAdolescent -> Categorical({SocioEconProle -> 0.4, SocioEconMiddle -> 0.4, SocioEconUpperMiddle -> 0.19, SocioEconWealthy -> 0.01}),
+AgeAdult -> Categorical({SocioEconProle -> 0.4, SocioEconMiddle -> 0.4, SocioEconUpperMiddle -> 0.19, SocioEconWealthy -> 0.01}),
+AgeSenior -> Categorical({SocioEconProle -> 0.5, SocioEconMiddle -> 0.2, SocioEconUpperMiddle -> 0.29, SocioEconWealthy -> 0.01})};
+
+random TypeTheft Theft ~ case [AntiTheft, HomeBase, CarValue] in
+	{[ AntiTheftTrue, HomeBaseSecure, CarValueFiveThou ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftTrue, HomeBaseSecure, CarValueTenThou ] -> Categorical({TheftTrue -> 2e-06, TheftFalse -> 0.999998}),
+[ AntiTheftTrue, HomeBaseSecure, CarValueTwentyThou ] -> Categorical({TheftTrue -> 3e-06, TheftFalse -> 0.999997}),
+[ AntiTheftTrue, HomeBaseSecure, CarValueFiftyThou ] -> Categorical({TheftTrue -> 2e-06, TheftFalse -> 0.999998}),
+[ AntiTheftTrue, HomeBaseSecure, CarValueMillion ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftTrue, HomeBaseCity, CarValueFiveThou ] -> Categorical({TheftTrue -> 0.0005, TheftFalse -> 0.9995}),
+[ AntiTheftTrue, HomeBaseCity, CarValueTenThou ] -> Categorical({TheftTrue -> 0.002, TheftFalse -> 0.998}),
+[ AntiTheftTrue, HomeBaseCity, CarValueTwentyThou ] -> Categorical({TheftTrue -> 0.005, TheftFalse -> 0.995}),
+[ AntiTheftTrue, HomeBaseCity, CarValueFiftyThou ] -> Categorical({TheftTrue -> 0.005, TheftFalse -> 0.995}),
+[ AntiTheftTrue, HomeBaseCity, CarValueMillion ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftTrue, HomeBaseSuburb, CarValueFiveThou ] -> Categorical({TheftTrue -> 1e-05, TheftFalse -> 0.99999}),
+[ AntiTheftTrue, HomeBaseSuburb, CarValueTenThou ] -> Categorical({TheftTrue -> 0.0001, TheftFalse -> 0.9999}),
+[ AntiTheftTrue, HomeBaseSuburb, CarValueTwentyThou ] -> Categorical({TheftTrue -> 0.0003, TheftFalse -> 0.9997}),
+[ AntiTheftTrue, HomeBaseSuburb, CarValueFiftyThou ] -> Categorical({TheftTrue -> 0.0003, TheftFalse -> 0.9997}),
+[ AntiTheftTrue, HomeBaseSuburb, CarValueMillion ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftTrue, HomeBaseRural, CarValueFiveThou ] -> Categorical({TheftTrue -> 1e-05, TheftFalse -> 0.99999}),
+[ AntiTheftTrue, HomeBaseRural, CarValueTenThou ] -> Categorical({TheftTrue -> 2e-05, TheftFalse -> 0.99998}),
+[ AntiTheftTrue, HomeBaseRural, CarValueTwentyThou ] -> Categorical({TheftTrue -> 5e-05, TheftFalse -> 0.99995}),
+[ AntiTheftTrue, HomeBaseRural, CarValueFiftyThou ] -> Categorical({TheftTrue -> 5e-05, TheftFalse -> 0.99995}),
+[ AntiTheftTrue, HomeBaseRural, CarValueMillion ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftFalse, HomeBaseSecure, CarValueFiveThou ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftFalse, HomeBaseSecure, CarValueTenThou ] -> Categorical({TheftTrue -> 2e-06, TheftFalse -> 0.999998}),
+[ AntiTheftFalse, HomeBaseSecure, CarValueTwentyThou ] -> Categorical({TheftTrue -> 3e-06, TheftFalse -> 0.999997}),
+[ AntiTheftFalse, HomeBaseSecure, CarValueFiftyThou ] -> Categorical({TheftTrue -> 2e-06, TheftFalse -> 0.999998}),
+[ AntiTheftFalse, HomeBaseSecure, CarValueMillion ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftFalse, HomeBaseCity, CarValueFiveThou ] -> Categorical({TheftTrue -> 0.001, TheftFalse -> 0.999}),
+[ AntiTheftFalse, HomeBaseCity, CarValueTenThou ] -> Categorical({TheftTrue -> 0.005, TheftFalse -> 0.995}),
+[ AntiTheftFalse, HomeBaseCity, CarValueTwentyThou ] -> Categorical({TheftTrue -> 0.01, TheftFalse -> 0.99}),
+[ AntiTheftFalse, HomeBaseCity, CarValueFiftyThou ] -> Categorical({TheftTrue -> 0.01, TheftFalse -> 0.99}),
+[ AntiTheftFalse, HomeBaseCity, CarValueMillion ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftFalse, HomeBaseSuburb, CarValueFiveThou ] -> Categorical({TheftTrue -> 1e-05, TheftFalse -> 0.99999}),
+[ AntiTheftFalse, HomeBaseSuburb, CarValueTenThou ] -> Categorical({TheftTrue -> 0.0002, TheftFalse -> 0.9998}),
+[ AntiTheftFalse, HomeBaseSuburb, CarValueTwentyThou ] -> Categorical({TheftTrue -> 0.0005, TheftFalse -> 0.9995}),
+[ AntiTheftFalse, HomeBaseSuburb, CarValueFiftyThou ] -> Categorical({TheftTrue -> 0.0005, TheftFalse -> 0.9995}),
+[ AntiTheftFalse, HomeBaseSuburb, CarValueMillion ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999}),
+[ AntiTheftFalse, HomeBaseRural, CarValueFiveThou ] -> Categorical({TheftTrue -> 1e-05, TheftFalse -> 0.99999}),
+[ AntiTheftFalse, HomeBaseRural, CarValueTenThou ] -> Categorical({TheftTrue -> 0.0001, TheftFalse -> 0.9999}),
+[ AntiTheftFalse, HomeBaseRural, CarValueTwentyThou ] -> Categorical({TheftTrue -> 0.0002, TheftFalse -> 0.9998}),
+[ AntiTheftFalse, HomeBaseRural, CarValueFiftyThou ] -> Categorical({TheftTrue -> 0.0002, TheftFalse -> 0.9998}),
+[ AntiTheftFalse, HomeBaseRural, CarValueMillion ] -> Categorical({TheftTrue -> 1e-06, TheftFalse -> 0.999999})};
+
+random TypeThisCarCost ThisCarCost ~ case [ThisCarDam, CarValue, Theft] in
+	{[ ThisCarDamNone, CarValueFiveThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.2, ThisCarCostTenThou -> 0.8, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamNone, CarValueFiveThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 1.0, ThisCarCostTenThou -> 0.0, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamNone, CarValueTenThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.05, ThisCarCostTenThou -> 0.95, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamNone, CarValueTenThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 1.0, ThisCarCostTenThou -> 0.0, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamNone, CarValueTwentyThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.04, ThisCarCostTenThou -> 0.01, ThisCarCostHundredThou -> 0.95, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamNone, CarValueTwentyThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 1.0, ThisCarCostTenThou -> 0.0, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamNone, CarValueFiftyThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.04, ThisCarCostTenThou -> 0.01, ThisCarCostHundredThou -> 0.95, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamNone, CarValueFiftyThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 1.0, ThisCarCostTenThou -> 0.0, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamNone, CarValueMillion, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.04, ThisCarCostTenThou -> 0.01, ThisCarCostHundredThou -> 0.2, ThisCarCostMillion -> 0.75}),
+[ ThisCarDamNone, CarValueMillion, TheftFalse ] -> Categorical({ThisCarCostThousand -> 1.0, ThisCarCostTenThou -> 0.0, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueFiveThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.15, ThisCarCostTenThou -> 0.85, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueFiveThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.95, ThisCarCostTenThou -> 0.05, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueTenThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.03, ThisCarCostTenThou -> 0.97, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueTenThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.95, ThisCarCostTenThou -> 0.05, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueTwentyThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.03, ThisCarCostTenThou -> 0.02, ThisCarCostHundredThou -> 0.95, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueTwentyThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.99, ThisCarCostTenThou -> 0.01, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueFiftyThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.03, ThisCarCostTenThou -> 0.02, ThisCarCostHundredThou -> 0.95, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueFiftyThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.99, ThisCarCostTenThou -> 0.01, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamMild, CarValueMillion, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.02, ThisCarCostTenThou -> 0.03, ThisCarCostHundredThou -> 0.25, ThisCarCostMillion -> 0.7}),
+[ ThisCarDamMild, CarValueMillion, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.98, ThisCarCostTenThou -> 0.01, ThisCarCostHundredThou -> 0.01, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueFiveThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.05, ThisCarCostTenThou -> 0.95, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueFiveThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.25, ThisCarCostTenThou -> 0.75, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueTenThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.01, ThisCarCostTenThou -> 0.99, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueTenThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.15, ThisCarCostTenThou -> 0.85, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueTwentyThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.001, ThisCarCostTenThou -> 0.001, ThisCarCostHundredThou -> 0.998, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueTwentyThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.01, ThisCarCostTenThou -> 0.01, ThisCarCostHundredThou -> 0.98, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueFiftyThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.001, ThisCarCostTenThou -> 0.001, ThisCarCostHundredThou -> 0.998, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueFiftyThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.005, ThisCarCostTenThou -> 0.005, ThisCarCostHundredThou -> 0.99, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamModerate, CarValueMillion, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.001, ThisCarCostTenThou -> 0.001, ThisCarCostHundredThou -> 0.018, ThisCarCostMillion -> 0.98}),
+[ ThisCarDamModerate, CarValueMillion, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.003, ThisCarCostTenThou -> 0.003, ThisCarCostHundredThou -> 0.044, ThisCarCostMillion -> 0.95}),
+[ ThisCarDamSevere, CarValueFiveThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 0.03, ThisCarCostTenThou -> 0.97, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamSevere, CarValueFiveThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.05, ThisCarCostTenThou -> 0.95, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamSevere, CarValueTenThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 1e-06, ThisCarCostTenThou -> 0.999999, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamSevere, CarValueTenThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.01, ThisCarCostTenThou -> 0.99, ThisCarCostHundredThou -> 0.0, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamSevere, CarValueTwentyThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 1e-06, ThisCarCostTenThou -> 1e-06, ThisCarCostHundredThou -> 0.999998, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamSevere, CarValueTwentyThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.005, ThisCarCostTenThou -> 0.005, ThisCarCostHundredThou -> 0.99, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamSevere, CarValueFiftyThou, TheftTrue ] -> Categorical({ThisCarCostThousand -> 1e-06, ThisCarCostTenThou -> 1e-06, ThisCarCostHundredThou -> 0.999998, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamSevere, CarValueFiftyThou, TheftFalse ] -> Categorical({ThisCarCostThousand -> 0.001, ThisCarCostTenThou -> 0.001, ThisCarCostHundredThou -> 0.998, ThisCarCostMillion -> 0.0}),
+[ ThisCarDamSevere, CarValueMillion, TheftTrue ] -> Categorical({ThisCarCostThousand -> 1e-06, ThisCarCostTenThou -> 1e-06, ThisCarCostHundredThou -> 0.009998, ThisCarCostMillion -> 0.99}),
+[ ThisCarDamSevere, CarValueMillion, TheftFalse ] -> Categorical({ThisCarCostThousand -> 1e-06, ThisCarCostTenThou -> 1e-06, ThisCarCostHundredThou -> 0.029998, ThisCarCostMillion -> 0.97})};
+
+random TypeThisCarDam ThisCarDam ~ case [Accident, RuggedAuto] in
+	{[ AccidentNone, RuggedAutoEggShell ] -> Categorical({ThisCarDamNone -> 1.0, ThisCarDamMild -> 0.0, ThisCarDamModerate -> 0.0, ThisCarDamSevere -> 0.0}),
+[ AccidentNone, RuggedAutoFootball ] -> Categorical({ThisCarDamNone -> 1.0, ThisCarDamMild -> 0.0, ThisCarDamModerate -> 0.0, ThisCarDamSevere -> 0.0}),
+[ AccidentNone, RuggedAutoTank ] -> Categorical({ThisCarDamNone -> 1.0, ThisCarDamMild -> 0.0, ThisCarDamModerate -> 0.0, ThisCarDamSevere -> 0.0}),
+[ AccidentMild, RuggedAutoEggShell ] -> Categorical({ThisCarDamNone -> 0.001, ThisCarDamMild -> 0.9, ThisCarDamModerate -> 0.098, ThisCarDamSevere -> 0.001}),
+[ AccidentMild, RuggedAutoFootball ] -> Categorical({ThisCarDamNone -> 0.2, ThisCarDamMild -> 0.75, ThisCarDamModerate -> 0.049999, ThisCarDamSevere -> 1e-06}),
+[ AccidentMild, RuggedAutoTank ] -> Categorical({ThisCarDamNone -> 0.7, ThisCarDamMild -> 0.29, ThisCarDamModerate -> 0.009999, ThisCarDamSevere -> 1e-06}),
+[ AccidentModerate, RuggedAutoEggShell ] -> Categorical({ThisCarDamNone -> 1e-06, ThisCarDamMild -> 0.000999, ThisCarDamModerate -> 0.7, ThisCarDamSevere -> 0.299}),
+[ AccidentModerate, RuggedAutoFootball ] -> Categorical({ThisCarDamNone -> 0.001, ThisCarDamMild -> 0.099, ThisCarDamModerate -> 0.8, ThisCarDamSevere -> 0.1}),
+[ AccidentModerate, RuggedAutoTank ] -> Categorical({ThisCarDamNone -> 0.05, ThisCarDamMild -> 0.6, ThisCarDamModerate -> 0.3, ThisCarDamSevere -> 0.05}),
+[ AccidentSevere, RuggedAutoEggShell ] -> Categorical({ThisCarDamNone -> 1e-06, ThisCarDamMild -> 9e-06, ThisCarDamModerate -> 9e-05, ThisCarDamSevere -> 0.9999}),
+[ AccidentSevere, RuggedAutoFootball ] -> Categorical({ThisCarDamNone -> 1e-06, ThisCarDamMild -> 0.000999, ThisCarDamModerate -> 0.009, ThisCarDamSevere -> 0.99}),
+[ AccidentSevere, RuggedAutoTank ] -> Categorical({ThisCarDamNone -> 0.05, ThisCarDamMild -> 0.2, ThisCarDamModerate -> 0.2, ThisCarDamSevere -> 0.55})};
+
+random TypeVehicleYear VehicleYear ~ case [SocioEcon, RiskAversion] in
+	{[ SocioEconProle, RiskAversionPsychopath ] -> Categorical({VehicleYearCurrent -> 0.15, VehicleYearOlder -> 0.85}),
+[ SocioEconProle, RiskAversionAdventurous ] -> Categorical({VehicleYearCurrent -> 0.15, VehicleYearOlder -> 0.85}),
+[ SocioEconProle, RiskAversionNormal ] -> Categorical({VehicleYearCurrent -> 0.15, VehicleYearOlder -> 0.85}),
+[ SocioEconProle, RiskAversionCautious ] -> Categorical({VehicleYearCurrent -> 0.15, VehicleYearOlder -> 0.85}),
+[ SocioEconMiddle, RiskAversionPsychopath ] -> Categorical({VehicleYearCurrent -> 0.3, VehicleYearOlder -> 0.7}),
+[ SocioEconMiddle, RiskAversionAdventurous ] -> Categorical({VehicleYearCurrent -> 0.3, VehicleYearOlder -> 0.7}),
+[ SocioEconMiddle, RiskAversionNormal ] -> Categorical({VehicleYearCurrent -> 0.3, VehicleYearOlder -> 0.7}),
+[ SocioEconMiddle, RiskAversionCautious ] -> Categorical({VehicleYearCurrent -> 0.3, VehicleYearOlder -> 0.7}),
+[ SocioEconUpperMiddle, RiskAversionPsychopath ] -> Categorical({VehicleYearCurrent -> 0.8, VehicleYearOlder -> 0.2}),
+[ SocioEconUpperMiddle, RiskAversionAdventurous ] -> Categorical({VehicleYearCurrent -> 0.8, VehicleYearOlder -> 0.2}),
+[ SocioEconUpperMiddle, RiskAversionNormal ] -> Categorical({VehicleYearCurrent -> 0.8, VehicleYearOlder -> 0.2}),
+[ SocioEconUpperMiddle, RiskAversionCautious ] -> Categorical({VehicleYearCurrent -> 0.8, VehicleYearOlder -> 0.2}),
+[ SocioEconWealthy, RiskAversionPsychopath ] -> Categorical({VehicleYearCurrent -> 0.9, VehicleYearOlder -> 0.1}),
+[ SocioEconWealthy, RiskAversionAdventurous ] -> Categorical({VehicleYearCurrent -> 0.9, VehicleYearOlder -> 0.1}),
+[ SocioEconWealthy, RiskAversionNormal ] -> Categorical({VehicleYearCurrent -> 0.9, VehicleYearOlder -> 0.1}),
+[ SocioEconWealthy, RiskAversionCautious ] -> Categorical({VehicleYearCurrent -> 0.9, VehicleYearOlder -> 0.1})};
+
+query VehicleYear;

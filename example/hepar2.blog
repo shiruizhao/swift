@@ -1,0 +1,1046 @@
+type TypeChHepatitis;
+distinct TypeChHepatitis ChHepatitisactive, ChHepatitispersistent, ChHepatitisabsent;
+
+type TypeCirrhosis;
+distinct TypeCirrhosis Cirrhosisdecompensate, Cirrhosiscompensate, Cirrhosisabsent;
+
+type TypeESR;
+distinct TypeESR ESRa200_50, ESRa49_15, ESRa14_0;
+
+type TypeHyperbilirubinemia;
+distinct TypeHyperbilirubinemia Hyperbilirubinemiapresent, Hyperbilirubinemiaabsent;
+
+type TypePBC;
+distinct TypePBC PBCpresent, PBCabsent;
+
+type TypeRHepatitis;
+distinct TypeRHepatitis RHepatitispresent, RHepatitisabsent;
+
+type TypeSteatosis;
+distinct TypeSteatosis Steatosispresent, Steatosisabsent;
+
+type TypeTHepatitis;
+distinct TypeTHepatitis THepatitispresent, THepatitisabsent;
+
+type Typeage;
+distinct Typeage ageage65_100, ageage51_65, ageage31_50, ageage0_30;
+
+type Typealbumin;
+distinct Typealbumin albumina70_50, albumina49_30, albumina29_0;
+
+type Typealcohol;
+distinct Typealcohol alcoholpresent, alcoholabsent;
+
+type Typealcoholism;
+distinct Typealcoholism alcoholismpresent, alcoholismabsent;
+
+type Typealt;
+distinct Typealt alta850_200, alta199_100, alta99_35, alta34_0;
+
+type Typeama;
+distinct Typeama amapresent, amaabsent;
+
+type Typeamylase;
+distinct Typeamylase amylasea1400_500, amylasea499_300, amylasea299_0;
+
+type Typeanorexia;
+distinct Typeanorexia anorexiapresent, anorexiaabsent;
+
+type Typeascites;
+distinct Typeascites ascitespresent, ascitesabsent;
+
+type Typeast;
+distinct Typeast asta700_400, asta399_150, asta149_40, asta39_0;
+
+type Typebilirubin;
+distinct Typebilirubin bilirubina88_20, bilirubina19_7, bilirubina6_2, bilirubina1_0;
+
+type Typebleeding;
+distinct Typebleeding bleedingpresent, bleedingabsent;
+
+type Typecarcinoma;
+distinct Typecarcinoma carcinomapresent, carcinomaabsent;
+
+type Typecholedocholithotomy;
+distinct Typecholedocholithotomy choledocholithotomypresent, choledocholithotomyabsent;
+
+type Typecholesterol;
+distinct Typecholesterol cholesterola999_350, cholesterola349_240, cholesterola239_0;
+
+type Typeconsciousness;
+distinct Typeconsciousness consciousnesspresent, consciousnessabsent;
+
+type Typedensity;
+distinct Typedensity densitypresent, densityabsent;
+
+type Typediabetes;
+distinct Typediabetes diabetespresent, diabetesabsent;
+
+type Typeedema;
+distinct Typeedema edemapresent, edemaabsent;
+
+type Typeedge;
+distinct Typeedge edgepresent, edgeabsent;
+
+type Typeencephalopathy;
+distinct Typeencephalopathy encephalopathypresent, encephalopathyabsent;
+
+type Typefat;
+distinct Typefat fatpresent, fatabsent;
+
+type Typefatigue;
+distinct Typefatigue fatiguepresent, fatigueabsent;
+
+type Typefibrosis;
+distinct Typefibrosis fibrosispresent, fibrosisabsent;
+
+type Typeflatulence;
+distinct Typeflatulence flatulencepresent, flatulenceabsent;
+
+type Typegallstones;
+distinct Typegallstones gallstonespresent, gallstonesabsent;
+
+type Typeggtp;
+distinct Typeggtp ggtpa640_70, ggtpa69_30, ggtpa29_10, ggtpa9_0;
+
+type Typehbc_anti;
+distinct Typehbc_anti hbc_antipresent, hbc_antiabsent;
+
+type Typehbeag;
+distinct Typehbeag hbeagpresent, hbeagabsent;
+
+type Typehbsag;
+distinct Typehbsag hbsagpresent, hbsagabsent;
+
+type Typehbsag_anti;
+distinct Typehbsag_anti hbsag_antipresent, hbsag_antiabsent;
+
+type Typehcv_anti;
+distinct Typehcv_anti hcv_antipresent, hcv_antiabsent;
+
+type Typehepatalgia;
+distinct Typehepatalgia hepatalgiapresent, hepatalgiaabsent;
+
+type Typehepatomegaly;
+distinct Typehepatomegaly hepatomegalypresent, hepatomegalyabsent;
+
+type Typehepatotoxic;
+distinct Typehepatotoxic hepatotoxicpresent, hepatotoxicabsent;
+
+type Typehospital;
+distinct Typehospital hospitalpresent, hospitalabsent;
+
+type Typeinjections;
+distinct Typeinjections injectionspresent, injectionsabsent;
+
+type Typeinr;
+distinct Typeinr inra200_110, inra109_70, inra69_0;
+
+type Typeirregular_liver;
+distinct Typeirregular_liver irregular_liverpresent, irregular_liverabsent;
+
+type Typeitching;
+distinct Typeitching itchingpresent, itchingabsent;
+
+type Typejaundice;
+distinct Typejaundice jaundicepresent, jaundiceabsent;
+
+type Typejoints;
+distinct Typejoints jointspresent, jointsabsent;
+
+type Typele_cells;
+distinct Typele_cells le_cellspresent, le_cellsabsent;
+
+type Typenausea;
+distinct Typenausea nauseapresent, nauseaabsent;
+
+type Typeobesity;
+distinct Typeobesity obesitypresent, obesityabsent;
+
+type Typepain;
+distinct Typepain painpresent, painabsent;
+
+type Typepain_ruq;
+distinct Typepain_ruq pain_ruqpresent, pain_ruqabsent;
+
+type Typepalms;
+distinct Typepalms palmspresent, palmsabsent;
+
+type Typephosphatase;
+distinct Typephosphatase phosphatasea4000_700, phosphatasea699_240, phosphatasea239_0;
+
+type Typeplatelet;
+distinct Typeplatelet plateleta597_300, plateleta299_150, plateleta149_100, plateleta99_0;
+
+type Typepressure_ruq;
+distinct Typepressure_ruq pressure_ruqpresent, pressure_ruqabsent;
+
+type Typeproteins;
+distinct Typeproteins proteinsa10_6, proteinsa5_2;
+
+type Typesex;
+distinct Typesex sexfemale, sexmale;
+
+type Typeskin;
+distinct Typeskin skinpresent, skinabsent;
+
+type Typespiders;
+distinct Typespiders spiderspresent, spidersabsent;
+
+type Typespleen;
+distinct Typespleen spleenpresent, spleenabsent;
+
+type Typesurgery;
+distinct Typesurgery surgerypresent, surgeryabsent;
+
+type Typetransfusion;
+distinct Typetransfusion transfusionpresent, transfusionabsent;
+
+type Typetriglycerides;
+distinct Typetriglycerides triglyceridesa17_4, triglyceridesa3_2, triglyceridesa1_0;
+
+type Typeupper_pain;
+distinct Typeupper_pain upper_painpresent, upper_painabsent;
+
+type Typeurea;
+distinct Typeurea ureaa165_50, ureaa49_40, ureaa39_0;
+
+type Typevh_amn;
+distinct Typevh_amn vh_amnpresent, vh_amnabsent;
+
+random TypeChHepatitis ChHepatitis ~ case [transfusion, vh_amn, injections] in
+	{[ transfusionpresent, vh_amnpresent, injectionspresent ] -> Categorical({ChHepatitisactive -> 0.2094241, ChHepatitispersistent -> 0.0052356, ChHepatitisabsent -> 0.7853403}),
+[ transfusionpresent, vh_amnpresent, injectionsabsent ] -> Categorical({ChHepatitisactive -> 0.4615385, ChHepatitispersistent -> 0.3076923, ChHepatitisabsent -> 0.2307692}),
+[ transfusionpresent, vh_amnabsent, injectionspresent ] -> Categorical({ChHepatitisactive -> 0.06, ChHepatitispersistent -> 0.06, ChHepatitisabsent -> 0.88}),
+[ transfusionpresent, vh_amnabsent, injectionsabsent ] -> Categorical({ChHepatitisactive -> 0.13043478, ChHepatitispersistent -> 0.04347826, ChHepatitisabsent -> 0.82608696}),
+[ transfusionabsent, vh_amnpresent, injectionspresent ] -> Categorical({ChHepatitisactive -> 0.15384615, ChHepatitispersistent -> 0.05128205, ChHepatitisabsent -> 0.7948718}),
+[ transfusionabsent, vh_amnpresent, injectionsabsent ] -> Categorical({ChHepatitisactive -> 0.24, ChHepatitispersistent -> 0.14, ChHepatitisabsent -> 0.62}),
+[ transfusionabsent, vh_amnabsent, injectionspresent ] -> Categorical({ChHepatitisactive -> 0.07692308, ChHepatitispersistent -> 0.00591716, ChHepatitisabsent -> 0.91715976}),
+[ transfusionabsent, vh_amnabsent, injectionsabsent ] -> Categorical({ChHepatitisactive -> 0.13095238, ChHepatitispersistent -> 0.05357143, ChHepatitisabsent -> 0.81547619})};
+
+random TypeCirrhosis Cirrhosis ~ case [fibrosis, Steatosis] in
+	{[ fibrosispresent, Steatosispresent ] -> Categorical({Cirrhosisdecompensate -> 0.56, Cirrhosiscompensate -> 0.24, Cirrhosisabsent -> 0.2}),
+[ fibrosispresent, Steatosisabsent ] -> Categorical({Cirrhosisdecompensate -> 0.49, Cirrhosiscompensate -> 0.21, Cirrhosisabsent -> 0.3}),
+[ fibrosisabsent, Steatosispresent ] -> Categorical({Cirrhosisdecompensate -> 0.35, Cirrhosiscompensate -> 0.15, Cirrhosisabsent -> 0.5}),
+[ fibrosisabsent, Steatosisabsent ] -> Categorical({Cirrhosisdecompensate -> 0.001, Cirrhosiscompensate -> 0.001, Cirrhosisabsent -> 0.998})};
+
+random TypeESR ESR ~ case [PBC, ChHepatitis, Steatosis, Hyperbilirubinemia] in
+	{[ PBCpresent, ChHepatitisactive, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.2704918, ESRa49_15 -> 0.1721312, ESRa14_0 -> 0.557377}),
+[ PBCpresent, ChHepatitisactive, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.2972973, ESRa49_15 -> 0.1837838, ESRa14_0 -> 0.5189189}),
+[ PBCpresent, ChHepatitisactive, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.2941177, ESRa49_15 -> 0.1911765, ESRa14_0 -> 0.5147058}),
+[ PBCpresent, ChHepatitisactive, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.3205575, ESRa49_15 -> 0.2055749, ESRa14_0 -> 0.4738676}),
+[ PBCpresent, ChHepatitispersistent, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.3093923, ESRa49_15 -> 0.1767956, ESRa14_0 -> 0.5138121}),
+[ PBCpresent, ChHepatitispersistent, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.3315508, ESRa49_15 -> 0.171123, ESRa14_0 -> 0.4973262}),
+[ PBCpresent, ChHepatitispersistent, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.3333333, ESRa49_15 -> 0.172043, ESRa14_0 -> 0.4946237}),
+[ PBCpresent, ChHepatitispersistent, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.368, ESRa49_15 -> 0.184, ESRa14_0 -> 0.448}),
+[ PBCpresent, ChHepatitisabsent, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.3425926, ESRa49_15 -> 0.1712963, ESRa14_0 -> 0.4861111}),
+[ PBCpresent, ChHepatitisabsent, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.3629893, ESRa49_15 -> 0.1779359, ESRa14_0 -> 0.4590747}),
+[ PBCpresent, ChHepatitisabsent, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.3636364, ESRa49_15 -> 0.1818182, ESRa14_0 -> 0.4545455}),
+[ PBCpresent, ChHepatitisabsent, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.4321429, ESRa49_15 -> 0.2107143, ESRa14_0 -> 0.3571429}),
+[ PBCabsent, ChHepatitisactive, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.2682927, ESRa49_15 -> 0.1768293, ESRa14_0 -> 0.554878}),
+[ PBCabsent, ChHepatitisactive, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.175, ESRa49_15 -> 0.1625, ESRa14_0 -> 0.6625}),
+[ PBCabsent, ChHepatitisactive, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.1045752, ESRa49_15 -> 0.1633987, ESRa14_0 -> 0.7320261}),
+[ PBCabsent, ChHepatitisactive, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.03296703, ESRa49_15 -> 0.21978022, ESRa14_0 -> 0.74725275}),
+[ PBCabsent, ChHepatitispersistent, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.06024096, ESRa49_15 -> 0.12048193, ESRa14_0 -> 0.81927711}),
+[ PBCabsent, ChHepatitispersistent, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.08602151, ESRa49_15 -> 0.08602151, ESRa14_0 -> 0.82795698}),
+[ PBCabsent, ChHepatitispersistent, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.05434783, ESRa49_15 -> 0.07608696, ESRa14_0 -> 0.86956521}),
+[ PBCabsent, ChHepatitispersistent, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.05555556, ESRa49_15 -> 0.05555556, ESRa14_0 -> 0.88888888}),
+[ PBCabsent, ChHepatitisabsent, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.07594937, ESRa49_15 -> 0.06329114, ESRa14_0 -> 0.86075949}),
+[ PBCabsent, ChHepatitisabsent, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.13432836, ESRa49_15 -> 0.05970149, ESRa14_0 -> 0.80597015}),
+[ PBCabsent, ChHepatitisabsent, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({ESRa200_50 -> 0.01785714, ESRa49_15 -> 0.07142857, ESRa14_0 -> 0.91071429}),
+[ PBCabsent, ChHepatitisabsent, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ESRa200_50 -> 0.04733728, ESRa49_15 -> 0.05325444, ESRa14_0 -> 0.89940828})};
+
+random TypeHyperbilirubinemia Hyperbilirubinemia ~ case [age, sex] in
+	{[ ageage65_100, sexfemale ] -> Categorical({Hyperbilirubinemiapresent -> 0.002849, Hyperbilirubinemiaabsent -> 0.997151}),
+[ ageage65_100, sexmale ] -> Categorical({Hyperbilirubinemiapresent -> 0.0052356, Hyperbilirubinemiaabsent -> 0.9947644}),
+[ ageage51_65, sexfemale ] -> Categorical({Hyperbilirubinemiapresent -> 0.01129944, Hyperbilirubinemiaabsent -> 0.98870056}),
+[ ageage51_65, sexmale ] -> Categorical({Hyperbilirubinemiapresent -> 0.0212766, Hyperbilirubinemiaabsent -> 0.9787234}),
+[ ageage31_50, sexfemale ] -> Categorical({Hyperbilirubinemiapresent -> 0.04597701, Hyperbilirubinemiaabsent -> 0.95402299}),
+[ ageage31_50, sexmale ] -> Categorical({Hyperbilirubinemiapresent -> 0.07692308, Hyperbilirubinemiaabsent -> 0.92307692}),
+[ ageage0_30, sexfemale ] -> Categorical({Hyperbilirubinemiapresent -> 0.21875, Hyperbilirubinemiaabsent -> 0.78125}),
+[ ageage0_30, sexmale ] -> Categorical({Hyperbilirubinemiapresent -> 0.453125, Hyperbilirubinemiaabsent -> 0.546875})};
+
+random TypePBC PBC ~ case [sex, age] in
+	{[ sexfemale, ageage65_100 ] -> Categorical({PBCpresent -> 0.6571429, PBCabsent -> 0.3428571}),
+[ sexfemale, ageage51_65 ] -> Categorical({PBCpresent -> 0.700565, PBCabsent -> 0.299435}),
+[ sexfemale, ageage31_50 ] -> Categorical({PBCpresent -> 0.6149425, PBCabsent -> 0.3850575}),
+[ sexfemale, ageage0_30 ] -> Categorical({PBCpresent -> 0.125, PBCabsent -> 0.875}),
+[ sexmale, ageage65_100 ] -> Categorical({PBCpresent -> 0.3684211, PBCabsent -> 0.6315789}),
+[ sexmale, ageage51_65 ] -> Categorical({PBCpresent -> 0.08510638, PBCabsent -> 0.91489362}),
+[ sexmale, ageage31_50 ] -> Categorical({PBCpresent -> 0.06730769, PBCabsent -> 0.93269231}),
+[ sexmale, ageage0_30 ] -> Categorical({PBCpresent -> 0.00156006, PBCabsent -> 0.99843994})};
+
+random TypeRHepatitis RHepatitis ~ case hepatotoxic in
+	{hepatotoxicpresent -> Categorical({RHepatitispresent -> 0.01754386, RHepatitisabsent -> 0.98245614}),
+hepatotoxicabsent -> Categorical({RHepatitispresent -> 0.02492212, RHepatitisabsent -> 0.97507788})};
+
+random TypeSteatosis Steatosis ~ case [obesity, alcoholism] in
+	{[ obesitypresent, alcoholismpresent ] -> Categorical({Steatosispresent -> 0.3636364, Steatosisabsent -> 0.6363636}),
+[ obesitypresent, alcoholismabsent ] -> Categorical({Steatosispresent -> 0.1891892, Steatosisabsent -> 0.8108108}),
+[ obesityabsent, alcoholismpresent ] -> Categorical({Steatosispresent -> 0.2380952, Steatosisabsent -> 0.7619048}),
+[ obesityabsent, alcoholismabsent ] -> Categorical({Steatosispresent -> 0.06349206, Steatosisabsent -> 0.93650794})};
+
+random TypeTHepatitis THepatitis ~ case [hepatotoxic, alcoholism] in
+	{[ hepatotoxicpresent, alcoholismpresent ] -> Categorical({THepatitispresent -> 0.2, THepatitisabsent -> 0.8}),
+[ hepatotoxicpresent, alcoholismabsent ] -> Categorical({THepatitispresent -> 0.00191939, THepatitisabsent -> 0.99808061}),
+[ hepatotoxicabsent, alcoholismpresent ] -> Categorical({THepatitispresent -> 0.08888889, THepatitisabsent -> 0.91111111}),
+[ hepatotoxicabsent, alcoholismabsent ] -> Categorical({THepatitispresent -> 0.0326087, THepatitisabsent -> 0.9673913})};
+
+random Typeage age ~ 
+	Categorical({ageage65_100 -> 0.07725322,ageage51_65 -> 0.38769671,ageage31_50 -> 0.39771102,ageage0_30 -> 0.13733906})
+;
+
+random Typealbumin albumin ~ case Cirrhosis in
+	{Cirrhosisdecompensate -> Categorical({albumina70_50 -> 0.91222031, albumina49_30 -> 0.08605852, albumina29_0 -> 0.00172117}),
+Cirrhosiscompensate -> Categorical({albumina70_50 -> 0.96463023, albumina49_30 -> 0.00321543, albumina29_0 -> 0.03215434}),
+Cirrhosisabsent -> Categorical({albumina70_50 -> 0.7393443, albumina49_30 -> 0.1426229, albumina29_0 -> 0.1180328})};
+
+random Typealcohol alcohol ~ case Cirrhosis in
+	{Cirrhosisdecompensate -> Categorical({alcoholpresent -> 0.2068966, alcoholabsent -> 0.7931034}),
+Cirrhosiscompensate -> Categorical({alcoholpresent -> 0.2258064, alcoholabsent -> 0.7741936}),
+Cirrhosisabsent -> Categorical({alcoholpresent -> 0.1114754, alcoholabsent -> 0.8885246})};
+
+random Typealcoholism alcoholism ~ 
+	Categorical({alcoholismpresent -> 0.1359084,alcoholismabsent -> 0.8640916})
+;
+
+random Typealt alt ~ case [ChHepatitis, RHepatitis, THepatitis, Steatosis, Cirrhosis] in
+	{[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.05882353, alta199_100 -> 0.15686275, alta99_35 -> 0.41176471, alta34_0 -> 0.37254902}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.05454545, alta199_100 -> 0.16363636, alta99_35 -> 0.41818182, alta34_0 -> 0.36363636}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.04761905, alta199_100 -> 0.15873016, alta99_35 -> 0.41269841, alta34_0 -> 0.38095238}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.06451613, alta199_100 -> 0.17741935, alta99_35 -> 0.41935484, alta34_0 -> 0.33870968}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.07017544, alta199_100 -> 0.19298246, alta99_35 -> 0.42105263, alta34_0 -> 0.31578947}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.07936508, alta199_100 -> 0.19047619, alta99_35 -> 0.41269841, alta34_0 -> 0.31746032}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.06849315, alta199_100 -> 0.16438356, alta99_35 -> 0.42465753, alta34_0 -> 0.34246575}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.05882353, alta199_100 -> 0.17647059, alta99_35 -> 0.42647059, alta34_0 -> 0.33823529}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.0625, alta199_100 -> 0.175, alta99_35 -> 0.4125, alta34_0 -> 0.35}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.075, alta199_100 -> 0.1875, alta99_35 -> 0.425, alta34_0 -> 0.3125}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.08333333, alta199_100 -> 0.20833333, alta99_35 -> 0.43055556, alta34_0 -> 0.27777778}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.08988764, alta199_100 -> 0.2247191, alta99_35 -> 0.41573034, alta34_0 -> 0.26966292}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.0617284, alta199_100 -> 0.1728395, alta99_35 -> 0.4197531, alta34_0 -> 0.345679}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.05479452, alta199_100 -> 0.16438356, alta99_35 -> 0.42465753, alta34_0 -> 0.35616438}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.05882353, alta199_100 -> 0.15294118, alta99_35 -> 0.41176471, alta34_0 -> 0.37647059}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.06976744, alta199_100 -> 0.1627907, alta99_35 -> 0.41860465, alta34_0 -> 0.34883721}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.07792208, alta199_100 -> 0.18181818, alta99_35 -> 0.41558442, alta34_0 -> 0.32467532}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.08333333, alta199_100 -> 0.1875, alta99_35 -> 0.40625, alta34_0 -> 0.32291667}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.06862745, alta199_100 -> 0.16666667, alta99_35 -> 0.42156863, alta34_0 -> 0.34313725}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.0625, alta199_100 -> 0.1666667, alta99_35 -> 0.4270833, alta34_0 -> 0.34375}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.064, alta199_100 -> 0.168, alta99_35 -> 0.416, alta34_0 -> 0.352}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.08148148, alta199_100 -> 0.17777778, alta99_35 -> 0.42222222, alta34_0 -> 0.31851852}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.08661417, alta199_100 -> 0.19685039, alta99_35 -> 0.42519685, alta34_0 -> 0.29133858}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.1208791, alta199_100 -> 0.2307692, alta99_35 -> 0.3956044, alta34_0 -> 0.2527472}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.05172414, alta199_100 -> 0.15517241, alta99_35 -> 0.39655172, alta34_0 -> 0.39655172}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.02173913, alta199_100 -> 0.13043478, alta99_35 -> 0.41304348, alta34_0 -> 0.43478261}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.0021692, alta199_100 -> 0.1084599, alta99_35 -> 0.3904555, alta34_0 -> 0.4989154}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.02272727, alta199_100 -> 0.11363636, alta99_35 -> 0.40909091, alta34_0 -> 0.45454545}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.00269542, alta199_100 -> 0.13477089, alta99_35 -> 0.40431267, alta34_0 -> 0.45822102}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00262467, alta199_100 -> 0.1312336, alta99_35 -> 0.36745407, alta34_0 -> 0.49868766}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.01923077, alta199_100 -> 0.11538462, alta99_35 -> 0.40384615, alta34_0 -> 0.46153846}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.002079, alta199_100 -> 0.1247401, alta99_35 -> 0.4158004, alta34_0 -> 0.4573805}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00181488, alta199_100 -> 0.12704174, alta99_35 -> 0.39927405, alta34_0 -> 0.47186933}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.01886792, alta199_100 -> 0.13207547, alta99_35 -> 0.41509434, alta34_0 -> 0.43396226}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.02272727, alta199_100 -> 0.15909091, alta99_35 -> 0.40909091, alta34_0 -> 0.40909091}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.02083333, alta199_100 -> 0.16666667, alta99_35 -> 0.375, alta34_0 -> 0.4375}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.01724138, alta199_100 -> 0.12068966, alta99_35 -> 0.39655172, alta34_0 -> 0.46551724}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.00191939, alta199_100 -> 0.11516315, alta99_35 -> 0.40307102, alta34_0 -> 0.47984645}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00166389, alta199_100 -> 0.09983361, alta99_35 -> 0.38269551, alta34_0 -> 0.51580699}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.01724138, alta199_100 -> 0.10344828, alta99_35 -> 0.39655172, alta34_0 -> 0.48275862}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.02040816, alta199_100 -> 0.12244898, alta99_35 -> 0.3877551, alta34_0 -> 0.46938776}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.01818182, alta199_100 -> 0.10909091, alta99_35 -> 0.34545455, alta34_0 -> 0.52727272}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.02777778, alta199_100 -> 0.11111111, alta99_35 -> 0.38888889, alta34_0 -> 0.47222222}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.01492537, alta199_100 -> 0.11940299, alta99_35 -> 0.40298507, alta34_0 -> 0.46268657}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.01190476, alta199_100 -> 0.10714286, alta99_35 -> 0.38095238, alta34_0 -> 0.5}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.03409091, alta199_100 -> 0.11363636, alta99_35 -> 0.38636364, alta34_0 -> 0.46590909}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.02631579, alta199_100 -> 0.13157895, alta99_35 -> 0.39473684, alta34_0 -> 0.44736842}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.02777778, alta199_100 -> 0.13888889, alta99_35 -> 0.27777778, alta34_0 -> 0.55555555}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.02, alta199_100 -> 0.12, alta99_35 -> 0.4, alta34_0 -> 0.46}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.00212314, alta199_100 -> 0.12738854, alta99_35 -> 0.42462845, alta34_0 -> 0.44585987}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00191939, alta199_100 -> 0.11516315, alta99_35 -> 0.42226488, alta34_0 -> 0.46065259}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.02, alta199_100 -> 0.12, alta99_35 -> 0.44, alta34_0 -> 0.42}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.00249377, alta199_100 -> 0.14962594, alta99_35 -> 0.44887781, alta34_0 -> 0.39900249}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.0023753, alta199_100 -> 0.1425178, alta99_35 -> 0.4275534, alta34_0 -> 0.4275534}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.01666667, alta199_100 -> 0.11666667, alta99_35 -> 0.45, alta34_0 -> 0.41666667}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.00178253, alta199_100 -> 0.12477718, alta99_35 -> 0.46345811, alta34_0 -> 0.40998217}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00144718, alta199_100 -> 0.11577424, alta99_35 -> 0.44862518, alta34_0 -> 0.4341534}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.02816901, alta199_100 -> 0.12676056, alta99_35 -> 0.46478873, alta34_0 -> 0.38028169}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.01724138, alta199_100 -> 0.15517241, alta99_35 -> 0.48275862, alta34_0 -> 0.34482759}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00584795, alta199_100 -> 0.23391813, alta99_35 -> 0.46783626, alta34_0 -> 0.29239766}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.01818182, alta199_100 -> 0.10909091, alta99_35 -> 0.43636364, alta34_0 -> 0.43636364}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.00172117, alta199_100 -> 0.10327022, alta99_35 -> 0.4475043, alta34_0 -> 0.4475043}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00131406, alta199_100 -> 0.09198423, alta99_35 -> 0.42049934, alta34_0 -> 0.48620237}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.025, alta199_100 -> 0.1, alta99_35 -> 0.425, alta34_0 -> 0.45}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.01470588, alta199_100 -> 0.11764706, alta99_35 -> 0.44117647, alta34_0 -> 0.42647059}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00369004, alta199_100 -> 0.07380074, alta99_35 -> 0.36900369, alta34_0 -> 0.55350553}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.02666667, alta199_100 -> 0.09333333, alta99_35 -> 0.42666667, alta34_0 -> 0.45333333}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.01176471, alta199_100 -> 0.10588235, alta99_35 -> 0.44705882, alta34_0 -> 0.43529412}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.00149031, alta199_100 -> 0.08941878, alta99_35 -> 0.41728763, alta34_0 -> 0.49180328}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({alta850_200 -> 0.06896552, alta199_100 -> 0.12068966, alta99_35 -> 0.46551724, alta34_0 -> 0.34482759}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({alta850_200 -> 0.03225806, alta199_100 -> 0.19354839, alta99_35 -> 0.51612903, alta34_0 -> 0.25806452}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({alta850_200 -> 0.04569892, alta199_100 -> 0.17473118, alta99_35 -> 0.42741935, alta34_0 -> 0.35215054})};
+
+random Typeama ama ~ case PBC in
+	{PBCpresent -> Categorical({amapresent -> 0.5678571, amaabsent -> 0.4321429}),
+PBCabsent -> Categorical({amapresent -> 0.01193317, amaabsent -> 0.98806683})};
+
+random Typeamylase amylase ~ case gallstones in
+	{gallstonespresent -> Categorical({amylasea1400_500 -> 0.01869159, amylasea499_300 -> 0.04672897, amylasea299_0 -> 0.93457944}),
+gallstonesabsent -> Categorical({amylasea1400_500 -> 0.01013514, amylasea499_300 -> 0.01689189, amylasea299_0 -> 0.97297297})};
+
+random Typeanorexia anorexia ~ case [RHepatitis, THepatitis] in
+	{[ RHepatitispresent, THepatitispresent ] -> Categorical({anorexiapresent -> 0.1818182, anorexiaabsent -> 0.8181818}),
+[ RHepatitispresent, THepatitisabsent ] -> Categorical({anorexiapresent -> 0.1176471, anorexiaabsent -> 0.8823529}),
+[ RHepatitisabsent, THepatitispresent ] -> Categorical({anorexiapresent -> 0.2222222, anorexiaabsent -> 0.7777778}),
+[ RHepatitisabsent, THepatitisabsent ] -> Categorical({anorexiapresent -> 0.280916, anorexiaabsent -> 0.719084})};
+
+random Typeascites ascites ~ case proteins in
+	{proteinsa10_6 -> Categorical({ascitespresent -> 0.1280932, ascitesabsent -> 0.8719068}),
+proteinsa5_2 -> Categorical({ascitespresent -> 0.5833333, ascitesabsent -> 0.4166667})};
+
+random Typeast ast ~ case [ChHepatitis, RHepatitis, THepatitis, Steatosis, Cirrhosis] in
+	{[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.01960784, asta399_150 -> 0.1372549, asta149_40 -> 0.47058824, asta39_0 -> 0.37254902}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.01818182, asta399_150 -> 0.12727273, asta149_40 -> 0.49090909, asta39_0 -> 0.36363636}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.01612903, asta399_150 -> 0.14516129, asta149_40 -> 0.46774194, asta39_0 -> 0.37096774}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.01612903, asta399_150 -> 0.16129032, asta149_40 -> 0.48387097, asta39_0 -> 0.33870968}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.01818182, asta399_150 -> 0.16363636, asta149_40 -> 0.50909091, asta39_0 -> 0.30909091}),
+[ ChHepatitisactive, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.03225806, asta399_150 -> 0.17741935, asta149_40 -> 0.48387097, asta39_0 -> 0.30645161}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.02777778, asta399_150 -> 0.15277778, asta149_40 -> 0.48611111, asta39_0 -> 0.33333333}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.02941176, asta399_150 -> 0.14705882, asta149_40 -> 0.50000001, asta39_0 -> 0.32352941}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.02531646, asta399_150 -> 0.15189873, asta149_40 -> 0.48101266, asta39_0 -> 0.34177215}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.025, asta399_150 -> 0.175, asta149_40 -> 0.5, asta39_0 -> 0.3}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.02777778, asta399_150 -> 0.18055556, asta149_40 -> 0.52777777, asta39_0 -> 0.26388889}),
+[ ChHepatitisactive, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.03370787, asta399_150 -> 0.20224719, asta149_40 -> 0.50561797, asta39_0 -> 0.25842697}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.02469136, asta399_150 -> 0.16049383, asta149_40 -> 0.4691358, asta39_0 -> 0.34567901}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.02739726, asta399_150 -> 0.1369863, asta149_40 -> 0.47945205, asta39_0 -> 0.35616438}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.02380952, asta399_150 -> 0.14285714, asta149_40 -> 0.45238095, asta39_0 -> 0.38095238}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.02352941, asta399_150 -> 0.16470588, asta149_40 -> 0.45882353, asta39_0 -> 0.35294118}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.02597403, asta399_150 -> 0.16883117, asta149_40 -> 0.48051948, asta39_0 -> 0.32467532}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.03125, asta399_150 -> 0.1875, asta149_40 -> 0.4583333, asta39_0 -> 0.3229167}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.02912621, asta399_150 -> 0.16504854, asta149_40 -> 0.46601942, asta39_0 -> 0.33980583}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.03125, asta399_150 -> 0.15625, asta149_40 -> 0.4791667, asta39_0 -> 0.3333333}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.03174603, asta399_150 -> 0.15873016, asta149_40 -> 0.46031746, asta39_0 -> 0.34920635}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.03676471, asta399_150 -> 0.17647059, asta149_40 -> 0.47058824, asta39_0 -> 0.31617647}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.03937008, asta399_150 -> 0.18110236, asta149_40 -> 0.49606299, asta39_0 -> 0.28346457}),
+[ ChHepatitisactive, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.05494505, asta399_150 -> 0.23076923, asta149_40 -> 0.46153846, asta39_0 -> 0.25274725}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.01754386, asta399_150 -> 0.14035088, asta149_40 -> 0.45614035, asta39_0 -> 0.38596491}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00221729, asta399_150 -> 0.0886918, asta149_40 -> 0.48780488, asta39_0 -> 0.42128603}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00212314, asta399_150 -> 0.08492569, asta149_40 -> 0.44585987, asta39_0 -> 0.4670913}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00221729, asta399_150 -> 0.11086475, asta149_40 -> 0.46563193, asta39_0 -> 0.42128603}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00269542, asta399_150 -> 0.08086253, asta149_40 -> 0.51212938, asta39_0 -> 0.40431267}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00269542, asta399_150 -> 0.08086253, asta149_40 -> 0.45822102, asta39_0 -> 0.45822102}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00191939, asta399_150 -> 0.09596929, asta149_40 -> 0.46065259, asta39_0 -> 0.44145873}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00203666, asta399_150 -> 0.0814664, asta149_40 -> 0.48879837, asta39_0 -> 0.42769857}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00181488, asta399_150 -> 0.0907441, asta149_40 -> 0.45372051, asta39_0 -> 0.45372051}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00184843, asta399_150 -> 0.11090573, asta149_40 -> 0.4805915, asta39_0 -> 0.40665434}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00226757, asta399_150 -> 0.09070295, asta149_40 -> 0.52154195, asta39_0 -> 0.38548753}),
+[ ChHepatitispersistent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00212314, asta399_150 -> 0.10615711, asta149_40 -> 0.48832272, asta39_0 -> 0.40339703}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00172117, asta399_150 -> 0.10327022, asta149_40 -> 0.4475043, asta39_0 -> 0.4475043}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00191939, asta399_150 -> 0.07677543, asta149_40 -> 0.46065259, asta39_0 -> 0.46065259}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00166389, asta399_150 -> 0.08319468, asta149_40 -> 0.41597338, asta39_0 -> 0.49916805}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00172117, asta399_150 -> 0.10327022, asta149_40 -> 0.4302926, asta39_0 -> 0.46471601}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00203666, asta399_150 -> 0.0814664, asta149_40 -> 0.46843177, asta39_0 -> 0.44806517}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00181488, asta399_150 -> 0.0907441, asta149_40 -> 0.41742287, asta39_0 -> 0.49001815}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00142653, asta399_150 -> 0.09985735, asta149_40 -> 0.44222539, asta39_0 -> 0.45649073}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00149031, asta399_150 -> 0.08941878, asta149_40 -> 0.46199702, asta39_0 -> 0.44709389}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00120337, asta399_150 -> 0.08423586, asta149_40 -> 0.433213, asta39_0 -> 0.48134777}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.01136364, asta399_150 -> 0.10227273, asta149_40 -> 0.44318182, asta39_0 -> 0.44318182}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.01315789, asta399_150 -> 0.09210526, asta149_40 -> 0.47368421, asta39_0 -> 0.42105263}),
+[ ChHepatitispersistent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.02777778, asta399_150 -> 0.11111111, asta149_40 -> 0.36111111, asta39_0 -> 0.5}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00199601, asta399_150 -> 0.0998004, asta149_40 -> 0.45908184, asta39_0 -> 0.43912176}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00212314, asta399_150 -> 0.08492569, asta149_40 -> 0.48832272, asta39_0 -> 0.42462845}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00191939, asta399_150 -> 0.07677543, asta149_40 -> 0.46065259, asta39_0 -> 0.46065259}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00199601, asta399_150 -> 0.0998004, asta149_40 -> 0.47904192, asta39_0 -> 0.41916168}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00249377, asta399_150 -> 0.07481297, asta149_40 -> 0.54862842, asta39_0 -> 0.37406484}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00243309, asta399_150 -> 0.0729927, asta149_40 -> 0.51094891, asta39_0 -> 0.4136253}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00166389, asta399_150 -> 0.09983361, asta149_40 -> 0.49916805, asta39_0 -> 0.39933444}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00175131, asta399_150 -> 0.08756567, asta149_40 -> 0.52539405, asta39_0 -> 0.38528897}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00142653, asta399_150 -> 0.08559201, asta149_40 -> 0.49928673, asta39_0 -> 0.41369472}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00140647, asta399_150 -> 0.11251758, asta149_40 -> 0.52039381, asta39_0 -> 0.36568214}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00172117, asta399_150 -> 0.10327022, asta149_40 -> 0.58519794, asta39_0 -> 0.30981067}),
+[ ChHepatitisabsent, RHepatitispresent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00584795, asta399_150 -> 0.11695906, asta149_40 -> 0.64327486, asta39_0 -> 0.23391813}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00181488, asta399_150 -> 0.0907441, asta149_40 -> 0.47186933, asta39_0 -> 0.43557169}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00172117, asta399_150 -> 0.06884682, asta149_40 -> 0.48192771, asta39_0 -> 0.4475043}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00133156, asta399_150 -> 0.0665779, asta149_40 -> 0.43941411, asta39_0 -> 0.49267643}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00126422, asta399_150 -> 0.08849558, asta149_40 -> 0.4551201, asta39_0 -> 0.4551201}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00149031, asta399_150 -> 0.07451565, asta149_40 -> 0.49180328, asta39_0 -> 0.43219076}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitispresent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00369004, asta399_150 -> 0.07380074, asta149_40 -> 0.36900369, asta39_0 -> 0.55350553}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.00133156, asta399_150 -> 0.09320905, asta149_40 -> 0.45272969, asta39_0 -> 0.45272969}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.00116144, asta399_150 -> 0.08130081, asta149_40 -> 0.48780488, asta39_0 -> 0.42973287}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosispresent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.00149031, asta399_150 -> 0.07451565, asta149_40 -> 0.43219076, asta39_0 -> 0.49180328}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisdecompensate ] -> Categorical({asta700_400 -> 0.01724138, asta399_150 -> 0.13793103, asta149_40 -> 0.5, asta39_0 -> 0.34482759}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosiscompensate ] -> Categorical({asta700_400 -> 0.03225806, asta399_150 -> 0.06451613, asta149_40 -> 0.67741936, asta39_0 -> 0.22580645}),
+[ ChHepatitisabsent, RHepatitisabsent, THepatitisabsent, Steatosisabsent, Cirrhosisabsent ] -> Categorical({asta700_400 -> 0.01075269, asta399_150 -> 0.22580645, asta149_40 -> 0.46774194, asta39_0 -> 0.29569892})};
+
+random Typebilirubin bilirubin ~ case [Hyperbilirubinemia, PBC, Cirrhosis, gallstones, ChHepatitis] in
+	{[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisdecompensate, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.04347826, bilirubina19_7 -> 0.2173913, bilirubina6_2 -> 0.34782609, bilirubina1_0 -> 0.39130435}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisdecompensate, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.07407407, bilirubina19_7 -> 0.22222222, bilirubina6_2 -> 0.33333333, bilirubina1_0 -> 0.37037037}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisdecompensate, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.07894737, bilirubina19_7 -> 0.23684211, bilirubina6_2 -> 0.34210526, bilirubina1_0 -> 0.34210526}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.01923077, bilirubina19_7 -> 0.11538462, bilirubina6_2 -> 0.36538462, bilirubina1_0 -> 0.5}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.01818182, bilirubina19_7 -> 0.11818182, bilirubina6_2 -> 0.38181818, bilirubina1_0 -> 0.48181818}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.02189781, bilirubina19_7 -> 0.12408759, bilirubina6_2 -> 0.41605839, bilirubina1_0 -> 0.4379562}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosiscompensate, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.03571429, bilirubina19_7 -> 0.16071429, bilirubina6_2 -> 0.39285714, bilirubina1_0 -> 0.41071429}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosiscompensate, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.05882353, bilirubina19_7 -> 0.20588235, bilirubina6_2 -> 0.38235294, bilirubina1_0 -> 0.35294118}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosiscompensate, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.07692308, bilirubina19_7 -> 0.23076923, bilirubina6_2 -> 0.35897436, bilirubina1_0 -> 0.33333333}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosiscompensate, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.02020202, bilirubina19_7 -> 0.11111111, bilirubina6_2 -> 0.34343434, bilirubina1_0 -> 0.52525253}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosiscompensate, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.01941748, bilirubina19_7 -> 0.10679612, bilirubina6_2 -> 0.34951456, bilirubina1_0 -> 0.52427184}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosiscompensate, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.02362205, bilirubina19_7 -> 0.11811024, bilirubina6_2 -> 0.37795276, bilirubina1_0 -> 0.48031496}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisabsent, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.04225352, bilirubina19_7 -> 0.15492958, bilirubina6_2 -> 0.36619718, bilirubina1_0 -> 0.43661972}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisabsent, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.06, bilirubina19_7 -> 0.2, bilirubina6_2 -> 0.36, bilirubina1_0 -> 0.38}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisabsent, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.07575758, bilirubina19_7 -> 0.22727273, bilirubina6_2 -> 0.36363636, bilirubina1_0 -> 0.33333333}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisabsent, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.03030303, bilirubina19_7 -> 0.12121212, bilirubina6_2 -> 0.35606061, bilirubina1_0 -> 0.49242424}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisabsent, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.02158273, bilirubina19_7 -> 0.11510791, bilirubina6_2 -> 0.37410072, bilirubina1_0 -> 0.48920863}),
+[ Hyperbilirubinemiapresent, PBCpresent, Cirrhosisabsent, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.02061856, bilirubina19_7 -> 0.12371134, bilirubina6_2 -> 0.40721649, bilirubina1_0 -> 0.44845361}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisdecompensate, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.01449275, bilirubina19_7 -> 0.11594203, bilirubina6_2 -> 0.39130435, bilirubina1_0 -> 0.47826087}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisdecompensate, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.00398406, bilirubina19_7 -> 0.11952191, bilirubina6_2 -> 0.35856574, bilirubina1_0 -> 0.51792829}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisdecompensate, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.00662252, bilirubina19_7 -> 0.13245033, bilirubina6_2 -> 0.26490066, bilirubina1_0 -> 0.59602649}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.00151286, bilirubina19_7 -> 0.04538578, bilirubina6_2 -> 0.34795764, bilirubina1_0 -> 0.60514372}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.00144718, bilirubina19_7 -> 0.04341534, bilirubina6_2 -> 0.37626628, bilirubina1_0 -> 0.5788712}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.00114811, bilirubina19_7 -> 0.05740528, bilirubina6_2 -> 0.44776119, bilirubina1_0 -> 0.49368542}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosiscompensate, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.00311526, bilirubina19_7 -> 0.03115265, bilirubina6_2 -> 0.43613707, bilirubina1_0 -> 0.52959502}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosiscompensate, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.00892857, bilirubina19_7 -> 0.00892857, bilirubina6_2 -> 0.44642857, bilirubina1_0 -> 0.53571429}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosiscompensate, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.01388889, bilirubina19_7 -> 0.01388889, bilirubina6_2 -> 0.41666667, bilirubina1_0 -> 0.55555555}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosiscompensate, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.00178253, bilirubina19_7 -> 0.01782531, bilirubina6_2 -> 0.28520499, bilirubina1_0 -> 0.69518717}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosiscompensate, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.00174825, bilirubina19_7 -> 0.00174825, bilirubina6_2 -> 0.2972028, bilirubina1_0 -> 0.6993007}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosiscompensate, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.00144509, bilirubina19_7 -> 0.00144509, bilirubina6_2 -> 0.36127168, bilirubina1_0 -> 0.63583814}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisabsent, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.00255102, bilirubina19_7 -> 0.00255102, bilirubina6_2 -> 0.33163265, bilirubina1_0 -> 0.66326531}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisabsent, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.0049505, bilirubina19_7 -> 0.0049505, bilirubina6_2 -> 0.2970297, bilirubina1_0 -> 0.6930693}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisabsent, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.07692308, bilirubina19_7 -> 0.07692308, bilirubina6_2 -> 0.07692308, bilirubina1_0 -> 0.76923076}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisabsent, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.00146843, bilirubina19_7 -> 0.01468429, bilirubina6_2 -> 0.30837004, bilirubina1_0 -> 0.67547724}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisabsent, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.00127877, bilirubina19_7 -> 0.00127877, bilirubina6_2 -> 0.33248082, bilirubina1_0 -> 0.66496164}),
+[ Hyperbilirubinemiapresent, PBCabsent, Cirrhosisabsent, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.00181159, bilirubina19_7 -> 0.00181159, bilirubina6_2 -> 0.54347827, bilirubina1_0 -> 0.45289855}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisdecompensate, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.04081633, bilirubina19_7 -> 0.14285714, bilirubina6_2 -> 0.40816327, bilirubina1_0 -> 0.40816327}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisdecompensate, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.06818182, bilirubina19_7 -> 0.20454545, bilirubina6_2 -> 0.36363636, bilirubina1_0 -> 0.36363636}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisdecompensate, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.07692308, bilirubina19_7 -> 0.23076923, bilirubina6_2 -> 0.35384615, bilirubina1_0 -> 0.33846154}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.03030303, bilirubina19_7 -> 0.14393939, bilirubina6_2 -> 0.34090909, bilirubina1_0 -> 0.48484848}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.02173913, bilirubina19_7 -> 0.13768116, bilirubina6_2 -> 0.35507246, bilirubina1_0 -> 0.48550725}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.02590674, bilirubina19_7 -> 0.15025907, bilirubina6_2 -> 0.38341969, bilirubina1_0 -> 0.44041451}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosiscompensate, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.04255319, bilirubina19_7 -> 0.17021277, bilirubina6_2 -> 0.37234043, bilirubina1_0 -> 0.41489362}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosiscompensate, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.05084746, bilirubina19_7 -> 0.20338983, bilirubina6_2 -> 0.37288136, bilirubina1_0 -> 0.37288136}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosiscompensate, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.07042254, bilirubina19_7 -> 0.22535211, bilirubina6_2 -> 0.36619718, bilirubina1_0 -> 0.33802817}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosiscompensate, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.032, bilirubina19_7 -> 0.136, bilirubina6_2 -> 0.312, bilirubina1_0 -> 0.52}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosiscompensate, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.0234375, bilirubina19_7 -> 0.1328125, bilirubina6_2 -> 0.3125, bilirubina1_0 -> 0.53125}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosiscompensate, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.02824859, bilirubina19_7 -> 0.14124294, bilirubina6_2 -> 0.33898305, bilirubina1_0 -> 0.49152542}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisabsent, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.04477612, bilirubina19_7 -> 0.1641791, bilirubina6_2 -> 0.34328358, bilirubina1_0 -> 0.44776119}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisabsent, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.05555556, bilirubina19_7 -> 0.19444444, bilirubina6_2 -> 0.35185185, bilirubina1_0 -> 0.39814815}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisabsent, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.08536585, bilirubina19_7 -> 0.24390244, bilirubina6_2 -> 0.36585366, bilirubina1_0 -> 0.30487805}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisabsent, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.03910615, bilirubina19_7 -> 0.15083799, bilirubina6_2 -> 0.32960894, bilirubina1_0 -> 0.48044693}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisabsent, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.02926829, bilirubina19_7 -> 0.14634146, bilirubina6_2 -> 0.33658537, bilirubina1_0 -> 0.48780488}),
+[ Hyperbilirubinemiaabsent, PBCpresent, Cirrhosisabsent, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.03030303, bilirubina19_7 -> 0.16666667, bilirubina6_2 -> 0.38888889, bilirubina1_0 -> 0.41414141}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisdecompensate, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.02830189, bilirubina19_7 -> 0.16037736, bilirubina6_2 -> 0.36792453, bilirubina1_0 -> 0.44339623}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisdecompensate, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.01818182, bilirubina19_7 -> 0.16363636, bilirubina6_2 -> 0.34545455, bilirubina1_0 -> 0.47272727}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisdecompensate, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.01923077, bilirubina19_7 -> 0.19230769, bilirubina6_2 -> 0.01923077, bilirubina1_0 -> 0.76923077}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.01449275, bilirubina19_7 -> 0.07246377, bilirubina6_2 -> 0.24637681, bilirubina1_0 -> 0.66666667}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.01282051, bilirubina19_7 -> 0.07692308, bilirubina6_2 -> 0.26923077, bilirubina1_0 -> 0.64102564}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisdecompensate, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.01886792, bilirubina19_7 -> 0.13207547, bilirubina6_2 -> 0.43396226, bilirubina1_0 -> 0.41509434}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosiscompensate, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.00321543, bilirubina19_7 -> 0.09646302, bilirubina6_2 -> 0.41800643, bilirubina1_0 -> 0.48231511}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosiscompensate, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.00621118, bilirubina19_7 -> 0.0621118, bilirubina6_2 -> 0.43478261, bilirubina1_0 -> 0.49689441}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosiscompensate, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.04545455, bilirubina19_7 -> 0.04545455, bilirubina6_2 -> 0.45454545, bilirubina1_0 -> 0.45454545}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosiscompensate, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.01818182, bilirubina19_7 -> 0.01818182, bilirubina6_2 -> 0.14545455, bilirubina1_0 -> 0.81818181}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosiscompensate, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.01694915, bilirubina19_7 -> 0.01694915, bilirubina6_2 -> 0.10169492, bilirubina1_0 -> 0.86440678}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosiscompensate, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.03448276, bilirubina19_7 -> 0.03448276, bilirubina6_2 -> 0.10344828, bilirubina1_0 -> 0.8275862}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisabsent, gallstonespresent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.00980392, bilirubina19_7 -> 0.00980392, bilirubina6_2 -> 0.19607843, bilirubina1_0 -> 0.78431373}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisabsent, gallstonespresent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.07692308, bilirubina19_7 -> 0.07692308, bilirubina6_2 -> 0.07692308, bilirubina1_0 -> 0.76923076}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisabsent, gallstonespresent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.01587302, bilirubina19_7 -> 0.01587302, bilirubina6_2 -> 0.01587302, bilirubina1_0 -> 0.95238094}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisabsent, gallstonesabsent, ChHepatitisactive ] -> Categorical({bilirubina88_20 -> 0.01234568, bilirubina19_7 -> 0.02469136, bilirubina6_2 -> 0.14814815, bilirubina1_0 -> 0.81481481}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisabsent, gallstonesabsent, ChHepatitispersistent ] -> Categorical({bilirubina88_20 -> 0.00284091, bilirubina19_7 -> 0.00284091, bilirubina6_2 -> 0.05681818, bilirubina1_0 -> 0.9375}),
+[ Hyperbilirubinemiaabsent, PBCabsent, Cirrhosisabsent, gallstonesabsent, ChHepatitisabsent ] -> Categorical({bilirubina88_20 -> 0.00070872, bilirubina19_7 -> 0.02126152, bilirubina6_2 -> 0.13465627, bilirubina1_0 -> 0.84337349})};
+
+random Typebleeding bleeding ~ case [platelet, inr] in
+	{[ plateleta597_300, inra200_110 ] -> Categorical({bleedingpresent -> 0.1428571, bleedingabsent -> 0.8571429}),
+[ plateleta597_300, inra109_70 ] -> Categorical({bleedingpresent -> 0.106383, bleedingabsent -> 0.893617}),
+[ plateleta597_300, inra69_0 ] -> Categorical({bleedingpresent -> 0.09090909, bleedingabsent -> 0.90909091}),
+[ plateleta299_150, inra200_110 ] -> Categorical({bleedingpresent -> 0.1304348, bleedingabsent -> 0.8695652}),
+[ plateleta299_150, inra109_70 ] -> Categorical({bleedingpresent -> 0.1373494, bleedingabsent -> 0.8626506}),
+[ plateleta299_150, inra69_0 ] -> Categorical({bleedingpresent -> 0.425, bleedingabsent -> 0.575}),
+[ plateleta149_100, inra200_110 ] -> Categorical({bleedingpresent -> 0.2, bleedingabsent -> 0.8}),
+[ plateleta149_100, inra109_70 ] -> Categorical({bleedingpresent -> 0.1333333, bleedingabsent -> 0.8666667}),
+[ plateleta149_100, inra69_0 ] -> Categorical({bleedingpresent -> 0.25, bleedingabsent -> 0.75}),
+[ plateleta99_0, inra200_110 ] -> Categorical({bleedingpresent -> 0.5, bleedingabsent -> 0.5}),
+[ plateleta99_0, inra109_70 ] -> Categorical({bleedingpresent -> 0.255814, bleedingabsent -> 0.744186}),
+[ plateleta99_0, inra69_0 ] -> Categorical({bleedingpresent -> 0.6666667, bleedingabsent -> 0.3333333})};
+
+random Typecarcinoma carcinoma ~ case [Cirrhosis, PBC] in
+	{[ Cirrhosisdecompensate, PBCpresent ] -> Categorical({carcinomapresent -> 0.3636364, carcinomaabsent -> 0.6363636}),
+[ Cirrhosisdecompensate, PBCabsent ] -> Categorical({carcinomapresent -> 0.3, carcinomaabsent -> 0.7}),
+[ Cirrhosiscompensate, PBCpresent ] -> Categorical({carcinomapresent -> 0.2727273, carcinomaabsent -> 0.7272727}),
+[ Cirrhosiscompensate, PBCabsent ] -> Categorical({carcinomapresent -> 0.2, carcinomaabsent -> 0.8}),
+[ Cirrhosisabsent, PBCpresent ] -> Categorical({carcinomapresent -> 0.1, carcinomaabsent -> 0.9}),
+[ Cirrhosisabsent, PBCabsent ] -> Categorical({carcinomapresent -> 0.01, carcinomaabsent -> 0.99})};
+
+random Typecholedocholithotomy choledocholithotomy ~ case gallstones in
+	{gallstonespresent -> Categorical({choledocholithotomypresent -> 0.7102804, choledocholithotomyabsent -> 0.2897196}),
+gallstonesabsent -> Categorical({choledocholithotomypresent -> 0.03716216, choledocholithotomyabsent -> 0.96283784})};
+
+random Typecholesterol cholesterol ~ case [PBC, Steatosis, ChHepatitis] in
+	{[ PBCpresent, Steatosispresent, ChHepatitisactive ] -> Categorical({cholesterola999_350 -> 0.08965517, cholesterola349_240 -> 0.28275862, cholesterola239_0 -> 0.62758621}),
+[ PBCpresent, Steatosispresent, ChHepatitispersistent ] -> Categorical({cholesterola999_350 -> 0.09659091, cholesterola349_240 -> 0.30113636, cholesterola239_0 -> 0.60227273}),
+[ PBCpresent, Steatosispresent, ChHepatitisabsent ] -> Categorical({cholesterola999_350 -> 0.1034483, cholesterola349_240 -> 0.3256705, cholesterola239_0 -> 0.5708812}),
+[ PBCpresent, Steatosisabsent, ChHepatitisactive ] -> Categorical({cholesterola999_350 -> 0.1015873, cholesterola349_240 -> 0.3047619, cholesterola239_0 -> 0.5936508}),
+[ PBCpresent, Steatosisabsent, ChHepatitispersistent ] -> Categorical({cholesterola999_350 -> 0.1050955, cholesterola349_240 -> 0.3152866, cholesterola239_0 -> 0.5796179}),
+[ PBCpresent, Steatosisabsent, ChHepatitisabsent ] -> Categorical({cholesterola999_350 -> 0.125, cholesterola349_240 -> 0.3642857, cholesterola239_0 -> 0.5107143}),
+[ PBCabsent, Steatosispresent, ChHepatitisactive ] -> Categorical({cholesterola999_350 -> 0.09174312, cholesterola349_240 -> 0.27981651, cholesterola239_0 -> 0.62844037}),
+[ PBCabsent, Steatosispresent, ChHepatitispersistent ] -> Categorical({cholesterola999_350 -> 0.06918239, cholesterola349_240 -> 0.23899371, cholesterola239_0 -> 0.6918239}),
+[ PBCabsent, Steatosispresent, ChHepatitisabsent ] -> Categorical({cholesterola999_350 -> 0.04477612, cholesterola349_240 -> 0.2238806, cholesterola239_0 -> 0.73134328}),
+[ PBCabsent, Steatosisabsent, ChHepatitisactive ] -> Categorical({cholesterola999_350 -> 0.03296703, cholesterola349_240 -> 0.06593407, cholesterola239_0 -> 0.9010989}),
+[ PBCabsent, Steatosisabsent, ChHepatitispersistent ] -> Categorical({cholesterola999_350 -> 0.00277008, cholesterola349_240 -> 0.02770083, cholesterola239_0 -> 0.96952909}),
+[ PBCabsent, Steatosisabsent, ChHepatitisabsent ] -> Categorical({cholesterola999_350 -> 0.00044425, cholesterola349_240 -> 0.09773434, cholesterola239_0 -> 0.90182141})};
+
+random Typeconsciousness consciousness ~ case encephalopathy in
+	{encephalopathypresent -> Categorical({consciousnesspresent -> 0.3043478, consciousnessabsent -> 0.6956522}),
+encephalopathyabsent -> Categorical({consciousnesspresent -> 0.01627219, consciousnessabsent -> 0.98372781})};
+
+random Typedensity density ~ case encephalopathy in
+	{encephalopathypresent -> Categorical({densitypresent -> 0.7391304, densityabsent -> 0.2608696}),
+encephalopathyabsent -> Categorical({densitypresent -> 0.3772189, densityabsent -> 0.6227811})};
+
+random Typediabetes diabetes ~ 
+	Categorical({diabetespresent -> 0.03576538,diabetesabsent -> 0.96423462})
+;
+
+random Typeedema edema ~ case Cirrhosis in
+	{Cirrhosisdecompensate -> Categorical({edemapresent -> 0.3448276, edemaabsent -> 0.6551724}),
+Cirrhosiscompensate -> Categorical({edemapresent -> 0.06451613, edemaabsent -> 0.93548387}),
+Cirrhosisabsent -> Categorical({edemapresent -> 0.1311475, edemaabsent -> 0.8688525})};
+
+random Typeedge edge ~ case Cirrhosis in
+	{Cirrhosisdecompensate -> Categorical({edgepresent -> 0.7586207, edgeabsent -> 0.2413793}),
+Cirrhosiscompensate -> Categorical({edgepresent -> 0.4516129, edgeabsent -> 0.5483871}),
+Cirrhosisabsent -> Categorical({edgepresent -> 0.2344262, edgeabsent -> 0.7655738})};
+
+random Typeencephalopathy encephalopathy ~ case [Cirrhosis, PBC] in
+	{[ Cirrhosisdecompensate, PBCpresent ] -> Categorical({encephalopathypresent -> 0.05325444, encephalopathyabsent -> 0.94674556}),
+[ Cirrhosisdecompensate, PBCabsent ] -> Categorical({encephalopathypresent -> 0.05172414, encephalopathyabsent -> 0.94827586}),
+[ Cirrhosiscompensate, PBCpresent ] -> Categorical({encephalopathypresent -> 0.04891304, encephalopathyabsent -> 0.95108696}),
+[ Cirrhosiscompensate, PBCabsent ] -> Categorical({encephalopathypresent -> 0.00321543, encephalopathyabsent -> 0.99678457}),
+[ Cirrhosisabsent, PBCpresent ] -> Categorical({encephalopathypresent -> 0.05357143, encephalopathyabsent -> 0.94642857}),
+[ Cirrhosisabsent, PBCabsent ] -> Categorical({encephalopathypresent -> 0.01515152, encephalopathyabsent -> 0.98484848})};
+
+random Typefat fat ~ case gallstones in
+	{gallstonespresent -> Categorical({fatpresent -> 0.1775701, fatabsent -> 0.8224299}),
+gallstonesabsent -> Categorical({fatpresent -> 0.2804054, fatabsent -> 0.7195946})};
+
+random Typefatigue fatigue ~ case [ChHepatitis, THepatitis, RHepatitis] in
+	{[ ChHepatitisactive, THepatitispresent, RHepatitispresent ] -> Categorical({fatiguepresent -> 0.6363636, fatigueabsent -> 0.3636364}),
+[ ChHepatitisactive, THepatitispresent, RHepatitisabsent ] -> Categorical({fatiguepresent -> 0.625, fatigueabsent -> 0.375}),
+[ ChHepatitisactive, THepatitisabsent, RHepatitispresent ] -> Categorical({fatiguepresent -> 0.6236559, fatigueabsent -> 0.3763441}),
+[ ChHepatitisactive, THepatitisabsent, RHepatitisabsent ] -> Categorical({fatiguepresent -> 0.6043956, fatigueabsent -> 0.3956044}),
+[ ChHepatitispersistent, THepatitispresent, RHepatitispresent ] -> Categorical({fatiguepresent -> 0.6071429, fatigueabsent -> 0.3928571}),
+[ ChHepatitispersistent, THepatitispresent, RHepatitisabsent ] -> Categorical({fatiguepresent -> 0.5932203, fatigueabsent -> 0.4067797}),
+[ ChHepatitispersistent, THepatitisabsent, RHepatitispresent ] -> Categorical({fatiguepresent -> 0.5892857, fatigueabsent -> 0.4107143}),
+[ ChHepatitispersistent, THepatitisabsent, RHepatitisabsent ] -> Categorical({fatiguepresent -> 0.5277778, fatigueabsent -> 0.4722222}),
+[ ChHepatitisabsent, THepatitispresent, RHepatitispresent ] -> Categorical({fatiguepresent -> 0.6153846, fatigueabsent -> 0.3846154}),
+[ ChHepatitisabsent, THepatitispresent, RHepatitisabsent ] -> Categorical({fatiguepresent -> 0.6666667, fatigueabsent -> 0.3333333}),
+[ ChHepatitisabsent, THepatitisabsent, RHepatitispresent ] -> Categorical({fatiguepresent -> 0.7058823, fatigueabsent -> 0.2941177}),
+[ ChHepatitisabsent, THepatitisabsent, RHepatitisabsent ] -> Categorical({fatiguepresent -> 0.5359849, fatigueabsent -> 0.4640151})};
+
+random Typefibrosis fibrosis ~ case ChHepatitis in
+	{ChHepatitisactive -> Categorical({fibrosispresent -> 0.3, fibrosisabsent -> 0.7}),
+ChHepatitispersistent -> Categorical({fibrosispresent -> 0.05, fibrosisabsent -> 0.95}),
+ChHepatitisabsent -> Categorical({fibrosispresent -> 0.001, fibrosisabsent -> 0.999})};
+
+random Typeflatulence flatulence ~ case gallstones in
+	{gallstonespresent -> Categorical({flatulencepresent -> 0.3925234, flatulenceabsent -> 0.6074766}),
+gallstonesabsent -> Categorical({flatulencepresent -> 0.4307432, flatulenceabsent -> 0.5692568})};
+
+random Typegallstones gallstones ~ 
+	Categorical({gallstonespresent -> 0.1530758,gallstonesabsent -> 0.8469242})
+;
+
+random Typeggtp ggtp ~ case [PBC, THepatitis, RHepatitis, Steatosis, ChHepatitis, Hyperbilirubinemia] in
+	{[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1590909, ggtpa69_30 -> 0.1477273, ggtpa29_10 -> 0.1136364, ggtpa9_0 -> 0.5795454}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1696429, ggtpa69_30 -> 0.1607143, ggtpa29_10 -> 0.125, ggtpa9_0 -> 0.5446428}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1546392, ggtpa69_30 -> 0.1443299, ggtpa29_10 -> 0.1134021, ggtpa9_0 -> 0.5876288}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1730769, ggtpa69_30 -> 0.1538462, ggtpa29_10 -> 0.125, ggtpa9_0 -> 0.5480769}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1666667, ggtpa69_30 -> 0.1481482, ggtpa29_10 -> 0.1111111, ggtpa9_0 -> 0.574074}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1854839, ggtpa69_30 -> 0.1612903, ggtpa29_10 -> 0.1209677, ggtpa9_0 -> 0.5322581}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1694915, ggtpa69_30 -> 0.1610169, ggtpa29_10 -> 0.1186441, ggtpa9_0 -> 0.5508475}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1832061, ggtpa69_30 -> 0.1755725, ggtpa29_10 -> 0.129771, ggtpa9_0 -> 0.5114504}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1759259, ggtpa69_30 -> 0.1574074, ggtpa29_10 -> 0.1111111, ggtpa9_0 -> 0.5555556}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1913044, ggtpa69_30 -> 0.173913, ggtpa29_10 -> 0.1217391, ggtpa9_0 -> 0.5130435}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1885246, ggtpa69_30 -> 0.1639344, ggtpa29_10 -> 0.1065574, ggtpa9_0 -> 0.5409836}),
+[ PBCpresent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.2108843, ggtpa69_30 -> 0.1836735, ggtpa29_10 -> 0.1156463, ggtpa9_0 -> 0.4897959}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1666667, ggtpa69_30 -> 0.1590909, ggtpa29_10 -> 0.1212121, ggtpa9_0 -> 0.5530303}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1768707, ggtpa69_30 -> 0.1632653, ggtpa29_10 -> 0.1292517, ggtpa9_0 -> 0.5306123}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1652893, ggtpa69_30 -> 0.1487603, ggtpa29_10 -> 0.1157025, ggtpa9_0 -> 0.5702479}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1742424, ggtpa69_30 -> 0.1590909, ggtpa29_10 -> 0.1287879, ggtpa9_0 -> 0.5378788}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1726619, ggtpa69_30 -> 0.1510791, ggtpa29_10 -> 0.1151079, ggtpa9_0 -> 0.5611511}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1893491, ggtpa69_30 -> 0.1656805, ggtpa29_10 -> 0.1242604, ggtpa9_0 -> 0.52071}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1741935, ggtpa69_30 -> 0.1677419, ggtpa29_10 -> 0.1225806, ggtpa9_0 -> 0.535484}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1857923, ggtpa69_30 -> 0.1857923, ggtpa29_10 -> 0.1311475, ggtpa9_0 -> 0.4972678}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1748252, ggtpa69_30 -> 0.1678322, ggtpa29_10 -> 0.1188811, ggtpa9_0 -> 0.5384615}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.19375, ggtpa69_30 -> 0.18125, ggtpa29_10 -> 0.125, ggtpa9_0 -> 0.5}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1918605, ggtpa69_30 -> 0.1744186, ggtpa29_10 -> 0.1104651, ggtpa9_0 -> 0.5232558}),
+[ PBCpresent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.2142857, ggtpa69_30 -> 0.1932773, ggtpa29_10 -> 0.1176471, ggtpa9_0 -> 0.4747899}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1756757, ggtpa69_30 -> 0.1621622, ggtpa29_10 -> 0.1216216, ggtpa9_0 -> 0.5405405}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.18, ggtpa69_30 -> 0.1666667, ggtpa29_10 -> 0.1333333, ggtpa9_0 -> 0.52}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1666667, ggtpa69_30 -> 0.15, ggtpa29_10 -> 0.125, ggtpa9_0 -> 0.5583333}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1782946, ggtpa69_30 -> 0.1627907, ggtpa29_10 -> 0.131783, ggtpa9_0 -> 0.5271317}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1764706, ggtpa69_30 -> 0.1544118, ggtpa29_10 -> 0.1176471, ggtpa9_0 -> 0.5514705}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1939394, ggtpa69_30 -> 0.169697, ggtpa29_10 -> 0.1272727, ggtpa9_0 -> 0.5090909}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1776316, ggtpa69_30 -> 0.1710526, ggtpa29_10 -> 0.125, ggtpa9_0 -> 0.5263158}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1899441, ggtpa69_30 -> 0.1899441, ggtpa29_10 -> 0.1340782, ggtpa9_0 -> 0.4860335}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1785714, ggtpa69_30 -> 0.1714286, ggtpa29_10 -> 0.1214286, ggtpa9_0 -> 0.5285714}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1987179, ggtpa69_30 -> 0.1858974, ggtpa29_10 -> 0.1282051, ggtpa9_0 -> 0.4871795}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1964286, ggtpa69_30 -> 0.1785714, ggtpa29_10 -> 0.1130952, ggtpa9_0 -> 0.5119048}),
+[ PBCpresent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.2207792, ggtpa69_30 -> 0.1991342, ggtpa29_10 -> 0.1212121, ggtpa9_0 -> 0.4588745}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.178771, ggtpa69_30 -> 0.1731844, ggtpa29_10 -> 0.122905, ggtpa9_0 -> 0.5251396}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1804878, ggtpa69_30 -> 0.1756098, ggtpa29_10 -> 0.1365854, ggtpa9_0 -> 0.507317}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1698113, ggtpa69_30 -> 0.1572327, ggtpa29_10 -> 0.1257862, ggtpa9_0 -> 0.5471698}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1843575, ggtpa69_30 -> 0.1675978, ggtpa29_10 -> 0.1340782, ggtpa9_0 -> 0.5139665}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1822917, ggtpa69_30 -> 0.1614583, ggtpa29_10 -> 0.1197917, ggtpa9_0 -> 0.5364583}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1977612, ggtpa69_30 -> 0.1791045, ggtpa29_10 -> 0.1268657, ggtpa9_0 -> 0.4962687}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1826087, ggtpa69_30 -> 0.1782609, ggtpa29_10 -> 0.126087, ggtpa9_0 -> 0.5130434}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.1939799, ggtpa69_30 -> 0.1939799, ggtpa29_10 -> 0.1371237, ggtpa9_0 -> 0.4749164}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1846847, ggtpa69_30 -> 0.1846847, ggtpa29_10 -> 0.1261261, ggtpa9_0 -> 0.5045045}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.2007435, ggtpa69_30 -> 0.197026, ggtpa29_10 -> 0.133829, ggtpa9_0 -> 0.4684015}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1986755, ggtpa69_30 -> 0.192053, ggtpa29_10 -> 0.1225166, ggtpa9_0 -> 0.486755}),
+[ PBCpresent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.2392857, ggtpa69_30 -> 0.225, ggtpa29_10 -> 0.1321429, ggtpa9_0 -> 0.4035714}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.1509434, ggtpa69_30 -> 0.1415094, ggtpa29_10 -> 0.1226415, ggtpa9_0 -> 0.5849057}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.10526316, ggtpa69_30 -> 0.09210526, ggtpa29_10 -> 0.13157895, ggtpa9_0 -> 0.67105263}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.05555556, ggtpa69_30 -> 0.03703704, ggtpa29_10 -> 0.09259259, ggtpa9_0 -> 0.81481481}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.06122449, ggtpa69_30 -> 0.02040816, ggtpa29_10 -> 0.10204082, ggtpa9_0 -> 0.81632653}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.05649718, ggtpa69_30 -> 0.00188324, ggtpa29_10 -> 0.07532957, ggtpa9_0 -> 0.86629001}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.07393715, ggtpa69_30 -> 0.00184843, ggtpa29_10 -> 0.09242144, ggtpa9_0 -> 0.83179298}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.06557377, ggtpa69_30 -> 0.04918033, ggtpa29_10 -> 0.09836066, ggtpa9_0 -> 0.78688524}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.078125, ggtpa69_30 -> 0.078125, ggtpa29_10 -> 0.125, ggtpa9_0 -> 0.71875}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04166667, ggtpa69_30 -> 0.02083333, ggtpa29_10 -> 0.08333333, ggtpa9_0 -> 0.85416667}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.04761905, ggtpa69_30 -> 0.02380952, ggtpa29_10 -> 0.0952381, ggtpa9_0 -> 0.83333333}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04338395, ggtpa69_30 -> 0.0021692, ggtpa29_10 -> 0.04338395, ggtpa9_0 -> 0.9110629}),
+[ PBCabsent, THepatitispresent, RHepatitispresent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.06651885, ggtpa69_30 -> 0.00221729, ggtpa29_10 -> 0.0443459, ggtpa9_0 -> 0.88691796}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.05714286, ggtpa69_30 -> 0.04285714, ggtpa29_10 -> 0.1, ggtpa9_0 -> 0.8}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.07142857, ggtpa69_30 -> 0.07142857, ggtpa29_10 -> 0.13095238, ggtpa9_0 -> 0.72619048}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04545455, ggtpa69_30 -> 0.03030303, ggtpa29_10 -> 0.10606061, ggtpa9_0 -> 0.81818181}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.04615385, ggtpa69_30 -> 0.03076923, ggtpa29_10 -> 0.12307692, ggtpa9_0 -> 0.8}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04285714, ggtpa69_30 -> 0.01428571, ggtpa29_10 -> 0.08571429, ggtpa9_0 -> 0.85714286}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.0617284, ggtpa69_30 -> 0.01234568, ggtpa29_10 -> 0.09876543, ggtpa9_0 -> 0.82716049}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.06024096, ggtpa69_30 -> 0.04819277, ggtpa29_10 -> 0.09638554, ggtpa9_0 -> 0.79518073}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.07070707, ggtpa69_30 -> 0.08080808, ggtpa29_10 -> 0.12121212, ggtpa9_0 -> 0.72727273}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04166667, ggtpa69_30 -> 0.04166667, ggtpa29_10 -> 0.09722222, ggtpa9_0 -> 0.81944444}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.03030303, ggtpa69_30 -> 0.03030303, ggtpa29_10 -> 0.10606061, ggtpa9_0 -> 0.83333333}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.02702703, ggtpa69_30 -> 0.01351351, ggtpa29_10 -> 0.05405405, ggtpa9_0 -> 0.90540541}),
+[ PBCabsent, THepatitispresent, RHepatitisabsent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.07380074, ggtpa69_30 -> 0.00369004, ggtpa29_10 -> 0.03690037, ggtpa9_0 -> 0.88560885}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.06349206, ggtpa69_30 -> 0.04761905, ggtpa29_10 -> 0.11111111, ggtpa9_0 -> 0.77777778}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.07594937, ggtpa69_30 -> 0.07594937, ggtpa29_10 -> 0.13924051, ggtpa9_0 -> 0.70886075}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.0483871, ggtpa69_30 -> 0.03225806, ggtpa29_10 -> 0.11290323, ggtpa9_0 -> 0.80645161}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.05, ggtpa69_30 -> 0.03333333, ggtpa29_10 -> 0.13333333, ggtpa9_0 -> 0.78333334}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04615385, ggtpa69_30 -> 0.01538462, ggtpa29_10 -> 0.09230769, ggtpa9_0 -> 0.84615384}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.06756757, ggtpa69_30 -> 0.01351351, ggtpa29_10 -> 0.10810811, ggtpa9_0 -> 0.81081081}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.06410256, ggtpa69_30 -> 0.05128205, ggtpa29_10 -> 0.1025641, ggtpa9_0 -> 0.78205129}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.07692308, ggtpa69_30 -> 0.08791209, ggtpa29_10 -> 0.13186813, ggtpa9_0 -> 0.7032967}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04545455, ggtpa69_30 -> 0.04545455, ggtpa29_10 -> 0.10606061, ggtpa9_0 -> 0.80303029}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.03448276, ggtpa69_30 -> 0.03448276, ggtpa29_10 -> 0.12068966, ggtpa9_0 -> 0.81034482}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.03076923, ggtpa69_30 -> 0.01538462, ggtpa29_10 -> 0.06153846, ggtpa9_0 -> 0.89230769}),
+[ PBCabsent, THepatitisabsent, RHepatitispresent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.11695906, ggtpa69_30 -> 0.00584795, ggtpa29_10 -> 0.05847953, ggtpa9_0 -> 0.81871346}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.06493506, ggtpa69_30 -> 0.06493506, ggtpa29_10 -> 0.11688312, ggtpa9_0 -> 0.75324676}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.07692308, ggtpa69_30 -> 0.08547009, ggtpa29_10 -> 0.14529915, ggtpa9_0 -> 0.69230768}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04444444, ggtpa69_30 -> 0.04444444, ggtpa29_10 -> 0.12222222, ggtpa9_0 -> 0.7888889}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.04210526, ggtpa69_30 -> 0.04210526, ggtpa29_10 -> 0.13684211, ggtpa9_0 -> 0.77894737}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.03703704, ggtpa69_30 -> 0.02777778, ggtpa29_10 -> 0.10185185, ggtpa9_0 -> 0.83333333}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosispresent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.07462687, ggtpa69_30 -> 0.02985075, ggtpa29_10 -> 0.13432836, ggtpa9_0 -> 0.76119402}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.05660377, ggtpa69_30 -> 0.06603774, ggtpa29_10 -> 0.12264151, ggtpa9_0 -> 0.75471698}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitisactive, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.08791209, ggtpa69_30 -> 0.14285714, ggtpa29_10 -> 0.17582418, ggtpa9_0 -> 0.59340659}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.04395604, ggtpa69_30 -> 0.07692308, ggtpa29_10 -> 0.13186813, ggtpa9_0 -> 0.74725275}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitispersistent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.00277008, ggtpa69_30 -> 0.05540166, ggtpa29_10 -> 0.19390582, ggtpa9_0 -> 0.74792244}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({ggtpa640_70 -> 0.00177936, ggtpa69_30 -> 0.00177936, ggtpa29_10 -> 0.01779359, ggtpa9_0 -> 0.97864769}),
+[ PBCabsent, THepatitisabsent, RHepatitisabsent, Steatosisabsent, ChHepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({ggtpa640_70 -> 0.08, ggtpa69_30 -> 0.096, ggtpa29_10 -> 0.144, ggtpa9_0 -> 0.68})};
+
+random Typehbc_anti hbc_anti ~ case [vh_amn, ChHepatitis] in
+	{[ vh_amnpresent, ChHepatitisactive ] -> Categorical({hbc_antipresent -> 0.00355872, hbc_antiabsent -> 0.99644128}),
+[ vh_amnpresent, ChHepatitispersistent ] -> Categorical({hbc_antipresent -> 0.00763359, hbc_antiabsent -> 0.99236641}),
+[ vh_amnpresent, ChHepatitisabsent ] -> Categorical({hbc_antipresent -> 0.0875, hbc_antiabsent -> 0.9125}),
+[ vh_amnabsent, ChHepatitisactive ] -> Categorical({hbc_antipresent -> 0.07936508, hbc_antiabsent -> 0.92063492}),
+[ vh_amnabsent, ChHepatitispersistent ] -> Categorical({hbc_antipresent -> 0.1304348, hbc_antiabsent -> 0.8695652}),
+[ vh_amnabsent, ChHepatitisabsent ] -> Categorical({hbc_antipresent -> 0.101626, hbc_antiabsent -> 0.898374})};
+
+random Typehbeag hbeag ~ case [vh_amn, ChHepatitis] in
+	{[ vh_amnpresent, ChHepatitisactive ] -> Categorical({hbeagpresent -> 0.00355872, hbeagabsent -> 0.99644128}),
+[ vh_amnpresent, ChHepatitispersistent ] -> Categorical({hbeagpresent -> 0.00763359, hbeagabsent -> 0.99236641}),
+[ vh_amnpresent, ChHepatitisabsent ] -> Categorical({hbeagpresent -> 0.00124844, hbeagabsent -> 0.99875156}),
+[ vh_amnabsent, ChHepatitisactive ] -> Categorical({hbeagpresent -> 0.00158479, hbeagabsent -> 0.99841521}),
+[ vh_amnabsent, ChHepatitispersistent ] -> Categorical({hbeagpresent -> 0.04347826, hbeagabsent -> 0.95652174}),
+[ vh_amnabsent, ChHepatitisabsent ] -> Categorical({hbeagpresent -> 0.00203252, hbeagabsent -> 0.99796748})};
+
+random Typehbsag hbsag ~ case [vh_amn, ChHepatitis] in
+	{[ vh_amnpresent, ChHepatitisactive ] -> Categorical({hbsagpresent -> 0.5, hbsagabsent -> 0.5}),
+[ vh_amnpresent, ChHepatitispersistent ] -> Categorical({hbsagpresent -> 0.4615385, hbsagabsent -> 0.5384615}),
+[ vh_amnpresent, ChHepatitisabsent ] -> Categorical({hbsagpresent -> 0.1125, hbsagabsent -> 0.8875}),
+[ vh_amnabsent, ChHepatitisactive ] -> Categorical({hbsagpresent -> 0.1904762, hbsagabsent -> 0.8095238}),
+[ vh_amnabsent, ChHepatitispersistent ] -> Categorical({hbsagpresent -> 0.04347826, hbsagabsent -> 0.95652174}),
+[ vh_amnabsent, ChHepatitisabsent ] -> Categorical({hbsagpresent -> 0.04674797, hbsagabsent -> 0.95325203})};
+
+random Typehbsag_anti hbsag_anti ~ case [vh_amn, ChHepatitis, hbsag] in
+	{[ vh_amnpresent, ChHepatitisactive, hbsagpresent ] -> Categorical({hbsag_antipresent -> 0.0070922, hbsag_antiabsent -> 0.9929078}),
+[ vh_amnpresent, ChHepatitisactive, hbsagabsent ] -> Categorical({hbsag_antipresent -> 0.07142857, hbsag_antiabsent -> 0.92857143}),
+[ vh_amnpresent, ChHepatitispersistent, hbsagpresent ] -> Categorical({hbsag_antipresent -> 0.01639344, hbsag_antiabsent -> 0.98360656}),
+[ vh_amnpresent, ChHepatitispersistent, hbsagabsent ] -> Categorical({hbsag_antipresent -> 0.01408451, hbsag_antiabsent -> 0.98591549}),
+[ vh_amnpresent, ChHepatitisabsent, hbsagpresent ] -> Categorical({hbsag_antipresent -> 0.01098901, hbsag_antiabsent -> 0.98901099}),
+[ vh_amnpresent, ChHepatitisabsent, hbsagabsent ] -> Categorical({hbsag_antipresent -> 0.04225352, hbsag_antiabsent -> 0.95774648}),
+[ vh_amnabsent, ChHepatitisactive, hbsagpresent ] -> Categorical({hbsag_antipresent -> 0.08333333, hbsag_antiabsent -> 0.91666667}),
+[ vh_amnabsent, ChHepatitisactive, hbsagabsent ] -> Categorical({hbsag_antipresent -> 0.00195695, hbsag_antiabsent -> 0.99804305}),
+[ vh_amnabsent, ChHepatitispersistent, hbsagpresent ] -> Categorical({hbsag_antipresent -> 0.09090909, hbsag_antiabsent -> 0.90909091}),
+[ vh_amnabsent, ChHepatitispersistent, hbsagabsent ] -> Categorical({hbsag_antipresent -> 0.00452489, hbsag_antiabsent -> 0.99547511}),
+[ vh_amnabsent, ChHepatitisabsent, hbsagpresent ] -> Categorical({hbsag_antipresent -> 0.004329, hbsag_antiabsent -> 0.995671}),
+[ vh_amnabsent, ChHepatitisabsent, hbsagabsent ] -> Categorical({hbsag_antipresent -> 0.01492537, hbsag_antiabsent -> 0.98507463})};
+
+random Typehcv_anti hcv_anti ~ case [vh_amn, ChHepatitis] in
+	{[ vh_amnpresent, ChHepatitisactive ] -> Categorical({hcv_antipresent -> 0.00355872, hcv_antiabsent -> 0.99644128}),
+[ vh_amnpresent, ChHepatitispersistent ] -> Categorical({hcv_antipresent -> 0.00763359, hcv_antiabsent -> 0.99236641}),
+[ vh_amnpresent, ChHepatitisabsent ] -> Categorical({hcv_antipresent -> 0.00124844, hcv_antiabsent -> 0.99875156}),
+[ vh_amnabsent, ChHepatitisactive ] -> Categorical({hcv_antipresent -> 0.00158479, hcv_antiabsent -> 0.99841521}),
+[ vh_amnabsent, ChHepatitispersistent ] -> Categorical({hcv_antipresent -> 0.004329, hcv_antiabsent -> 0.995671}),
+[ vh_amnabsent, ChHepatitisabsent ] -> Categorical({hcv_antipresent -> 0.00203252, hcv_antiabsent -> 0.99796748})};
+
+random Typehepatalgia hepatalgia ~ case hepatomegaly in
+	{hepatomegalypresent -> Categorical({hepatalgiapresent -> 0.3142251, hepatalgiaabsent -> 0.6857749}),
+hepatomegalyabsent -> Categorical({hepatalgiapresent -> 0.03070175, hepatalgiaabsent -> 0.96929825})};
+
+random Typehepatomegaly hepatomegaly ~ case [RHepatitis, THepatitis, Steatosis, Hyperbilirubinemia] in
+	{[ RHepatitispresent, THepatitispresent, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({hepatomegalypresent -> 0.6097561, hepatomegalyabsent -> 0.3902439}),
+[ RHepatitispresent, THepatitispresent, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({hepatomegalypresent -> 0.68, hepatomegalyabsent -> 0.32}),
+[ RHepatitispresent, THepatitispresent, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({hepatomegalypresent -> 0.5918367, hepatomegalyabsent -> 0.4081633}),
+[ RHepatitispresent, THepatitispresent, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({hepatomegalypresent -> 0.673913, hepatomegalyabsent -> 0.326087}),
+[ RHepatitispresent, THepatitisabsent, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({hepatomegalypresent -> 0.5901639, hepatomegalyabsent -> 0.4098361}),
+[ RHepatitispresent, THepatitisabsent, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({hepatomegalypresent -> 0.6527778, hepatomegalyabsent -> 0.3472222}),
+[ RHepatitispresent, THepatitisabsent, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({hepatomegalypresent -> 0.5555556, hepatomegalyabsent -> 0.4444444}),
+[ RHepatitispresent, THepatitisabsent, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({hepatomegalypresent -> 0.7058823, hepatomegalyabsent -> 0.2941177}),
+[ RHepatitisabsent, THepatitispresent, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({hepatomegalypresent -> 0.6, hepatomegalyabsent -> 0.4}),
+[ RHepatitisabsent, THepatitispresent, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({hepatomegalypresent -> 0.6756757, hepatomegalyabsent -> 0.3243243}),
+[ RHepatitisabsent, THepatitispresent, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({hepatomegalypresent -> 0.5897436, hepatomegalyabsent -> 0.4102564}),
+[ RHepatitisabsent, THepatitispresent, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({hepatomegalypresent -> 0.7777778, hepatomegalyabsent -> 0.2222222}),
+[ RHepatitisabsent, THepatitisabsent, Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({hepatomegalypresent -> 0.5866667, hepatomegalyabsent -> 0.4133333}),
+[ RHepatitisabsent, THepatitisabsent, Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({hepatomegalypresent -> 0.6865672, hepatomegalyabsent -> 0.3134328}),
+[ RHepatitisabsent, THepatitisabsent, Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({hepatomegalypresent -> 0.375, hepatomegalyabsent -> 0.625}),
+[ RHepatitisabsent, THepatitisabsent, Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({hepatomegalypresent -> 0.6973684, hepatomegalyabsent -> 0.3026316})};
+
+random Typehepatotoxic hepatotoxic ~ 
+	Categorical({hepatotoxicpresent -> 0.08154506,hepatotoxicabsent -> 0.91845494})
+;
+
+random Typehospital hospital ~ 
+	Categorical({hospitalpresent -> 0.5350501,hospitalabsent -> 0.4649499})
+;
+
+random Typeinjections injections ~ case [hospital, surgery, choledocholithotomy] in
+	{[ hospitalpresent, surgerypresent, choledocholithotomypresent ] -> Categorical({injectionspresent -> 0.8, injectionsabsent -> 0.2}),
+[ hospitalpresent, surgerypresent, choledocholithotomyabsent ] -> Categorical({injectionspresent -> 0.715847, injectionsabsent -> 0.284153}),
+[ hospitalpresent, surgeryabsent, choledocholithotomypresent ] -> Categorical({injectionspresent -> 0.8333333, injectionsabsent -> 0.1666667}),
+[ hospitalpresent, surgeryabsent, choledocholithotomyabsent ] -> Categorical({injectionspresent -> 0.4818182, injectionsabsent -> 0.5181818}),
+[ hospitalabsent, surgerypresent, choledocholithotomypresent ] -> Categorical({injectionspresent -> 0.375, injectionsabsent -> 0.625}),
+[ hospitalabsent, surgerypresent, choledocholithotomyabsent ] -> Categorical({injectionspresent -> 0.2333333, injectionsabsent -> 0.7666667}),
+[ hospitalabsent, surgeryabsent, choledocholithotomypresent ] -> Categorical({injectionspresent -> 0.01098901, injectionsabsent -> 0.98901099}),
+[ hospitalabsent, surgeryabsent, choledocholithotomyabsent ] -> Categorical({injectionspresent -> 0.0647482, injectionsabsent -> 0.9352518})};
+
+random Typeinr inr ~ case [ChHepatitis, Cirrhosis, THepatitis, Hyperbilirubinemia] in
+	{[ ChHepatitisactive, Cirrhosisdecompensate, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.01754386, inra109_70 -> 0.84210526, inra69_0 -> 0.14035088}),
+[ ChHepatitisactive, Cirrhosisdecompensate, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.01298701, inra109_70 -> 0.81818182, inra69_0 -> 0.16883117}),
+[ ChHepatitisactive, Cirrhosisdecompensate, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.02150538, inra109_70 -> 0.8172043, inra69_0 -> 0.16129032}),
+[ ChHepatitisactive, Cirrhosisdecompensate, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.01666667, inra109_70 -> 0.8, inra69_0 -> 0.18333333}),
+[ ChHepatitisactive, Cirrhosiscompensate, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.025, inra109_70 -> 0.85, inra69_0 -> 0.125}),
+[ ChHepatitisactive, Cirrhosiscompensate, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.01333333, inra109_70 -> 0.86666667, inra69_0 -> 0.12}),
+[ ChHepatitisactive, Cirrhosiscompensate, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.02409639, inra109_70 -> 0.86746988, inra69_0 -> 0.10843373}),
+[ ChHepatitisactive, Cirrhosiscompensate, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.01960784, inra109_70 -> 0.85294118, inra69_0 -> 0.12745098}),
+[ ChHepatitisactive, Cirrhosisabsent, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.02197802, inra109_70 -> 0.89010989, inra69_0 -> 0.08791209}),
+[ ChHepatitisactive, Cirrhosisabsent, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.01923077, inra109_70 -> 0.90384615, inra69_0 -> 0.07692308}),
+[ ChHepatitisactive, Cirrhosisabsent, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.024, inra109_70 -> 0.904, inra69_0 -> 0.072}),
+[ ChHepatitisactive, Cirrhosisabsent, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.02197802, inra109_70 -> 0.9010989, inra69_0 -> 0.07692308}),
+[ ChHepatitispersistent, Cirrhosisdecompensate, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.03030303, inra109_70 -> 0.84848485, inra69_0 -> 0.12121212}),
+[ ChHepatitispersistent, Cirrhosisdecompensate, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.03225806, inra109_70 -> 0.79032259, inra69_0 -> 0.17741935}),
+[ ChHepatitispersistent, Cirrhosisdecompensate, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.02898551, inra109_70 -> 0.79710145, inra69_0 -> 0.17391304}),
+[ ChHepatitispersistent, Cirrhosisdecompensate, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.02469136, inra109_70 -> 0.75308642, inra69_0 -> 0.22222222}),
+[ ChHepatitispersistent, Cirrhosiscompensate, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.03508772, inra109_70 -> 0.8245614, inra69_0 -> 0.14035088}),
+[ ChHepatitispersistent, Cirrhosiscompensate, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.04081633, inra109_70 -> 0.83673469, inra69_0 -> 0.12244898}),
+[ ChHepatitispersistent, Cirrhosiscompensate, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.03571429, inra109_70 -> 0.85714285, inra69_0 -> 0.10714286}),
+[ ChHepatitispersistent, Cirrhosiscompensate, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.03333333, inra109_70 -> 0.83333334, inra69_0 -> 0.13333333}),
+[ ChHepatitispersistent, Cirrhosisabsent, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.05084746, inra109_70 -> 0.88135593, inra69_0 -> 0.06779661}),
+[ ChHepatitispersistent, Cirrhosisabsent, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.05, inra109_70 -> 0.9, inra69_0 -> 0.05}),
+[ ChHepatitispersistent, Cirrhosisabsent, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.05333333, inra109_70 -> 0.90666667, inra69_0 -> 0.04}),
+[ ChHepatitispersistent, Cirrhosisabsent, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.08333333, inra109_70 -> 0.88888889, inra69_0 -> 0.02777778}),
+[ ChHepatitisabsent, Cirrhosisdecompensate, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.03448276, inra109_70 -> 0.81034483, inra69_0 -> 0.15517241}),
+[ ChHepatitisabsent, Cirrhosisdecompensate, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.01428571, inra109_70 -> 0.75714286, inra69_0 -> 0.22857143}),
+[ ChHepatitisabsent, Cirrhosisdecompensate, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.02173913, inra109_70 -> 0.75, inra69_0 -> 0.22826087}),
+[ ChHepatitisabsent, Cirrhosisdecompensate, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.00172117, inra109_70 -> 0.60240964, inra69_0 -> 0.39586919}),
+[ ChHepatitisabsent, Cirrhosiscompensate, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.01785714, inra109_70 -> 0.76785715, inra69_0 -> 0.21428571}),
+[ ChHepatitisabsent, Cirrhosiscompensate, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.01785714, inra109_70 -> 0.78571429, inra69_0 -> 0.19642857}),
+[ ChHepatitisabsent, Cirrhosiscompensate, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.02816901, inra109_70 -> 0.80281691, inra69_0 -> 0.16901408}),
+[ ChHepatitisabsent, Cirrhosiscompensate, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.00321543, inra109_70 -> 0.67524116, inra69_0 -> 0.32154341}),
+[ ChHepatitisabsent, Cirrhosisabsent, THepatitispresent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.03508772, inra109_70 -> 0.84210526, inra69_0 -> 0.12280702}),
+[ ChHepatitisabsent, Cirrhosisabsent, THepatitispresent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.03703704, inra109_70 -> 0.92592592, inra69_0 -> 0.03703704}),
+[ ChHepatitisabsent, Cirrhosisabsent, THepatitisabsent, Hyperbilirubinemiapresent ] -> Categorical({inra200_110 -> 0.05357143, inra109_70 -> 0.89285714, inra69_0 -> 0.05357143}),
+[ ChHepatitisabsent, Cirrhosisabsent, THepatitisabsent, Hyperbilirubinemiaabsent ] -> Categorical({inra200_110 -> 0.065, inra109_70 -> 0.875, inra69_0 -> 0.06})};
+
+random Typeirregular_liver irregular_liver ~ case Cirrhosis in
+	{Cirrhosisdecompensate -> Categorical({irregular_liverpresent -> 0.6034483, irregular_liverabsent -> 0.3965517}),
+Cirrhosiscompensate -> Categorical({irregular_liverpresent -> 0.3548387, irregular_liverabsent -> 0.6451613}),
+Cirrhosisabsent -> Categorical({irregular_liverpresent -> 0.1065574, irregular_liverabsent -> 0.8934426})};
+
+random Typeitching itching ~ case bilirubin in
+	{bilirubina88_20 -> Categorical({itchingpresent -> 0.875, itchingabsent -> 0.125}),
+bilirubina19_7 -> Categorical({itchingpresent -> 0.6865672, itchingabsent -> 0.3134328}),
+bilirubina6_2 -> Categorical({itchingpresent -> 0.5477387, itchingabsent -> 0.4522613}),
+bilirubina1_0 -> Categorical({itchingpresent -> 0.3333333, itchingabsent -> 0.6666667})};
+
+random Typejaundice jaundice ~ case bilirubin in
+	{bilirubina88_20 -> Categorical({jaundicepresent -> 0.75, jaundiceabsent -> 0.25}),
+bilirubina19_7 -> Categorical({jaundicepresent -> 0.5671642, jaundiceabsent -> 0.4328358}),
+bilirubina6_2 -> Categorical({jaundicepresent -> 0.3467337, jaundiceabsent -> 0.6532663}),
+bilirubina1_0 -> Categorical({jaundicepresent -> 0.1942446, jaundiceabsent -> 0.8057554})};
+
+random Typejoints joints ~ case PBC in
+	{PBCpresent -> Categorical({jointspresent -> 0.1285714, jointsabsent -> 0.8714286}),
+PBCabsent -> Categorical({jointspresent -> 0.1002387, jointsabsent -> 0.8997613})};
+
+random Typele_cells le_cells ~ case PBC in
+	{PBCpresent -> Categorical({le_cellspresent -> 0.1214286, le_cellsabsent -> 0.8785714}),
+PBCabsent -> Categorical({le_cellspresent -> 0.04057279, le_cellsabsent -> 0.95942721})};
+
+random Typenausea nausea ~ case [RHepatitis, THepatitis] in
+	{[ RHepatitispresent, THepatitispresent ] -> Categorical({nauseapresent -> 0.3636364, nauseaabsent -> 0.6363636}),
+[ RHepatitispresent, THepatitisabsent ] -> Categorical({nauseapresent -> 0.3529412, nauseaabsent -> 0.6470588}),
+[ RHepatitisabsent, THepatitispresent ] -> Categorical({nauseapresent -> 0.3703704, nauseaabsent -> 0.6296296}),
+[ RHepatitisabsent, THepatitisabsent ] -> Categorical({nauseapresent -> 0.2854962, nauseaabsent -> 0.7145038})};
+
+random Typeobesity obesity ~ case diabetes in
+	{diabetespresent -> Categorical({obesitypresent -> 0.24, obesityabsent -> 0.76}),
+diabetesabsent -> Categorical({obesitypresent -> 0.06231454, obesityabsent -> 0.93768546})};
+
+random Typepain pain ~ case [PBC, joints] in
+	{[ PBCpresent, jointspresent ] -> Categorical({painpresent -> 0.3888889, painabsent -> 0.6111111}),
+[ PBCpresent, jointsabsent ] -> Categorical({painpresent -> 0.147541, painabsent -> 0.852459}),
+[ PBCabsent, jointspresent ] -> Categorical({painpresent -> 0.8095238, painabsent -> 0.1904762}),
+[ PBCabsent, jointsabsent ] -> Categorical({painpresent -> 0.1830239, painabsent -> 0.8169761})};
+
+random Typepain_ruq pain_ruq ~ case [Steatosis, Hyperbilirubinemia] in
+	{[ Steatosispresent, Hyperbilirubinemiapresent ] -> Categorical({pain_ruqpresent -> 0.3934426, pain_ruqabsent -> 0.6065574}),
+[ Steatosispresent, Hyperbilirubinemiaabsent ] -> Categorical({pain_ruqpresent -> 0.4776119, pain_ruqabsent -> 0.5223881}),
+[ Steatosisabsent, Hyperbilirubinemiapresent ] -> Categorical({pain_ruqpresent -> 0.2857143, pain_ruqabsent -> 0.7142857}),
+[ Steatosisabsent, Hyperbilirubinemiaabsent ] -> Categorical({pain_ruqpresent -> 0.421875, pain_ruqabsent -> 0.578125})};
+
+random Typepalms palms ~ case Cirrhosis in
+	{Cirrhosisdecompensate -> Categorical({palmspresent -> 0.5, palmsabsent -> 0.5}),
+Cirrhosiscompensate -> Categorical({palmspresent -> 0.2903226, palmsabsent -> 0.7096774}),
+Cirrhosisabsent -> Categorical({palmspresent -> 0.1409836, palmsabsent -> 0.8590164})};
+
+random Typephosphatase phosphatase ~ case [RHepatitis, THepatitis, Cirrhosis, ChHepatitis] in
+	{[ RHepatitispresent, THepatitispresent, Cirrhosisdecompensate, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.04166667, phosphatasea699_240 -> 0.29166667, phosphatasea239_0 -> 0.66666666}),
+[ RHepatitispresent, THepatitispresent, Cirrhosisdecompensate, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.04347826, phosphatasea699_240 -> 0.30434783, phosphatasea239_0 -> 0.65217391}),
+[ RHepatitispresent, THepatitispresent, Cirrhosisdecompensate, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.04166667, phosphatasea699_240 -> 0.33333333, phosphatasea239_0 -> 0.625}),
+[ RHepatitispresent, THepatitispresent, Cirrhosiscompensate, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.03773585, phosphatasea699_240 -> 0.26415094, phosphatasea239_0 -> 0.69811321}),
+[ RHepatitispresent, THepatitispresent, Cirrhosiscompensate, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.025, phosphatasea699_240 -> 0.25, phosphatasea239_0 -> 0.725}),
+[ RHepatitispresent, THepatitispresent, Cirrhosiscompensate, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.02702703, phosphatasea699_240 -> 0.27027027, phosphatasea239_0 -> 0.7027027}),
+[ RHepatitispresent, THepatitispresent, Cirrhosisabsent, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.03571429, phosphatasea699_240 -> 0.21428571, phosphatasea239_0 -> 0.75}),
+[ RHepatitispresent, THepatitispresent, Cirrhosisabsent, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.02272727, phosphatasea699_240 -> 0.20454545, phosphatasea239_0 -> 0.77272728}),
+[ RHepatitispresent, THepatitispresent, Cirrhosisabsent, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.02325581, phosphatasea699_240 -> 0.18604651, phosphatasea239_0 -> 0.79069768}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosisdecompensate, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.02898551, phosphatasea699_240 -> 0.28985507, phosphatasea239_0 -> 0.68115942}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosisdecompensate, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.03389831, phosphatasea699_240 -> 0.3220339, phosphatasea239_0 -> 0.64406779}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosisdecompensate, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.04545455, phosphatasea699_240 -> 0.37878788, phosphatasea239_0 -> 0.57575757}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosiscompensate, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.02985075, phosphatasea699_240 -> 0.29850746, phosphatasea239_0 -> 0.67164179}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosiscompensate, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.02040816, phosphatasea699_240 -> 0.28571429, phosphatasea239_0 -> 0.69387755}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosiscompensate, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.02083333, phosphatasea699_240 -> 0.3125, phosphatasea239_0 -> 0.66666667}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosisabsent, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.02597403, phosphatasea699_240 -> 0.24675325, phosphatasea239_0 -> 0.72727272}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosisabsent, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.015625, phosphatasea699_240 -> 0.234375, phosphatasea239_0 -> 0.75}),
+[ RHepatitispresent, THepatitisabsent, Cirrhosisabsent, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.00584795, phosphatasea699_240 -> 0.23391813, phosphatasea239_0 -> 0.76023392}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosisdecompensate, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.04761905, phosphatasea699_240 -> 0.28571429, phosphatasea239_0 -> 0.66666666}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosisdecompensate, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.04918033, phosphatasea699_240 -> 0.31147541, phosphatasea239_0 -> 0.63934426}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosisdecompensate, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.05555556, phosphatasea699_240 -> 0.34722222, phosphatasea239_0 -> 0.59722222}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosiscompensate, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.04166667, phosphatasea699_240 -> 0.27777778, phosphatasea239_0 -> 0.68055555}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosiscompensate, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.03703704, phosphatasea699_240 -> 0.25925926, phosphatasea239_0 -> 0.7037037}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosiscompensate, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.05357143, phosphatasea699_240 -> 0.26785714, phosphatasea239_0 -> 0.67857143}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosisabsent, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.04651163, phosphatasea699_240 -> 0.22093023, phosphatasea239_0 -> 0.73255814}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosisabsent, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.04054054, phosphatasea699_240 -> 0.2027027, phosphatasea239_0 -> 0.75675676}),
+[ RHepatitisabsent, THepatitispresent, Cirrhosisabsent, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.07407407, phosphatasea699_240 -> 0.14814815, phosphatasea239_0 -> 0.77777778}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosisdecompensate, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.04597701, phosphatasea699_240 -> 0.29885057, phosphatasea239_0 -> 0.65517242}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosisdecompensate, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.04494382, phosphatasea699_240 -> 0.33707865, phosphatasea239_0 -> 0.61797753}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosisdecompensate, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.06896552, phosphatasea699_240 -> 0.48275862, phosphatasea239_0 -> 0.44827586}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosiscompensate, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.04494382, phosphatasea699_240 -> 0.33707865, phosphatasea239_0 -> 0.61797753}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosiscompensate, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.03896104, phosphatasea699_240 -> 0.31168831, phosphatasea239_0 -> 0.64935065}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosiscompensate, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.06451613, phosphatasea699_240 -> 0.38709677, phosphatasea239_0 -> 0.5483871}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosisabsent, ChHepatitisactive ] -> Categorical({phosphatasea4000_700 -> 0.03296703, phosphatasea699_240 -> 0.21978022, phosphatasea239_0 -> 0.74725275}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosisabsent, ChHepatitispersistent ] -> Categorical({phosphatasea4000_700 -> 0.02777778, phosphatasea699_240 -> 0.19444444, phosphatasea239_0 -> 0.77777778}),
+[ RHepatitisabsent, THepatitisabsent, Cirrhosisabsent, ChHepatitisabsent ] -> Categorical({phosphatasea4000_700 -> 0.2118451, phosphatasea699_240 -> 0.3394077, phosphatasea239_0 -> 0.4487472})};
+
+random Typeplatelet platelet ~ case [Cirrhosis, PBC] in
+	{[ Cirrhosisdecompensate, PBCpresent ] -> Categorical({plateleta597_300 -> 0.06547619, plateleta299_150 -> 0.63690476, plateleta149_100 -> 0.17857143, plateleta99_0 -> 0.11904762}),
+[ Cirrhosisdecompensate, PBCabsent ] -> Categorical({plateleta597_300 -> 0.06896552, plateleta299_150 -> 0.46551724, plateleta149_100 -> 0.27586207, plateleta99_0 -> 0.18965517}),
+[ Cirrhosiscompensate, PBCpresent ] -> Categorical({plateleta597_300 -> 0.06557377, plateleta299_150 -> 0.63934426, plateleta149_100 -> 0.17486339, plateleta99_0 -> 0.12021858}),
+[ Cirrhosiscompensate, PBCabsent ] -> Categorical({plateleta597_300 -> 0.06451613, plateleta299_150 -> 0.64516129, plateleta149_100 -> 0.16129032, plateleta99_0 -> 0.12903226}),
+[ Cirrhosisabsent, PBCpresent ] -> Categorical({plateleta597_300 -> 0.06428571, plateleta299_150 -> 0.67142857, plateleta149_100 -> 0.15714286, plateleta99_0 -> 0.10714286}),
+[ Cirrhosisabsent, PBCabsent ] -> Categorical({plateleta597_300 -> 0.09393939, plateleta299_150 -> 0.73636364, plateleta149_100 -> 0.13939394, plateleta99_0 -> 0.03030303})};
+
+random Typepressure_ruq pressure_ruq ~ case [gallstones, PBC, ChHepatitis] in
+	{[ gallstonespresent, PBCpresent, ChHepatitisactive ] -> Categorical({pressure_ruqpresent -> 0.3333333, pressure_ruqabsent -> 0.6666667}),
+[ gallstonespresent, PBCpresent, ChHepatitispersistent ] -> Categorical({pressure_ruqpresent -> 0.328125, pressure_ruqabsent -> 0.671875}),
+[ gallstonespresent, PBCpresent, ChHepatitisabsent ] -> Categorical({pressure_ruqpresent -> 0.3292683, pressure_ruqabsent -> 0.6707317}),
+[ gallstonespresent, PBCabsent, ChHepatitisactive ] -> Categorical({pressure_ruqpresent -> 0.4, pressure_ruqabsent -> 0.6}),
+[ gallstonespresent, PBCabsent, ChHepatitispersistent ] -> Categorical({pressure_ruqpresent -> 0.09090909, pressure_ruqabsent -> 0.90909091}),
+[ gallstonespresent, PBCabsent, ChHepatitisabsent ] -> Categorical({pressure_ruqpresent -> 0.2857143, pressure_ruqabsent -> 0.7142857}),
+[ gallstonesabsent, PBCpresent, ChHepatitisactive ] -> Categorical({pressure_ruqpresent -> 0.3424658, pressure_ruqabsent -> 0.6575342}),
+[ gallstonesabsent, PBCpresent, ChHepatitispersistent ] -> Categorical({pressure_ruqpresent -> 0.3227513, pressure_ruqabsent -> 0.6772487}),
+[ gallstonesabsent, PBCpresent, ChHepatitisabsent ] -> Categorical({pressure_ruqpresent -> 0.2929293, pressure_ruqabsent -> 0.7070707}),
+[ gallstonesabsent, PBCabsent, ChHepatitisactive ] -> Categorical({pressure_ruqpresent -> 0.4691358, pressure_ruqabsent -> 0.5308642}),
+[ gallstonesabsent, PBCabsent, ChHepatitispersistent ] -> Categorical({pressure_ruqpresent -> 0.4285714, pressure_ruqabsent -> 0.5714286}),
+[ gallstonesabsent, PBCabsent, ChHepatitisabsent ] -> Categorical({pressure_ruqpresent -> 0.4532374, pressure_ruqabsent -> 0.5467626})};
+
+random Typeproteins proteins ~ case Cirrhosis in
+	{Cirrhosisdecompensate -> Categorical({proteinsa10_6 -> 0.99827883, proteinsa5_2 -> 0.00172117}),
+Cirrhosiscompensate -> Categorical({proteinsa10_6 -> 0.99678457, proteinsa5_2 -> 0.00321543}),
+Cirrhosisabsent -> Categorical({proteinsa10_6 -> 0.98032787, proteinsa5_2 -> 0.01967213})};
+
+random Typesex sex ~ 
+	Categorical({sexfemale -> 0.5979971,sexmale -> 0.4020029})
+;
+
+random Typeskin skin ~ case bilirubin in
+	{bilirubina88_20 -> Categorical({skinpresent -> 0.99378882, skinabsent -> 0.00621118}),
+bilirubina19_7 -> Categorical({skinpresent -> 0.8955224, skinabsent -> 0.1044776}),
+bilirubina6_2 -> Categorical({skinpresent -> 0.7035176, skinabsent -> 0.2964824}),
+bilirubina1_0 -> Categorical({skinpresent -> 0.1822542, skinabsent -> 0.8177458})};
+
+random Typespiders spiders ~ case Cirrhosis in
+	{Cirrhosisdecompensate -> Categorical({spiderspresent -> 0.6034483, spidersabsent -> 0.3965517}),
+Cirrhosiscompensate -> Categorical({spiderspresent -> 0.483871, spidersabsent -> 0.516129}),
+Cirrhosisabsent -> Categorical({spiderspresent -> 0.1836066, spidersabsent -> 0.8163934})};
+
+random Typespleen spleen ~ case [Cirrhosis, RHepatitis, THepatitis] in
+	{[ Cirrhosisdecompensate, RHepatitispresent, THepatitispresent ] -> Categorical({spleenpresent -> 0.3235294, spleenabsent -> 0.6764706}),
+[ Cirrhosisdecompensate, RHepatitispresent, THepatitisabsent ] -> Categorical({spleenpresent -> 0.3703704, spleenabsent -> 0.6296296}),
+[ Cirrhosisdecompensate, RHepatitisabsent, THepatitispresent ] -> Categorical({spleenpresent -> 0.3623188, spleenabsent -> 0.6376812}),
+[ Cirrhosisdecompensate, RHepatitisabsent, THepatitisabsent ] -> Categorical({spleenpresent -> 0.4827586, spleenabsent -> 0.5172414}),
+[ Cirrhosiscompensate, RHepatitispresent, THepatitispresent ] -> Categorical({spleenpresent -> 0.3023256, spleenabsent -> 0.6976744}),
+[ Cirrhosiscompensate, RHepatitispresent, THepatitisabsent ] -> Categorical({spleenpresent -> 0.2444444, spleenabsent -> 0.7555556}),
+[ Cirrhosiscompensate, RHepatitisabsent, THepatitispresent ] -> Categorical({spleenpresent -> 0.2156863, spleenabsent -> 0.7843137}),
+[ Cirrhosiscompensate, RHepatitisabsent, THepatitisabsent ] -> Categorical({spleenpresent -> 0.2580645, spleenabsent -> 0.7419355}),
+[ Cirrhosisabsent, RHepatitispresent, THepatitispresent ] -> Categorical({spleenpresent -> 0.1621622, spleenabsent -> 0.8378378}),
+[ Cirrhosisabsent, RHepatitispresent, THepatitisabsent ] -> Categorical({spleenpresent -> 0.1176471, spleenabsent -> 0.8823529}),
+[ Cirrhosisabsent, RHepatitisabsent, THepatitispresent ] -> Categorical({spleenpresent -> 0.1111111, spleenabsent -> 0.8888889}),
+[ Cirrhosisabsent, RHepatitisabsent, THepatitisabsent ] -> Categorical({spleenpresent -> 0.1007067, spleenabsent -> 0.8992933})};
+
+random Typesurgery surgery ~ 
+	Categorical({surgerypresent -> 0.4234621,surgeryabsent -> 0.5765379})
+;
+
+random Typetransfusion transfusion ~ case [hospital, surgery, choledocholithotomy] in
+	{[ hospitalpresent, surgerypresent, choledocholithotomypresent ] -> Categorical({transfusionpresent -> 0.3333333, transfusionabsent -> 0.6666667}),
+[ hospitalpresent, surgerypresent, choledocholithotomyabsent ] -> Categorical({transfusionpresent -> 0.2896175, transfusionabsent -> 0.7103825}),
+[ hospitalpresent, surgeryabsent, choledocholithotomypresent ] -> Categorical({transfusionpresent -> 0.1666667, transfusionabsent -> 0.8333333}),
+[ hospitalpresent, surgeryabsent, choledocholithotomyabsent ] -> Categorical({transfusionpresent -> 0.1181818, transfusionabsent -> 0.8818182}),
+[ hospitalabsent, surgerypresent, choledocholithotomypresent ] -> Categorical({transfusionpresent -> 0.125, transfusionabsent -> 0.875}),
+[ hospitalabsent, surgerypresent, choledocholithotomyabsent ] -> Categorical({transfusionpresent -> 0.3, transfusionabsent -> 0.7}),
+[ hospitalabsent, surgeryabsent, choledocholithotomypresent ] -> Categorical({transfusionpresent -> 0.01098901, transfusionabsent -> 0.98901099}),
+[ hospitalabsent, surgeryabsent, choledocholithotomyabsent ] -> Categorical({transfusionpresent -> 0.01079137, transfusionabsent -> 0.98920863})};
+
+random Typetriglycerides triglycerides ~ case Steatosis in
+	{Steatosispresent -> Categorical({triglyceridesa17_4 -> 0.1791045, triglyceridesa3_2 -> 0.1641791, triglyceridesa1_0 -> 0.6567164}),
+Steatosisabsent -> Categorical({triglyceridesa17_4 -> 0.02373418, triglyceridesa3_2 -> 0.03164557, triglyceridesa1_0 -> 0.94462025})};
+
+random Typeupper_pain upper_pain ~ case gallstones in
+	{gallstonespresent -> Categorical({upper_painpresent -> 0.411215, upper_painabsent -> 0.588785}),
+gallstonesabsent -> Categorical({upper_painpresent -> 0.3868243, upper_painabsent -> 0.6131757})};
+
+random Typeurea urea ~ case encephalopathy in
+	{encephalopathypresent -> Categorical({ureaa165_50 -> 0.2173913, ureaa49_40 -> 0.1304348, ureaa39_0 -> 0.6521739}),
+encephalopathyabsent -> Categorical({ureaa165_50 -> 0.03550296, ureaa49_40 -> 0.06508876, ureaa39_0 -> 0.89940828})};
+
+random Typevh_amn vh_amn ~ 
+	Categorical({vh_amnpresent -> 0.1731044,vh_amnabsent -> 0.8268956})
+;
+
+query vh_amn;
