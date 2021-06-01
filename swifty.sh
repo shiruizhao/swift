@@ -13,12 +13,12 @@ fi
 
 cd src
 
-g++ -Ofast -std=c++11 $fname.cpp random/*.cpp -o $fname -larmadillo
+g++ -Ofast -std=c++11 $fname.cpp random/*.cpp -o $fname -L/users/micas/szhao/no_backup/software/anaconda3/envs/gem5/lib -I/users/micas/szhao/no_backup/software/anaconda3/envs/gem5/include -larmadillo
 
-mv $fname.cpp ../out/$fname.cpp
-mv $fname ../out/$fname
+mv $fname.cpp ../lw_out/$fname.cpp
+mv $fname ../lw_out/$fname
 
 echo "Running "$fname
 cd ..
 
-./out/$fname
+./lw_out/$fname

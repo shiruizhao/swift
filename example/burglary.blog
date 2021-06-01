@@ -2,7 +2,7 @@
  * Intelligence: A Modern Approach", 2nd ed., p. 494.  
  */
 
-random Categorical Burglary ~ Categorical(0.1, 0.2, 0.7);
+random Boolean Burglary ~ BooleanDistrib(0.001);
 
 random Boolean Earthquake ~ BooleanDistrib(0.002);
 
@@ -35,3 +35,4 @@ obs MaryCalls = true;
  */
 
 query Burglary;
+

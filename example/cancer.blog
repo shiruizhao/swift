@@ -37,4 +37,7 @@ random TypeXray Xray ~ case Cancer in
 	{CancerTrue -> Categorical({Xraypositive -> 0.9, Xraynegative -> 0.1}),
 CancerFalse -> Categorical({Xraypositive -> 0.2, Xraynegative -> 0.8})};
 
-query Xray;
+obs Smoker = SmokerTrue;
+obs Xray = Xraypositive;
+
+query Cancer;

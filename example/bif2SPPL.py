@@ -58,14 +58,14 @@ class SPPLWriter(object):
         self.variable_states = self.get_states()
         self.property_tag = self.get_properties()
         self.variable_parents = self.get_parents()
-        self.tables, self.queries_id_list, self.queries_list = self.get_cpds()
+        self.tables, self.cpd_list, self.queries_id_list, self.queries_list = self.get_cpds()
 
     def SPPL_templates(self):
         """
         Create template for writing in SPPL format
         """
         probability_template = Template(
-            """$variable_ ~= $values\n\n"""
+            """$values\n\n"""
         )
         return (
             probability_template,
@@ -82,17 +82,12 @@ class SPPLWriter(object):
         
         network = ""
 
-        for var in (variables):
-            if not self.variable_parents[var]:
-                parents = ""
-                cpd = "choice({"+self.tables[var]+"})\n"
-            else:
-                cpd = self.tables[var]
+        for var in (self.cpd_list):
+            cpd = self.tables[var]
             network += probability_template.substitute(
                 variable_=var, values=cpd
             )
 
-        print(self.queries_list)
 
         network_queries = ','.join(self.queries_list)
         network_queries = "events = ["+network_queries+"]"
@@ -226,55 +221,79 @@ class SPPLWriter(object):
         cpds = self.model.get_cpds()
         tables = {}
         queries_list = []
-        for cpd in cpds:
-            evidence = cpd.variables[1:]
-            evidence_card = cpd.cardinality[1:]
-            o_value = []
-            if evidence:
-                col_indexes = np.array(list(product(*[range(i) for i in evidence_card])))
-                for m in range(np.shape(col_indexes)[0]):
-                    col_name = []
-                    var_name = []
-                    cat_value = []
-                    var_col_name = []
-                    for k in range(np.size(col_indexes[m])):
-                        var_name.append("{var}".format(var=evidence[k]))
-                        col_name.append("{state}".format(state=cpd.state_names[evidence[k]][col_indexes[m][k]]))
-                        var_col_name.append("({var} == \'{state}\')".format(var=evidence[k], state=cpd.state_names[evidence[k]][col_indexes[m][k]]))
-                    for j in range(cpd.variable_card):
-                        row_name = "{state}".format(
-                            state=cpd.state_names[cpd.variable][j]
-                            )
-                        index = np.shape(col_indexes)[0] * j + m
-                        row_index = "\'"+row_name +"\' : " + str(cpd.values.ravel()[index])
-                        cat_value.append(row_index)
-                        
 
-                    var_name = ', '.join(var_name)
-                    cat_value= ', '.join(cat_value)
-                    var_col_name= ' and '.join(var_col_name)
-                    if len(col_name) == 1:
-                        if(m != (np.shape(col_indexes)[0]) - 1 ):
-                            o_value_temp = ''.join(["choice({", cat_value, "})", " if ", var_col_name, " else ("])
-                        else:
-                            o_value_temp = ''.join(["choice({", cat_value, "})"])
+        cpd_list = []
+        old_cpd_list=0
+        while (len(cpd_list) != len(cpds)):
+            print("while loop")
+            print(len(cpds))
+            old_cpd_list = len(cpd_list)
+            for cpd in cpds:
+                append_flag = True
+                evidence = cpd.variables[1:]
+                evidence_card = cpd.cardinality[1:]
+                o_value = []
+                if cpd.variable in cpd_list:
+                    append_flag = False
+                else:
+                    if evidence:
+                        for i in range(len(evidence)):
+                            if evidence[i] in cpd_list:
+                                append_flag = True
+                                continue
+                            else:
+                                append_flag = False
+                                print("bypass:%s"%cpd.variable)
+                                break
+                        if append_flag:
+                            cpd_list.append(cpd.variable)
+
+                            col_indexes = np.array(list(product(*[range(i) for i in evidence_card])))
+                            for m in range(np.shape(col_indexes)[0]):
+                                col_name = []
+                                var_name = []
+                                cat_value = []
+                                var_col_name = []
+                                for k in range(np.size(col_indexes[m])):
+                                    var_name.append("{var}".format(var=evidence[k]))
+                                    col_name.append("{state}".format(state=cpd.state_names[evidence[k]][col_indexes[m][k]]))
+                                    var_col_name.append("({var} == \'{state}\')".format(var=evidence[k], state=cpd.state_names[evidence[k]][col_indexes[m][k]]))
+                                for j in range(cpd.variable_card):
+                                    row_name = "{state}".format(
+                                        state=cpd.state_names[cpd.variable][j]
+                                        )
+                                    index = np.shape(col_indexes)[0] * j + m
+                                    row_index = "\'"+row_name +"\' : " + str(cpd.values.ravel()[index])
+                                    cat_value.append(row_index)
+                                    
+
+                                var_name = ', '.join(var_name)
+                                cat_value= ', '.join(cat_value)
+                                var_col_name= ' and '.join(var_col_name)
+                                if(m != (np.shape(col_indexes)[0]) - 1 ):
+                                    o_value_temp = ''.join(["if (", var_col_name, "):\n\t", cpd.variable, ' ~= ', "choice({", cat_value, "})\n", "el"])
+                                else:
+                                    o_value_temp = ''.join(['se:\n\t', cpd.variable, ' ~= ', "choice({", cat_value, "})\n"])
+                                o_value.append(o_value_temp)
+                            tables[cpd.variable] = ''.join(o_value)
                     else:
-                        if(m != (np.shape(col_indexes)[0]) - 1 ):
-                            o_value_temp = ''.join(["choice({", cat_value, "})", " if (", var_col_name, ") else ("])
-                        else:
-                            o_value_temp = ''.join(["choice({", cat_value, "})"])
-                    o_value.append(o_value_temp)
-                o_value.append(")"*((np.shape(col_indexes)[0])-1))
-                tables[cpd.variable] = ''.join(o_value)
-            else:
-                for j in range(cpd.variable_card):
-                    row_name = "({state})".format(state=cpd.state_names[cpd.variable][j])
-                    index = j
-                    #col_name="{var}{state}".format(state=cpd.state_names[cpd.variable][j], var=cpd.variable)
-                    col_name="\'{state}\'".format(state=cpd.state_names[cpd.variable][j])
-                    o_value_temp = "".join([col_name, " : ", str(cpd.values.ravel()[index])])
-                    o_value.append(o_value_temp)
-                tables[cpd.variable] = ','.join(o_value)
+                        cpd_list.append(cpd.variable)
+                        for j in range(cpd.variable_card):
+                            row_name = "({state})".format(state=cpd.state_names[cpd.variable][j])
+                            index = j
+                            #col_name="{var}{state}".format(state=cpd.state_names[cpd.variable][j], var=cpd.variable)
+                            col_name="\'{state}\'".format(state=cpd.state_names[cpd.variable][j])
+                            o_value_temp = "".join([col_name, " : ", str(cpd.values.ravel()[index])])
+                            o_value.append(o_value_temp)
+                        o_value = ','.join(o_value)
+                        o_value = cpd.variable+" ~= choice({"+o_value+"})\n"
+                        tables[cpd.variable] = o_value
+            
+            print(cpd_list)
+            if(len(cpd_list) > len(cpds)):
+                print(len(cpd_list))
+                break
+                exit()
 
         queries_id_list = []
         for cpd in cpds:
@@ -306,7 +325,7 @@ class SPPLWriter(object):
             queries_list.append(all_marginal_query)
             j+=1
 
-        return tables, queries_id_list, queries_list
+        return tables, cpd_list, queries_id_list, queries_list
 
     def write_SPPL(self, filename):
         """
@@ -342,14 +361,18 @@ class SPPLWriter(object):
             fout.write(writer1)
             fout.write("\n")
 
-            fout.write("for event in events:\n\tstart_time=time.time()\n\tquery_prob=model.prob(event)\n\tprint(\"--- %s seconds ---\" % (time.time() - start_time))\n")
+            fout.write("runtime=np.zeros(100)\n")
+            fout.write("for i in range(100):\n\tstart_time=time.time()\n\tquery_prob=model.prob(events[i])\n\tend_time = time.time()\n\tprint(\"--- %s seconds ---\" % (end_time - start_time))\n")
             fout.write("\n\tprint(query_prob)\n")
+            fout.write("\n\truntime[i]=end_time-start_time\n")
+            fout.write("print(\"single marginal time:%s\"%np.mean(runtime[0:50]))\n")
+            fout.write("print(\"all marginal time:%s\"%np.mean(runtime[50:100]))\n")
 
 from pgmpy.readwrite import BIFReader, BIFWriter
 import os
 from bif2SPPL import SPPLWriter
 if __name__ ==  "__main__":
-    file = "./survey.bif"
+    file = "./alarm.bif"
     if file.endswith(".bif"):
         print("convert BIF file:", file)
         model = BIFReader(file).get_model()

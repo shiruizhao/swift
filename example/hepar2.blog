@@ -1043,4 +1043,4 @@ random Typevh_amn vh_amn ~
 	Categorical({vh_amnpresent -> 0.1731044,vh_amnabsent -> 0.8268956})
 ;
 
-query vh_amn;
+query carcinoma;

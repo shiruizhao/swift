@@ -33,7 +33,7 @@ help:
 	@echo '                                                                       '
 
 compile: $(SRC)
-	$(CXX) $(CXX_CFLAGS) $(SRC) -o $(EXEC) $(LIB_FLAGS)
+	$(CXX) $(CXX_CFLAGS) $(SRC) -o $(EXEC) -L/users/micas/szhao/no_backup/software/anaconda3/envs/gem5/lib -I/users/micas/szhao/no_backup/software/anaconda3/envs/gem5/include $(LIB_FLAGS)
 
 genparser: $(YACCDIR)/yacc
 	cd src/parse; flex -o lexer.cpp blog.flex; ../../$(YACCDIR)/yacc -v -d -o parser.cpp blog.yacc

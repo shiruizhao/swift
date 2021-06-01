@@ -1380,4 +1380,4 @@ random TypeWndHodograph WndHodograph ~
 	Categorical({WndHodographDCVZFavor -> 0.3,WndHodographStrongWest -> 0.25,WndHodographWesterly -> 0.25,WndHodographOther -> 0.2})
 ;
 
-query WndHodograph;
+query WindFieldPln;
