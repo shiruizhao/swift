@@ -8050,8 +8050,8 @@ C_NI_12_15 = Id('C_NI_12_15')
 C_NI_12_30 = Id('C_NI_12_30')
 C_NI_12_45 = Id('C_NI_12_45')
 
-event = [CNON_12_45 << {"2_MG_L"}, CNON_12_45 << {"4_MG_L"}, CNON_12_45 << {"6_MG_L"}, CNON_12_45 << {"10_MG_L"}]
-for i in range(len(event)):
+events = [CNON_12_45 << {"2_MG_L"}, CNON_12_45 << {"4_MG_L"}, CNON_12_45 << {"6_MG_L"}, CNON_12_45 << {"10_MG_L"}]
+for i in range(len(events)):
 	start_time=time.time()
 	query_prob=model.prob(events[i])
 	end_time = time.time()
