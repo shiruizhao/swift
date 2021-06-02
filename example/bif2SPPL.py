@@ -225,8 +225,6 @@ class SPPLWriter(object):
         cpd_list = []
         old_cpd_list=0
         while (len(cpd_list) != len(cpds)):
-            print("while loop")
-            print(len(cpds))
             old_cpd_list = len(cpd_list)
             for cpd in cpds:
                 append_flag = True
@@ -237,43 +235,128 @@ class SPPLWriter(object):
                     append_flag = False
                 else:
                     if evidence:
+                        print(cpd.variable)
                         for i in range(len(evidence)):
                             if evidence[i] in cpd_list:
                                 append_flag = True
                                 continue
                             else:
                                 append_flag = False
-                                print("bypass:%s"%cpd.variable)
                                 break
                         if append_flag:
                             cpd_list.append(cpd.variable)
 
                             col_indexes = np.array(list(product(*[range(i) for i in evidence_card])))
+
+                            iter_no = []
+                            edge_num = 1
+                            for k in range(np.size(col_indexes[0])):
+                                iter_temp = len(cpd.state_names[evidence[np.size(col_indexes[0])-k-1]])
+                                edge_num = edge_num * iter_temp
+                                print(edge_num)
+                                iter_no.append(edge_num)
+                            print("iter_no: ")
+                            print(iter_no) 
+
+                            #for loop: eveidents
+                            var_col_name_all = []
                             for m in range(np.shape(col_indexes)[0]):
                                 col_name = []
                                 var_name = []
                                 cat_value = []
                                 var_col_name = []
-                                for k in range(np.size(col_indexes[m])):
-                                    var_name.append("{var}".format(var=evidence[k]))
-                                    col_name.append("{state}".format(state=cpd.state_names[evidence[k]][col_indexes[m][k]]))
-                                    var_col_name.append("({var} == \'{state}\')".format(var=evidence[k], state=cpd.state_names[evidence[k]][col_indexes[m][k]]))
+
+                                sum_value = 0
+
                                 for j in range(cpd.variable_card):
                                     row_name = "{state}".format(
                                         state=cpd.state_names[cpd.variable][j]
                                         )
                                     index = np.shape(col_indexes)[0] * j + m
-                                    row_index = "\'"+row_name +"\' : " + str(cpd.values.ravel()[index])
+
+                                    if j == cpd.variable_card - 1:
+                                        round_value = 1.0 - sum_value
+                                        row_index = "\'"+row_name +"\' : " + str(round_value)
+                                    else:
+                                        row_index = "\'"+row_name +"\' : " + str(cpd.values.ravel()[index])
+                                    sum_value += cpd.values.ravel()[index]
                                     cat_value.append(row_index)
                                     
+                                for k in range(np.size(col_indexes[m])):
+                                    var = evidence[k]
+                                    state = cpd.state_names[evidence[k]][col_indexes[m][k]]
+                                    var_col = "({var} == \'{state}\')".format(var=var, state=state)
+                                    var_name.append("{var}".format(var=var))
+                                    col_name.append("{state}".format(state=state))
+                                    print('{m} {k} {var_col} {var_col_name_all}'.format(m=m, k=k, var_col=var_col, var_col_name_all=var_col_name_all))
+                                    if m == 0:
+                                        var_col_name.append('if ')
+                                        var_col_name.append(var_col)
+                                        var_col_name.append(':\n')
+                                        var_col_name.append('\t'*(k+1))
+                                        var_col_name_all.append(var_col)
+                                    else:
+                                        start_flag = False
+                                        end_flag = False
+                                        #del redudent item
+                                        for iter_k in range(np.size(col_indexes[m]) - 1):
+                                            if iter_k == 0:
+                                                iter_edge = iter_no[0]
+                                            else:
+                                                iter_edge = int(iter_no[iter_k] / iter_no[iter_k - 1])
+
+                                            if (k == 0) & (m % iter_no[iter_k] == 0):
+                                                print("del")
+                                                del var_col_name_all[-iter_edge:]
+
+
+                                        #end flag
+                                        reverse_k = np.size(col_indexes[m]) - k - 1
+                                        if reverse_k == 0:
+                                            if m % iter_no[0] == iter_no[0] - 1:
+                                                print("k = reverse k end flag")
+                                                end_flag = True
+                                        else:
+                                            if m % iter_no[reverse_k] == iter_no[reverse_k] - iter_no[reverse_k-1]:
+                                                print("end flag")
+                                                end_flag = True
+
+                                        #start flag
+                                        if m % iter_no[reverse_k] == 0:
+                                            start_flag = True
+                                            print("start flag")
+
+                                        if any(var_col in s for s in var_col_name_all):
+                                            print("mathing")
+                                            var_col_name.append('\t')
+                                        else:
+                                            var_col_name_all.append(var_col)
+
+                                            if start_flag:
+                                                var_col_name.append('if')
+                                                start_flag = False
+                                                
+                                                var_col_name.append("({var} == \'{state}\')".format(var=evidence[k], state=cpd.state_names[evidence[k]][col_indexes[m][k]]))
+                                                var_col_name.append(':\n')
+                                                var_col_name.append('\t'*(k+1))
+                                            elif end_flag:
+                                                var_col_name.append('else')
+                                                end_flag = False
+                                                
+                                                var_col_name.append(':\n')
+                                                var_col_name.append('\t'*(k+1))
+                                            else:
+                                                var_col_name.append('elif')
+
+                                                var_col_name.append("({var} == \'{state}\')".format(var=evidence[k], state=cpd.state_names[evidence[k]][col_indexes[m][k]]))
+                                                var_col_name.append(':\n')
+                                                var_col_name.append('\t'*(k+1))
 
                                 var_name = ', '.join(var_name)
                                 cat_value= ', '.join(cat_value)
-                                var_col_name= ' and '.join(var_col_name)
-                                if(m != (np.shape(col_indexes)[0]) - 1 ):
-                                    o_value_temp = ''.join(["if (", var_col_name, "):\n\t", cpd.variable, ' ~= ', "choice({", cat_value, "})\n", "el"])
-                                else:
-                                    o_value_temp = ''.join(['se:\n\t', cpd.variable, ' ~= ', "choice({", cat_value, "})\n"])
+                                var_col_name= ''.join(var_col_name)
+                                
+                                o_value_temp = ''.join([var_col_name, cpd.variable, ' ~= ', "choice({", cat_value, "})\n"])
                                 o_value.append(o_value_temp)
                             tables[cpd.variable] = ''.join(o_value)
                     else:
@@ -289,9 +372,7 @@ class SPPLWriter(object):
                         o_value = cpd.variable+" ~= choice({"+o_value+"})\n"
                         tables[cpd.variable] = o_value
             
-            print(cpd_list)
             if(len(cpd_list) > len(cpds)):
-                print(len(cpd_list))
                 break
                 exit()
 
